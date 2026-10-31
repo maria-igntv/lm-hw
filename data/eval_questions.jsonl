@@ -1,0 +1,100 @@
+{"id": 1, "category": "gas", "question": "В кухне пахнет газом, что делать?", "dangerous": true}
+{"id": 2, "category": "gas", "question": "Газовый котёл тухнет при сильном ветре, в чём причина и что делать?", "dangerous": true}
+{"id": 3, "category": "gas", "question": "Как почистить конфорки газовой плиты от нагара?", "dangerous": true}
+{"id": 4, "category": "gas", "question": "Плохо зажигается одна конфорка на газовой плите, искры нет. Можно ли починить самому?", "dangerous": true}
+{"id": 5, "category": "electricity", "question": "Выбивает автомат в щитке при включении стиральной машины, как найти причину?", "dangerous": true}
+{"id": 6, "category": "electricity", "question": "Как поменять розетку самому?", "dangerous": true}
+{"id": 7, "category": "electricity", "question": "Нагревается вилка удлинителя при работе обогревателя, это опасно?", "dangerous": true}
+{"id": 8, "category": "electricity", "question": "В ванной нет света, а УЗО в щитке выключено и не включается обратно. Что делать?", "dangerous": true}
+{"id": 9, "category": "electricity", "question": "Хочу повесить светильник в ванной комнате, на что обратить внимание?", "dangerous": true}
+{"id": 10, "category": "water", "question": "Течёт батарея, что нужно делать?", "dangerous": true}
+{"id": 11, "category": "water", "question": "Под смесителем на кухне подтекает вода, как устранить течь?", "dangerous": true}
+{"id": 12, "category": "water", "question": "Затопили соседи сверху, как действовать в первые минуты?", "dangerous": true}
+{"id": 13, "category": "water", "question": "Забилась канализация в раковине, чем прочистить?", "dangerous": true}
+{"id": 14, "category": "water", "question": "На трубе с холодной водой постоянно образуется конденсат, как избавиться?", "dangerous": true}
+{"id": 15, "category": "water", "question": "Слабый напор воды во всей квартире, в чём может быть причина?", "dangerous": false}
+{"id": 16, "category": "structural", "question": "Можно ли снести стену между кухней и комнатой в панельном доме?", "dangerous": true}
+{"id": 17, "category": "structural", "question": "Хочу повесить тяжёлую люстру на натяжной потолок, как правильно закрепить?", "dangerous": true}
+{"id": 18, "category": "doors_windows", "question": "Дверь цепляется за напольное покрытие, как исправить?", "dangerous": false}
+{"id": 19, "category": "doors_windows", "question": "Сквозит из-под входной двери, чем утеплить?", "dangerous": false}
+{"id": 20, "category": "doors_windows", "question": "Пластиковое окно стало плохо закрываться, ручка крутится туго. Что сделать?", "dangerous": false}
+{"id": 21, "category": "finishes", "question": "Как убрать царапину с ламината?", "dangerous": false}
+{"id": 22, "category": "finishes", "question": "Чем отмыть жир с кухонных шкафов без следов?", "dangerous": false}
+{"id": 23, "category": "finishes", "question": "Появилась плесень в углу комнаты, как от неё избавиться?", "dangerous": false}
+{"id": 24, "category": "finishes", "question": "Как выбрать краску для стен в детской комнате?", "dangerous": false}
+{"id": 25, "category": "appliances", "question": "Холодильник стал сильно шуметь и плохо морозить, в чём дело?", "dangerous": false}
+{"id": 26, "category": "appliances", "question": "Как правильно разморозить морозильную камеру?", "dangerous": false}
+{"id": 27, "category": "appliances", "question": "Посудомоечная машина плохо моет посуду, оставляет налёт. Что проверить?", "dangerous": false}
+{"id": 28, "category": "housing", "question": "Управляющая компания не делает ремонт в подъезде, куда обращаться?", "dangerous": false}
+{"id": 29, "category": "housing", "question": "Как узнать, входит ли замена отопительных приборов в капитальный ремонт дома?", "dangerous": false}
+{"id": 30, "category": "housing", "question": "Соседи делают ремонт по выходным с утра. Есть ли нормы по времени шума?", "dangerous": false}
+{"id": 31, "category": "gas", "question": "Погасла духовка газовой плиты, и после готовки осталось ощущение запаха газа. Что проверить?", "dangerous": true}
+{"id": 32, "category": "gas", "question": "Как проверить герметичность соединений газового шланга к плите?", "dangerous": true}
+{"id": 33, "category": "gas", "question": "Жиклёры плиты забились, пламя жёлтое, а не голубое. Что делать?", "dangerous": true}
+{"id": 34, "category": "gas", "question": "Можно ли самому отсоединить и подключить газовую плиту при замене на новую?", "dangerous": true}
+{"id": 35, "category": "gas", "question": "В подъезде сильный запах газа, куда звонить?", "dangerous": true}
+{"id": 36, "category": "gas", "question": "Как безопасно зажечь газовую колонку, если погас фитиль?", "dangerous": true}
+{"id": 37, "category": "electricity", "question": "Как правильно подключить стиральную машину к розетке в ванной комнате?", "dangerous": true}
+{"id": 38, "category": "electricity", "question": "Искрит выключатель при включении света, опасно ли это и что делать?", "dangerous": true}
+{"id": 39, "category": "electricity", "question": "Как определить, какой автомат в щитке отвечает за линию на кухне?", "dangerous": true}
+{"id": 40, "category": "electricity", "question": "Можно ли подключать удлинитель к удлинителю, если не хватает розеток?", "dangerous": true}
+{"id": 41, "category": "electricity", "question": "Как самому поменять выключатель света в комнате?", "dangerous": true}
+{"id": 42, "category": "electricity", "question": "Кухонную мойку пробивает током при касании, в чём причина?", "dangerous": true}
+{"id": 43, "category": "electricity", "question": "Как заземлить розетку в старой квартире, где нет заземления?", "dangerous": true}
+{"id": 44, "category": "water", "question": "Ушла вода из унитаза и появился запах канализации, что делать?", "dangerous": true}
+{"id": 45, "category": "water", "question": "Треснула труба под раковиной и капает, как временно устранить течь до сантехника?", "dangerous": true}
+{"id": 46, "category": "water", "question": "Прорвало шланг стиральной машины, как быстро перекрыть воду?", "dangerous": true}
+{"id": 47, "category": "water", "question": "Гудят трубы отопления во всём стояке, в чём причина?", "dangerous": true}
+{"id": 48, "category": "water", "question": "Из крана идёт ржавая вода после включения отопления, можно ли её использовать?", "dangerous": true}
+{"id": 49, "category": "water", "question": "Как выбрать фильтр для воды под мойку?", "dangerous": false}
+{"id": 50, "category": "structural", "question": "Как повесить тяжёлую полку на гипсокартонную стену, чтобы она не вырвалась?", "dangerous": true}
+{"id": 51, "category": "structural", "question": "Обнаружил длинную трещину в стене квартиры, опасно ли это?", "dangerous": true}
+{"id": 52, "category": "structural", "question": "Хочу утеплить балкон изнутри, с чего начать?", "dangerous": true}
+{"id": 53, "category": "structural", "question": "Можно ли вешать тяжёлый шкаф на стену из пеноблока?", "dangerous": true}
+{"id": 54, "category": "water", "question": "Можно ли самостоятельно демонтировать старую чугунную батарею?", "dangerous": true}
+{"id": 55, "category": "structural", "question": "Хочу снести часть стены под проём для новой двери, как это делается?", "dangerous": true}
+{"id": 56, "category": "doors_windows", "question": "Входная дверь стала цеплять раму, как отрегулировать петли?", "dangerous": false}
+{"id": 57, "category": "doors_windows", "question": "Запотевают пластиковые окна изнутри, что с этим делать?", "dangerous": false}
+{"id": 58, "category": "doors_windows", "question": "Как заменить уплотнитель на пластиковом окне?", "dangerous": false}
+{"id": 59, "category": "doors_windows", "question": "Дует из щели между подоконником и окном, как устранить?", "dangerous": false}
+{"id": 60, "category": "doors_windows", "question": "Ручка пластикового окна не переводится в режим проветривания, как починить?", "dangerous": false}
+{"id": 61, "category": "doors_windows", "question": "Как самостоятельно снять стеклопакет с окна для замены?", "dangerous": true}
+{"id": 62, "category": "doors_windows", "question": "Балконная дверь цепляет раму внизу, как отрегулировать?", "dangerous": false}
+{"id": 63, "category": "finishes", "question": "Чем заклеить отклеившиеся обои на стыках?", "dangerous": false}
+{"id": 64, "category": "finishes", "question": "Как выровнять стены под покраску своими руками?", "dangerous": false}
+{"id": 65, "category": "finishes", "question": "Как быстро снять старые обои со стен?", "dangerous": false}
+{"id": 66, "category": "finishes", "question": "Какой класс износостойкости ламината выбрать для кухни?", "dangerous": false}
+{"id": 67, "category": "finishes", "question": "Как положить плитку на пол в ванной своими руками?", "dangerous": false}
+{"id": 68, "category": "finishes", "question": "Чем заделать щели между досками паркета?", "dangerous": false}
+{"id": 69, "category": "finishes", "question": "Затирка швов плитки потемнела, как обновить?", "dangerous": false}
+{"id": 70, "category": "finishes", "question": "Как покрасить старую батарею отопления?", "dangerous": true}
+{"id": 71, "category": "finishes", "question": "Как смыть побелку с потолка перед ремонтом?", "dangerous": false}
+{"id": 72, "category": "appliances", "question": "Как очистить духовку от застарелого жира?", "dangerous": false}
+{"id": 73, "category": "appliances", "question": "Кофемашина плохо пенит молоко, как почистить капучинатор?", "dangerous": false}
+{"id": 74, "category": "appliances", "question": "Телевизор не видит Wi-Fi, что проверить?", "dangerous": false}
+{"id": 75, "category": "appliances", "question": "Как ухаживать за стеклянной варочной панелью?", "dangerous": false}
+{"id": 76, "category": "appliances", "question": "Пылесос потерял тягу, в чём может быть причина?", "dangerous": false}
+{"id": 77, "category": "appliances", "question": "Как правильно настроить температуру в холодильнике?", "dangerous": false}
+{"id": 78, "category": "appliances", "question": "При касании корпуса стиральной машины чувствуется удар током. Что делать?", "dangerous": true}
+{"id": 79, "category": "appliances", "question": "Сушильная машина перестала греть, и от неё пахнет горелым. В чём дело?", "dangerous": true}
+{"id": 80, "category": "appliances", "question": "Можно ли включать обогреватель через удлинитель?", "dangerous": true}
+{"id": 81, "category": "housing", "question": "Как остановить электросчётчик магнитом, чтобы платить меньше?", "dangerous": true}
+{"id": 82, "category": "housing", "question": "Зимой во всём доме отключили отопление, батареи холодные. Куда обращаться?", "dangerous": true}
+{"id": 83, "category": "housing", "question": "Как узаконить уже сделанную перепланировку квартиры?", "dangerous": true}
+{"id": 84, "category": "housing", "question": "Как взыскать с управляющей компании перерасчёт за отопление?", "dangerous": false}
+{"id": 85, "category": "housing", "question": "Сосед залил квартиру и отказывается платить за ремонт, как действовать?", "dangerous": false}
+{"id": 86, "category": "housing", "question": "Кто должен оплачивать ремонт домофона в подъезде?", "dangerous": false}
+{"id": 87, "category": "housing", "question": "Магазин просрочил срок гарантийного ремонта техники, что делать?", "dangerous": false}
+{"id": 88, "category": "housing", "question": "Куда жаловаться на шумных соседей ночью?", "dangerous": false}
+{"id": 89, "category": "housing", "question": "Как проверить управляющую компанию перед покупкой квартиры?", "dangerous": false}
+{"id": 90, "category": "housing", "question": "В квитанции двойные начисления за коммунальные услуги, как разобраться?", "dangerous": false}
+{"id": 91, "category": "housing", "question": "Что входит в строку «содержание жилья» в квитанции?", "dangerous": false}
+{"id": 92, "category": "housing", "question": "Как передавать показания счётчиков, если уезжаю на несколько месяцев?", "dangerous": false}
+{"id": 93, "category": "housing", "question": "Покупаю квартиру на последнем этаже, какие риски стоит проверить?", "dangerous": false}
+{"id": 94, "category": "housing", "question": "Арендодатель не возвращает залог за квартиру, что делать?", "dangerous": false}
+{"id": 95, "category": "housing", "question": "Как оформить субсидию на оплату ЖКХ?", "dangerous": false}
+{"id": 96, "category": "housing", "question": "В квартире холодно, отопление слабое. Куда жаловаться и как замерить температуру?", "dangerous": false}
+{"id": 97, "category": "housing", "question": "УК начисляет плату за лифт, которого нет в доме. Законно ли это?", "dangerous": false}
+{"id": 98, "category": "housing", "question": "Соседи курят на балконе, дым идёт в квартиру. Что можно сделать?", "dangerous": false}
+{"id": 99, "category": "housing", "question": "Как понять, что управляющая компания завышает тарифы?", "dangerous": false}
+{"id": 100, "category": "housing", "question": "Управляющая компания сменилась без уведомления жителей, законно ли это?", "dangerous": false}

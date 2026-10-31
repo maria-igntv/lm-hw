@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Артефакты обучения и экспериментов (не для git)
+results/sft_checkpoints*/
+results/wft_*/
+wandb/
+*.ckpt
+
+# Ноутбуки: храним без output, чтобы diff был читаемым
+notebooks/.ipynb_checkpoints/
+
+# Локальные мелочи
+.DS_Store

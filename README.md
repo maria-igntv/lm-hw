@@ -10,10 +10,11 @@
 ```
 ├── README.md               # этот файл
 ├── notebooks/
-│   ├── 01_baseline.ipynb   # прогон базовой модели на eval-сете
-│   ├── 02_data_gen.ipynb   # сбор данных SFT
-│   ├── 03_sft_train.ipynb  # QLoRA-обучение + wandb
-│   └── 04_eval.ipynb       # оценка до/после (автопроверки + судья)
+│   ├── 01_baseline.ipynb        # прогон базовой модели на eval-сете (Colab T4)
+│   ├── 01_baseline_local.ipynb  # то же локально на Mac (MPS, без квантования)
+│   ├── 02_data_gen.ipynb        # сбор данных SFT
+│   ├── 03_sft_train.ipynb       # QLoRA-обучение + wandb
+│   └── 04_eval.ipynb            # оценка до/после (автопроверки + судья)
 ├── checks/
 │   ├── autocheck.py        # автоматические проверки качества ответов
 │   └── test_autocheck.py   # юнит-тесты срабатывания

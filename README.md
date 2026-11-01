@@ -31,15 +31,18 @@
 Все ноутбуки рассчитаны на GPU T4 (16GB) в Google Colab.
 
 1. Откройте ноутбук в Colab: `Runtime -> Change runtime type -> T4 GPU`.
-2. Склонируйте репозиторий и установите зависимости (первая ячейка каждого ноутбука):
+2. Выполняйте ячейки по порядку — первая ячейка каждого ноутбука сама
+   клонит репозиторий и ставит зависимости, загружать что-то вручную не нужно:
 
 ```python
-!git clone https://github.com/<username>/lm-hw.git
+!git clone https://github.com/maria-igntv/lm-hw.git
 %cd lm-hw
-!pip install -q -U transformers datasets trl peft bitsandbytes accelerate wandb
 ```
 
 3. Ноутбуки запускать по порядку номеров.
+
+Чтобы получить свежую версию кода в уже запущенной сессии Colab:
+`%cd /content && !rm -rf lm-hw` и выполнить первую ячейку заново.
 
 ## Автопроверки
 

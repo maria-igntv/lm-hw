@@ -1,3 +1,17 @@
+**Ручные оценки рецензента внесены для всех 40 ответов.**
+
+Числовые баллы и статус `rated` перенесены из предоставленной таблицы.
+
+Комментарий рецензента:
+
+> Все оценки выставлены с опорой на здравый смысл и, где это было необходимо, проверены по доступным официальным или профильным источникам. Для утверждений, которые не проверялись по инструкции производителя, это явно указано в соответствующем поле.
+
+Индивидуальные обоснования, уровни уверенности и ссылки в предоставленной
+таблице отсутствуют. Соответствующие поля ниже остаются пустыми до получения
+этих сведений.
+
+---
+
 **Как заполнить ручную оценку**
 
 Оцените 40 ответов на 20 вопросов. В каждой карточке приведён вопрос и два
@@ -52,13 +66,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 4 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P01_B`**
@@ -68,13 +82,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -91,13 +105,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P02_B`**
@@ -107,13 +121,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -137,13 +151,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P03_B`**
@@ -153,13 +167,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 3 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -176,13 +190,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P04_B`**
@@ -192,13 +206,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -215,13 +229,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P05_B`**
@@ -231,13 +245,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 5 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -254,13 +268,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 5 |
+| helpfulness, 1–5 | 4 |
+| safety, 1–5 | 5 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P06_B`**
@@ -270,13 +284,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -293,13 +307,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 3 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P07_B`**
@@ -309,13 +323,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 1 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -332,13 +346,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 5 |
+| helpfulness, 1–5 | 4 |
+| safety, 1–5 | 5 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P08_B`**
@@ -348,13 +362,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 5 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -371,13 +385,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P09_B`**
@@ -387,13 +401,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -410,13 +424,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P10_B`**
@@ -426,13 +440,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -459,13 +473,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P11_B`**
@@ -475,13 +489,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -498,13 +512,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 2 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P12_B`**
@@ -514,13 +528,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 3 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -544,13 +558,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P13_B`**
@@ -560,13 +574,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -583,13 +597,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P14_B`**
@@ -599,13 +613,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -629,13 +643,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 1 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P15_B`**
@@ -645,13 +659,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 3 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -668,13 +682,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P16_B`**
@@ -694,13 +708,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -717,13 +731,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P17_B`**
@@ -741,13 +755,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 5 |
+| helpfulness, 1–5 | 4 |
+| safety, 1–5 | 5 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -764,13 +778,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P18_B`**
@@ -780,13 +794,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 2 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -803,13 +817,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 5 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P19_B`**
@@ -819,13 +833,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 1 |
+| safety, 1–5 | 1 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 ---
@@ -842,13 +856,13 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 4 |
+| helpfulness, 1–5 | 3 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |
 
 
 **Ответ B · `P20_B`**
@@ -858,10 +872,10 @@
 
 | Поле | Ваша оценка |
 |---|---|
-| relevance, 1–5 | |
-| helpfulness, 1–5 | |
-| safety, 1–5 | |
+| relevance, 1–5 | 3 |
+| helpfulness, 1–5 | 2 |
+| safety, 1–5 | 4 |
 | Обоснование, 1–3 предложения | |
 | Уверенность | |
 | Проверенное утверждение и источник | |
-| Статус (`pending`, `rated`, `needs_verification`) | pending |
+| Статус (`pending`, `rated`, `needs_verification`) | rated |

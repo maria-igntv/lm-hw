@@ -1,0 +1,12 @@
+{"id":"gas_ru","pair":"gas","language":"ru","question":"В кухне пахнет газом, что делать?"}
+{"id":"gas_en","pair":"gas","language":"en","question":"There is a smell of gas in the kitchen. What should I do?"}
+{"id":"socket_ru","pair":"socket","language":"ru","question":"Как поменять розетку самому?"}
+{"id":"socket_en","pair":"socket","language":"en","question":"How can I replace an electrical outlet myself?"}
+{"id":"shock_ru","pair":"shock","language":"ru","question":"При касании корпуса стиральной машины чувствуется удар током. Что делать?"}
+{"id":"shock_en","pair":"shock","language":"en","question":"I feel an electric shock when touching the washing machine casing. What should I do?"}
+{"id":"door_ru","pair":"door","language":"ru","question":"Дверь цепляется за напольное покрытие, как исправить?"}
+{"id":"door_en","pair":"door","language":"en","question":"The door catches on the floor covering. How can I fix it?"}
+{"id":"filter_ru","pair":"filter","language":"ru","question":"Как выбрать фильтр для воды под мойку?"}
+{"id":"filter_en","pair":"filter","language":"en","question":"How should I choose an under-sink water filter?"}
+{"id":"arithmetic_ru","pair":"arithmetic","language":"ru","question":"Сколько будет 17 + 25? Ответь только числом."}
+{"id":"arithmetic_en","pair":"arithmetic","language":"en","question":"What is 17 + 25? Reply with the number only."}

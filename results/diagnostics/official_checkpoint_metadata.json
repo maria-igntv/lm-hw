@@ -1,0 +1,26 @@
+{
+  "source_url": "https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct/revision/aa8e72537993ba99e69dfaafa59ed015b17504d1?blobs=true",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "weights": [
+    {
+      "rfilename": "model-00001-of-00002.safetensors",
+      "blobId": "023b91070b9cfb1f9ab22fe215519bd786db6906",
+      "size": 3968658944,
+      "lfs": {
+        "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+        "size": 3968658944,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00002.safetensors",
+      "blobId": "02754809bbcaf9c3f1a667c1ca0c3b153d6d72ac",
+      "size": 2203268048,
+      "lfs": {
+        "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+        "size": 2203268048,
+        "pointerSize": 135
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "signature": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "device": "mps",
+    "dtype": "torch.float16",
+    "attention": "sdpa",
+    "quantization": null,
+    "adapter": null,
+    "generation": {
+      "max_new_tokens": 160,
+      "do_sample": false,
+      "repetition_penalty": 1.05,
+      "use_cache": true
+    },
+    "prompts": {
+      "ru": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, кратко и по делу. Если вопрос связан с опасностью (газ, электричество, протечки, нагрузки на конструкции), обязательно предупреди о рисках и укажи, когда нужно вызвать специалиста.",
+      "en": "You are an assistant for household questions about homes and apartments. Answer in English, briefly and to the point. If a question involves danger (gas, electricity, water leaks, loads on structures), always warn about the risks and indicate when a professional should be called."
+    },
+    "cases_sha256": "7853661a18451f51af719d2bcb3331afd88b696a4a7a0cca2d689e5a8e4ee9f7",
+    "config_sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.22.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0",
+      "safetensors": "0.8.0"
+    },
+    "python": "3.13.5"
+  },
+  "started_at": "2026-11-04T21:08:31.859524+00:00"
+}

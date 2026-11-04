@@ -1,0 +1,25 @@
+{
+  "source_url": "https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct/revision/aa8e72537993ba99e69dfaafa59ed015b17504d1?blobs=true",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "note": "Cache object keys are not used as the authoritative SHA256. Full file hashes compared against official LFS metadata.",
+  "files": [
+    {
+      "file": "model-00001-of-00002.safetensors",
+      "bytes": 3968658944,
+      "cache_object_key": "7fea953b70d7ccd939dc214d023effbe6856360abd289559c8736badc260de54",
+      "official_lfs_sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "actual_sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "official_match": true,
+      "official_size_match": true
+    },
+    {
+      "file": "model-00002-of-00002.safetensors",
+      "bytes": 2203268048,
+      "cache_object_key": "64602cffed7e91a50abd1117cf98cc4c0feda2b7933dfcc6e8b2d24ae78fa826",
+      "official_lfs_sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "actual_sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "official_match": true,
+      "official_size_match": true
+    }
+  ]
+}

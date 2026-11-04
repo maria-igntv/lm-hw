@@ -1,0 +1,242 @@
+[
+  {
+    "review_id": "P01_A",
+    "request_id": "item_0094",
+    "question_id": 1,
+    "model": "sft"
+  },
+  {
+    "review_id": "P01_B",
+    "request_id": "item_0056",
+    "question_id": 1,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P02_A",
+    "request_id": "item_0029",
+    "question_id": 6,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P02_B",
+    "request_id": "item_0051",
+    "question_id": 6,
+    "model": "sft"
+  },
+  {
+    "review_id": "P03_A",
+    "request_id": "item_0043",
+    "question_id": 11,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P03_B",
+    "request_id": "item_0028",
+    "question_id": 11,
+    "model": "sft"
+  },
+  {
+    "review_id": "P04_A",
+    "request_id": "item_0143",
+    "question_id": 18,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P04_B",
+    "request_id": "item_0152",
+    "question_id": 18,
+    "model": "sft"
+  },
+  {
+    "review_id": "P05_A",
+    "request_id": "item_0119",
+    "question_id": 28,
+    "model": "sft"
+  },
+  {
+    "review_id": "P05_B",
+    "request_id": "item_0097",
+    "question_id": 28,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P06_A",
+    "request_id": "item_0084",
+    "question_id": 34,
+    "model": "sft"
+  },
+  {
+    "review_id": "P06_B",
+    "request_id": "item_0086",
+    "question_id": 34,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P07_A",
+    "request_id": "item_0062",
+    "question_id": 39,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P07_B",
+    "request_id": "item_0116",
+    "question_id": 39,
+    "model": "sft"
+  },
+  {
+    "review_id": "P08_A",
+    "request_id": "item_0189",
+    "question_id": 40,
+    "model": "sft"
+  },
+  {
+    "review_id": "P08_B",
+    "request_id": "item_0163",
+    "question_id": 40,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P09_A",
+    "request_id": "item_0044",
+    "question_id": 45,
+    "model": "sft"
+  },
+  {
+    "review_id": "P09_B",
+    "request_id": "item_0010",
+    "question_id": 45,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P10_A",
+    "request_id": "item_0027",
+    "question_id": 48,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P10_B",
+    "request_id": "item_0139",
+    "question_id": 48,
+    "model": "sft"
+  },
+  {
+    "review_id": "P11_A",
+    "request_id": "item_0114",
+    "question_id": 49,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P11_B",
+    "request_id": "item_0093",
+    "question_id": 49,
+    "model": "sft"
+  },
+  {
+    "review_id": "P12_A",
+    "request_id": "item_0117",
+    "question_id": 50,
+    "model": "sft"
+  },
+  {
+    "review_id": "P12_B",
+    "request_id": "item_0144",
+    "question_id": 50,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P13_A",
+    "request_id": "item_0100",
+    "question_id": 52,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P13_B",
+    "request_id": "item_0187",
+    "question_id": 52,
+    "model": "sft"
+  },
+  {
+    "review_id": "P14_A",
+    "request_id": "item_0136",
+    "question_id": 58,
+    "model": "sft"
+  },
+  {
+    "review_id": "P14_B",
+    "request_id": "item_0194",
+    "question_id": 58,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P15_A",
+    "request_id": "item_0091",
+    "question_id": 64,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P15_B",
+    "request_id": "item_0200",
+    "question_id": 64,
+    "model": "sft"
+  },
+  {
+    "review_id": "P16_A",
+    "request_id": "item_0175",
+    "question_id": 67,
+    "model": "sft"
+  },
+  {
+    "review_id": "P16_B",
+    "request_id": "item_0001",
+    "question_id": 67,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P17_A",
+    "request_id": "item_0190",
+    "question_id": 74,
+    "model": "sft"
+  },
+  {
+    "review_id": "P17_B",
+    "request_id": "item_0049",
+    "question_id": 74,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P18_A",
+    "request_id": "item_0122",
+    "question_id": 78,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P18_B",
+    "request_id": "item_0070",
+    "question_id": 78,
+    "model": "sft"
+  },
+  {
+    "review_id": "P19_A",
+    "request_id": "item_0060",
+    "question_id": 81,
+    "model": "baseline"
+  },
+  {
+    "review_id": "P19_B",
+    "request_id": "item_0138",
+    "question_id": 81,
+    "model": "sft"
+  },
+  {
+    "review_id": "P20_A",
+    "request_id": "item_0002",
+    "question_id": 88,
+    "model": "sft"
+  },
+  {
+    "review_id": "P20_B",
+    "request_id": "item_0165",
+    "question_id": 88,
+    "model": "baseline"
+  }
+]

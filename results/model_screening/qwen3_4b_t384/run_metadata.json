@@ -1,0 +1,34 @@
+{
+  "signature": {
+    "candidate": {
+      "key": "qwen3_4b",
+      "blind_alias": "candidate_A",
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "gated": false,
+      "license": "apache-2.0",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    "system_prompt": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, кратко и по делу. Если вопрос связан с опасностью (газ, электричество, протечки, нагрузки на конструкции), обязательно предупреди о рисках и укажи, когда нужно вызвать специалиста.",
+    "generation": {
+      "max_new_tokens": 384,
+      "do_sample": false,
+      "repetition_penalty": 1.05,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 50
+    },
+    "questions_sha256": "41b30cad11c1956d11ed70e6ebe796066acac65d730cc7d7b53e43e92ae67cb3",
+    "device": "Tesla T4",
+    "quantization": "NF4",
+    "compute_dtype": "float16",
+    "attention": "sdpa",
+    "versions": {
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.1",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.12.0"
+    }
+  },
+  "started_at": "2026-11-04T21:35:32.755610+00:00"
+}

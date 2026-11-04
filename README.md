@@ -10,7 +10,10 @@
 Для предварительного сравнения Qwen3-4B-Instruct-2507 и Qwen2.5-7B-Instruct
 подготовлены 16 новых русских вопросов и
 [ноутбук 00_model_screening](notebooks/00_model_screening.ipynb).
-Ответы кандидатов и оценки судьи ещё предстоит получить.
+Первый прогон Qwen3-4B завершён, 9 из 16 ответов достигли лимита 384 токена.
+[Разбор первого прогона](results/model_screening/qwen3_4b_t384/analysis.md).
+Для общего сравнения двух моделей лимит увеличен до 768, результаты и оценки
+нового протокола ещё предстоит получить.
 [Пошаговый план](docs/model_screening.md).
 [Открыть скрининг в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening.ipynb).
 

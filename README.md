@@ -12,8 +12,11 @@
 [ноутбук 00_model_screening](notebooks/00_model_screening.ipynb).
 Первый прогон Qwen3-4B завершён, 9 из 16 ответов достигли лимита 384 токена.
 [Разбор первого прогона](results/model_screening/qwen3_4b_t384/analysis.md).
-Для общего сравнения двух моделей лимит увеличен до 768, результаты и оценки
-нового протокола ещё предстоит получить.
+Для общего сравнения двух моделей лимит увеличен до 768. Повторный результат
+Qwen3-4B и оценки судьи для общего протокола ещё предстоит получить.
+Qwen2.5-7B уже завершил прогон с лимитом 768, обрезаний нет, но языковые
+и содержательные ошибки остаются.
+[Разбор Qwen2.5-7B](results/model_screening/qwen25_7b_t768/analysis.md).
 [Пошаговый план](docs/model_screening.md).
 [Открыть скрининг в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening.ipynb).
 

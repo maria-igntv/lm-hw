@@ -1,0 +1,82 @@
+[
+  {
+    "request_id": "candidate_B_t768_01",
+    "question_id": "screen_08",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_02",
+    "question_id": "screen_10",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_03",
+    "question_id": "screen_06",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_04",
+    "question_id": "screen_07",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_05",
+    "question_id": "screen_15",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_06",
+    "question_id": "screen_11",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_07",
+    "question_id": "screen_13",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_08",
+    "question_id": "screen_09",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_09",
+    "question_id": "screen_02",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_10",
+    "question_id": "screen_03",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_11",
+    "question_id": "screen_14",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_12",
+    "question_id": "screen_16",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_13",
+    "question_id": "screen_05",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_14",
+    "question_id": "screen_12",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_15",
+    "question_id": "screen_01",
+    "model_key": "qwen25_7b"
+  },
+  {
+    "request_id": "candidate_B_t768_16",
+    "question_id": "screen_04",
+    "model_key": "qwen25_7b"
+  }
+]

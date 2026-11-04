@@ -5,6 +5,15 @@
 
 **Базовая модель:** Qwen2.5-3B-Instruct (4-bit NF4) → SFT (QLoRA) → оценка до/после.
 
+## Выбор следующей базы
+
+Для предварительного сравнения Qwen3-4B-Instruct-2507 и Qwen2.5-7B-Instruct
+подготовлены 16 новых русских вопросов и
+[ноутбук 00_model_screening](notebooks/00_model_screening.ipynb).
+Ответы кандидатов и оценки судьи ещё предстоит получить.
+[Пошаговый план](docs/model_screening.md).
+[Открыть скрининг в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening.ipynb).
+
 ## Диагностика исходной модели
 
 Выполнено сравнение русских/английских запросов в Transformers 4.57.3 и 5.22.1

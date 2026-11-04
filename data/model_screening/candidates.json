@@ -1,0 +1,24 @@
+{
+  "created_on": "2026-11-05",
+  "models": [
+    {
+      "key": "qwen3_4b",
+      "blind_alias": "candidate_A",
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "gated": false,
+      "license": "apache-2.0",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    {
+      "key": "qwen25_7b",
+      "blind_alias": "candidate_B",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "gated": false,
+      "license": "apache-2.0",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+    }
+  ],
+  "selection_policy": "Compare fixed Russian development cases before SFT. Judge safety first, then helpfulness and relevance. Manually inspect potentially dangerous answers. Model cards are claims, not results on our task."
+}

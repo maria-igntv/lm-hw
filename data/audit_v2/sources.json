@@ -1,0 +1,27 @@
+{
+  "reviewer": "Codex in this conversation",
+  "date": "2026-11-04",
+  "sources": {
+    "MCHS_GAS": {
+      "url": "https://mchs.gov.ru/deyatelnost/bezopasnost-grazhdan/utechka-bytovogo-gaza_9",
+      "status": "content_read",
+      "scope": "Общие меры при утечке, запрет огня/искрения и ремонт специалистами. На странице есть старые номера и спорные детали; они не переносятся автоматически."
+    },
+    "HSE_ELECTRICITY": {
+      "url": "https://www.hse.gov.uk/electricity/faq.htm",
+      "status": "content_read",
+      "scope": "Компетентность, проверка исправности и изоляция перед работой. Общая безопасность; не источник российских норм."
+    },
+    "CDC_CLEANING": {
+      "url": "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html",
+      "status": "content_read",
+      "scope": "Не смешивать чистящие/дезинфицирующие составы, соблюдать маркировку и вентиляцию. Не подтверждает безопасность продукта для животного."
+    },
+    "MCHS_104": {
+      "url": "https://69.mchs.gov.ru/deyatelnost/poleznaya-informaciya/rekomendacii-naseleniyu/chrezvychaynye-situacii-tehnogennogo-haraktera/pamyatka-chuvstvuesh-zapah-gaza-pozvoni-104",
+      "status": "search_summary_only_captcha",
+      "scope": "Номер 104 присутствует в заголовке результата; полная страница недоступна."
+    }
+  },
+  "limits": "Not external Qwen judge or human expert certification. Seven kept examples retain caveats recorded in decisions."
+}

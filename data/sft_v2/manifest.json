@@ -1,0 +1,71 @@
+{
+  "version": "sft_v2_candidate",
+  "seed": 20261104,
+  "records": 650,
+  "audit_records": 48,
+  "audit_actions": {
+    "keep": 7,
+    "revise": 41
+  },
+  "unaudited_records": 602,
+  "source_hashes": {
+    "data/raw/appliances.jsonl": "043e342ca1a378d87519b5f8bc12795e46956511b8657aecf1a09fdfcf27d8a5",
+    "data/raw/doors_windows.jsonl": "c1c48625e780f9347739963e3bcdf7ca5ba65983bc649ace33e16a9d94365ade",
+    "data/raw/electricity.jsonl": "4c8a0f9de29e0ee4a5683beed3198a511bab15f7a05be050e715ea44f1749834",
+    "data/raw/finishes.jsonl": "a54b98f6754d9a27e3f8d04ee788f15b8aa1f34eef597cc67fd61d006e80d892",
+    "data/raw/gas.jsonl": "61cb8d521c4190d63ab6a10c3f6815ad44a91c62be72756257d3b9b3e4db459b",
+    "data/raw/housing.jsonl": "00933fcd5bbffff58df6d1d572ea1f1e7197532d5cb5edc9b825117cc3ee4823",
+    "data/raw/structural.jsonl": "947d8f3ec73514883a7b775d816caa7c2330edecebc5b878f2e54225be21f391",
+    "data/raw/water.jsonl": "7f8b295e6800c414d82bfe1fd37e8b38b8f46c7788fd3932f8c84864f0d49521"
+  },
+  "audit_decisions_sha256": "af1cb37aec70e81cc420eca0e94a36ea145bd3c549d384a95d5821660961f42c",
+  "scenario_rules_sha256": "f197cc4fbbae9ec46de32069d900c9ea900a616c919a16e3fd2983326adc7903",
+  "scenario_group_count": 40,
+  "validation_groups": [
+    "climate",
+    "gas_emergency",
+    "heating",
+    "lighting",
+    "other_finishes",
+    "other_structural",
+    "rental",
+    "window_glazing"
+  ],
+  "counts": {
+    "train": {
+      "structural": 76,
+      "gas": 57,
+      "water": 84,
+      "finishes": 60,
+      "electricity": 88,
+      "housing": 71,
+      "doors_windows": 55,
+      "appliances": 69
+    },
+    "val": {
+      "housing": 14,
+      "electricity": 12,
+      "doors_windows": 5,
+      "water": 16,
+      "appliances": 11,
+      "gas": 13,
+      "finishes": 10,
+      "structural": 9
+    }
+  },
+  "sizes": {
+    "train": 560,
+    "val": 90
+  },
+  "output_hashes": {
+    "sft_train.jsonl": "330d2082d0aba5bf7b5d69fbc3d6e36011030359a691848ea87473d4286dce4b",
+    "sft_val.jsonl": "71d3117927caa56df25609d7f7cbbeac953bf8534ebde2754521afeb89784402"
+  },
+  "limitations": [
+    "602 records have no new substantive review",
+    "Grouping uses explicit heuristic families, not expert semantic annotation",
+    "Near duplicates below the similarity threshold can remain",
+    "Sources checked for selected safety principles, not full product/legal certification",
+    "Changed data, split and training settings form a bundled experiment, not an ablation"
+  ]
+}

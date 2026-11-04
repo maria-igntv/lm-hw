@@ -5,6 +5,16 @@
 
 **Базовая модель:** Qwen2.5-3B-Instruct (4-bit NF4) → SFT (QLoRA) → оценка до/после.
 
+## Второй SFT-эксперимент
+
+Подготовлены [аудит 48 примеров](data/audit_v2/README.md), кандидат данных
+`data/sft_v2/` со split 560/90 и
+[отдельный ноутбук SFT v2](notebooks/03_sft_train_v2.ipynb).
+У 602 из 650 примеров нового содержательного аудита нет; статусы записаны в данных.
+Полный v2-прогон и его оценка ещё предстоят.
+[Пошаговая инструкция запуска](docs/sft_v2_run_guide.md).
+[Открыть v2 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/03_sft_train_v2.ipynb).
+
 ## Структура
 
 ```

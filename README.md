@@ -5,6 +5,18 @@
 
 **Базовая модель:** Qwen2.5-3B-Instruct (4-bit NF4) → SFT (QLoRA) → оценка до/после.
 
+## Новый цикл улучшения качества v3
+
+Подготовлены [32 development-вопроса с критериями](data/development_v3/README.md)
+и отдельное сравнение `Qwen3-4B-Instruct-2507` с `Phi-4-mini-instruct`.
+Два системных промпта дают 64 ответа на модель. Ноутбук сохраняет технические
+RU / EN-контроли, условия генерации, ответы и задания тому же Qwen-судье
+по обновлённой рубрике. Реальные результаты этого нового сравнения ожидаются
+после запуска в Colab.
+
+[Пошаговая инструкция](docs/model_screening_v3.md).
+[Открыть сравнение v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening_v3.ipynb).
+
 ## Выбор следующей базы
 
 Для предварительного сравнения Qwen3-4B-Instruct-2507 и Qwen2.5-7B-Instruct

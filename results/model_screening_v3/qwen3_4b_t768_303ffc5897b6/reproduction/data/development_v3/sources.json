@@ -1,0 +1,197 @@
+{
+  "version": "development_v3.0",
+  "checked_on": "2026-11-16",
+  "reviewed_by": "Codex, проверка указанных фрагментов первичных источников",
+  "expert_human_review": false,
+  "verification_method": "Содержимое первичных страниц / PDF открыто через веб-поиск. В реестре сохранены краткие пересказы и области применимости.",
+  "sources": {
+    "MOSGAZ": {
+      "title": "Действия при появлении запаха газа",
+      "publisher": "АО МОСГАЗ",
+      "url": "https://www.mos-gaz.ru/individuals/info/accident",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Раздел с инструктажем при запахе газа, пункты 5–8, номера 104 и 112.",
+      "supports": "Исключить переключение электроприборов, покинуть загазованное помещение, вызвать помощь снаружи. Проверка огнём запрещена.",
+      "limits": "Использованы перечисленные меры. Поиск места утечки из других разделов страницы в критерии аварийного случая не включён."
+    },
+    "GORENJE": {
+      "title": "Руководство GT641AKB / GTW641AKB",
+      "publisher": "Gorenje",
+      "url": "https://partners.gorenje.com/fts/GetDigitDoc.aspx?docName=gorenje+gt641akb-gtw641akb_gog_ru.pdf&jezik=ru&sifra=742439&tipVsebine=1",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Печатные страницы 3 и 8, разделы безопасности и газ-контроля.",
+      "supports": "Газ-контроль прекращает подачу при погасании пламени. Первоначальное удержание регулятора предусмотрено инструкцией. Ремонт выполняет сервисный мастер.",
+      "limits": "Модельный пример. Время удержания и технические параметры этой панели нельзя переносить на неизвестную плиту. Отказ от фиксации ручки вытекает из назначения защиты."
+    },
+    "HSE_ELECTRICITY": {
+      "title": "Introduction to electrical safety",
+      "publisher": "Health and Safety Executive",
+      "url": "https://www.hse.gov.uk/electricity/introduction.htm",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "The main electrical hazards, Actions you must take, Maintenance.",
+      "supports": "Влажная среда усиливает электрическую опасность. Защита подбирается к цепи. Оборудование со следами перегрева выводят из использования, ремонт поручают компетентному специалисту.",
+      "limits": "Общие принципы электрической безопасности. Российские нормы и конкретные сечения кабелей по этому источнику не устанавливаются."
+    },
+    "EIA_ENERGY": {
+      "title": "Measuring electricity",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Electricity use over time is measured in Watthours.",
+      "supports": "Энергия в кВт·ч получается умножением мощности в кВт на время в часах.",
+      "limits": "Числа для расчёта заданы в вопросе. Тарифы и реальные потери приборов источник для этого задания не задаёт."
+    },
+    "ENERGY_RATING": {
+      "title": "Choosing the right lamp",
+      "publisher": "Energy Rating, Australia / New Zealand",
+      "url": "https://www.energyrating.gov.au/consumer-information/products/lighting/choosing-right-lamp",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Choosing the right lamp, Key lighting terms and attributes.",
+      "supports": "При подборе учитывают цоколь, напряжение, световой поток, цветовую температуру. Люмены характеризуют световой поток, кельвины — цветовую температуру.",
+      "limits": "Критерии используют физические характеристики. Требования маркировки конкретной страны и универсальный эквивалент мощности не переносятся."
+    },
+    "AQUAPHOR": {
+      "title": "Замена картриджа в АКВАФОР Трио",
+      "publisher": "АКВАФОР",
+      "url": "https://www.aquaphor.ru/support/choose-cartridge/replace-in-trio",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Шаги 1–3 и совет сфотографировать фильтр / картриджи перед покупкой.",
+      "supports": "Перед открытием колбы прекращают подачу воды и сбрасывают давление. Для подбора сменных модулей используют сведения о конкретном фильтре.",
+      "limits": "Инструкция одной серии. Колбы, модули, время промывки и способы сброса давления других моделей требуют собственной инструкции."
+    },
+    "FISCHER": {
+      "title": "Notes on the safe processing of fischer products",
+      "publisher": "fischer",
+      "url": "https://www.fischer-international.com/en/service/our-support/safety-important/english",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Safety first, Building materials and loads, Screw size and loads.",
+      "supports": "Несущая способность крепления зависит от основания и монтажа. Применяют данные конкретного изделия, при сомнении привлекают специалиста.",
+      "limits": "Численную грузоподъёмность неизвестной стены источник не подтверждает. Проверка полной массы и схемы крепления — применение этого принципа к вопросу."
+    },
+    "MCHS_COLLAPSE": {
+      "title": "Поведение при внезапном обрушении здания",
+      "publisher": "ГУ МЧС России по Астраханской области",
+      "url": "https://30.mchs.gov.ru/deyatelnost/press-centr/novosti/2212307",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Признаки разрушения, действия при потере устойчивости, звонок 112.",
+      "supports": "Внезапные трещины могут сопровождать разрушение. При угрозе покидают здание безопасным путём, отходят от него и вызывают спасателей.",
+      "limits": "Памятка 2015 года. Использованы только указанные принципы и 112. Совет при падающей отделке — применение принципа удаления из зоны обломков. Диагноз по ширине трещины не задаётся."
+    },
+    "WINDOW_CHILD": {
+      "title": "Рекомендации по безопасности детей у окон",
+      "publisher": "Комитет предупреждения чрезвычайных ситуаций Казахстана",
+      "url": "https://www.gov.kz/org/kpchs/press/news/details/1320816?lang=ru",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Пять рекомендаций по окнам, опубликованы 30 октября 2026 года.",
+      "supports": "Сетка не удерживает ребёнка. Нужны ограничение доступа к окну, защитные устройства и присмотр взрослого.",
+      "limits": "Использованы общие меры против падения. Российские юридические требования к монтажу замков этим источником не подтверждаются."
+    },
+    "HSE_HEIGHT": {
+      "title": "Introduction to working at height safely",
+      "publisher": "Health and Safety Executive",
+      "url": "https://www.hse.gov.uk/work-at-height/introduction.htm",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "What you have to do, Assessing and controlling the risks, What to do and not do.",
+      "supports": "Высотную работу планируют и выполняют компетентные люди с подходящим оборудованием. Следует предотвращать падения и учитывать падающие предметы.",
+      "limits": "Общие принципы. Для наружного шва на девятом этаже вызов подготовленной бригады — применение принципа к условиям вопроса."
+    },
+    "NRCAN": {
+      "title": "Condensation",
+      "publisher": "Natural Resources Canada",
+      "url": "https://prod-natural-resources.azure.cloud.nrcan-rncan.gc.ca/energy-efficiency/product-energy-ratings/condensation?wbdisable=true",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "What causes condensation, Reducing condensation.",
+      "supports": "Причины и действия зависят от места конденсата. Комнатная влага на холодной поверхности отличается от влаги между стёклами герметичного блока.",
+      "limits": "Само слово «запотело» не устанавливает дефект. Диагноз для конкретного окна требует уточнения и при необходимости осмотра."
+    },
+    "CDC_BLEACH": {
+      "title": "Cleaning and Disinfecting with Bleach",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "How to safely disinfect with bleach, Before using bleach.",
+      "supports": "Хлорсодержащие средства не смешивают с другими чистящими составами. Применение требует соблюдения этикетки и вентиляции.",
+      "limits": "Универсальная безопасная пауза между неизвестными средствами не установлена. В задании оценивается предотвращение смешивания, токсикологический протокол не требуется."
+    },
+    "HSE_LEAD": {
+      "title": "Construction hazardous substances — Lead",
+      "publisher": "Health and Safety Executive",
+      "url": "https://www.hse.gov.uk/construction/healthrisks/hazardous-substances/lead.htm",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Assess и Control, распространение пыли и изоляция детей.",
+      "supports": "В старой краске возможен свинец. Необходимо оценить состав и ограничить пыль / пары, изолировать рабочую зону от детей.",
+      "limits": "Даты применения красок и рабочие нормативы Великобритании не переносятся на российское жильё. Цвет и возраст краски сами по себе состав не определяют."
+    },
+    "GE_MICROWAVE": {
+      "title": "Microwave Do-It-Yourself Repair Recommendations",
+      "publisher": "GE Appliances",
+      "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=16774",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Причины отказа от советов по самостоятельному внутреннему ремонту.",
+      "supports": "Высоковольтный конденсатор способен сохранять заряд после отключения вилки. Внутренний ремонт требует квалифицированного сервиса.",
+      "limits": "Не задаёт безопасного времени ожидания или бытового способа разряда."
+    },
+    "PHILIPS_HEPA": {
+      "title": "Выходной фильтр s-filter FC8038/01",
+      "publisher": "Philips",
+      "url": "https://www.philips.ru/c-p/FC8038_01/s-filter-exhaust-filter",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Раздел об очистке выходного фильтра.",
+      "supports": "Пример HEPA-фильтра, для которого производитель запрещает мытьё.",
+      "limits": "Контрпример к универсальному разрешению мыть HEPA. Для неизвестной модели допустимый уход устанавливает её инструкция, сроки замены Philips не обобщаются."
+    },
+    "BOSCH_DISHWASHER": {
+      "title": "Dishwasher instruction manual SM… / SB…",
+      "publisher": "Bosch",
+      "url": "https://media3.bosch-home.com/Documents/9001188850_D.pdf",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Печатные страницы 20 и 32, Detergent и Detergent residue.",
+      "supports": "Короткий цикл может не растворить таблетку. Посуда может блокировать дозатор. Подходящий режим / моющее средство выбирают по инструкции.",
+      "limits": "Примеры вероятных причин. Один симптом не доказывает неисправность нагревателя и не оправдывает внутренний ремонт."
+    },
+    "OTIS_LIFT": {
+      "title": "5 Steps to take if your elevator stops working",
+      "publisher": "Otis UK",
+      "url": "https://www.otis.com/en-GB/w/5-steps-to-take-if-your-elevator-stops-working",
+      "verification_status": "content_read",
+      "checked_on": "2026-11-16",
+      "locator": "Первые пять действий при остановке кабины.",
+      "supports": "Связаться через аварийную связь, оставаться в кабине и ждать подготовленных специалистов. Двери силой не открывают.",
+      "limits": "Британский номер экстренной связи не переносится в вопрос о России. Номер 112 подтверждён MCHS_COLLAPSE. Юридический срок освобождения не задаётся."
+    },
+    "CASE_FACTS": {
+      "title": "Данные и арифметика условия",
+      "publisher": "Автор development-набора",
+      "url": null,
+      "verification_status": "derived_from_question",
+      "checked_on": "2026-11-16",
+      "supports": "Только явно заданные размеры, показания, мощности, тарифы и текст условной этикетки.",
+      "limits": "Числа являются условиями учебных задач. Они не описывают реальный товар или действующий тариф."
+    },
+    "REVIEWER_REASONING": {
+      "title": "Логика ответа при недостающих данных и документирование",
+      "publisher": "Автор development-набора",
+      "url": null,
+      "verification_status": "authored_reasoning",
+      "checked_on": "2026-11-16",
+      "supports": "Уточнение модели, размеров и условий, сопоставление документов, фиксация передачи имущества.",
+      "limits": "Авторские критерии применимости. Не устанавливают техническую норму, юридическую обязанность, срок или право на выплату."
+    }
+  }
+}

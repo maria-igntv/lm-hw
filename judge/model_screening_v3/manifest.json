@@ -1,0 +1,30 @@
+{
+  "protocol_id": "screening_v3.0",
+  "judge_protocol_id": "judge_v3.0",
+  "requests": 128,
+  "questions": 32,
+  "conditions": 4,
+  "judgments_obtained": 0,
+  "shuffle_seed": 20261116,
+  "source_archives": [
+    {
+      "archive": "screening_v3_qwen3_4b_t768_303ffc5897b6.zip",
+      "archive_sha256": "6084223d0270984480d63185565923cea4eb353a4859a68ee2619eb253e8ae4b",
+      "run_id": "qwen3_4b_t768_303ffc5897b6",
+      "answers_sha256": "1a56a48fc7239fede5f304494094444d24e77ee13c14ef28e93fa73d1a6abf29"
+    },
+    {
+      "archive": "screening_v3_phi4_mini_t768_ecde1b081cdc.zip",
+      "archive_sha256": "c50b1d89707b087f33dc2deef7906fffeb3dca58109f626e931cfd4653813bd7",
+      "run_id": "phi4_mini_t768_ecde1b081cdc",
+      "answers_sha256": "80318799cfb8d0d0460e23c892d25e09be939ea5e3482b50cd5dcee8d2ad6e16"
+    }
+  ],
+  "counts": {
+    "qwen3_4b/household": 32,
+    "qwen3_4b/general": 32,
+    "phi4_mini/household": 32,
+    "phi4_mini/general": 32
+  },
+  "request_file_sha256": "d1018edeaa13c89d0f1ae6da6c5d093b43dacbfe5feeae2dcda1ee930485323c"
+}

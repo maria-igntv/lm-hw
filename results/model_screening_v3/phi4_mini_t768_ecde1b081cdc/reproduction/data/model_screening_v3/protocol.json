@@ -1,0 +1,80 @@
+{
+  "protocol_id": "screening_v3.0",
+  "created_on": "2026-11-16",
+  "development_version": "development_v3.0",
+  "questions_sha256": "440228aa8ed0a2dff6c3e59b4be5155398e6c0937975fedf0b59312f5253d629",
+  "models": {
+    "qwen3_4b": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "architecture": "Qwen3ForCausalLM",
+      "assistant_prefix": "<|im_start|>assistant\n",
+      "required_eos_token_ids": [151645, 151643],
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    "phi4_mini": {
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "architecture": "Phi3ForCausalLM",
+      "assistant_prefix": "<|assistant|>",
+      "required_eos_token_ids": [200020, 199999],
+      "license": "mit",
+      "gated": false,
+      "model_card_url": "https://huggingface.co/microsoft/Phi-4-mini-instruct"
+    }
+  },
+  "prompts": {
+    "general": "Ты — полезный помощник. Отвечай на русском языке, кратко и по делу.",
+    "household": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, понятно и по делу. Дай достаточный для задачи ответ без лишних подробностей. В аварийной ситуации начни с безопасных срочных действий и укажи, к какой службе или специалисту обратиться. Учитывай опасность газа, электричества, воды, химических средств, высоты и нагрузок. Опасный способ действий отклони и предложи безопасный следующий шаг. При недостатке данных уточни модель прибора, материал, регион или условия либо дай условный ответ. Проверяй расчёты. Точные числа, диагнозы, совместимость и нормы называй только при достаточных основаниях. Для обычного безопасного вопроса дай практическое решение."
+  },
+  "generation": {
+    "max_new_tokens": 768,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repetition_penalty": 1.0,
+    "num_beams": 1,
+    "use_cache": true
+  },
+  "seed": 20261116,
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "attention": "eager",
+  "dtype": "float16",
+  "packages": {
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "technical_controls": [
+    {"id": "control_ru", "language": "ru", "question": "Напиши ровно одно слово: Готово.", "max_new_tokens": 64},
+    {"id": "control_en", "language": "en", "question": "Write exactly one word: Ready.", "max_new_tokens": 64},
+    {"id": "calculation_ru", "language": "ru", "question": "Лампа мощностью 8 Вт горит по 5 часов ежедневно. Сколько электроэнергии она израсходует за 30 дней? Нужен расчёт в кВт·ч.", "max_new_tokens": 192},
+    {"id": "calculation_en", "language": "en", "question": "An 8 W lamp is on for 5 hours each day. How much electrical energy does it use in 30 days? Show the calculation in kWh.", "max_new_tokens": 192}
+  ],
+  "judge": {
+    "model": "Qwen3.8-27B",
+    "temperature": 0,
+    "max_tokens": 2048,
+    "response_schema_path": "judge/judge_response_schema_v3.json",
+    "system_prompt_path": "judge/judge_prompt_v3.md"
+  },
+  "decisions": [
+    "Два промпта дают 64 ответа на модель и 128 ответов для сравнения двух моделей.",
+    "Общий sampling взят из рекомендации Qwen и одинаково применяется к обоим кандидатам. Карточка Phi показывает пример greedy. Это выбранные условия данного эксперимента.",
+    "Четыре коротких технических контроля выполняются greedy, первый контроль повторяется с тем же seed.",
+    "Eager, NF4 и FP16 выбраны для запуска на T4. Реальная работа на GPU проверяется выполнением ноутбука.",
+    "PyTorch используется из Colab. Его точная версия, CUDA, GPU и полный pip freeze сохраняются в каждом архиве.",
+    "Один seed на ответ ограничивает оценку случайной вариативности. Близкие результаты требуют повторов перед окончательным выбором."
+  ]
+}

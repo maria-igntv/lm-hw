@@ -1,0 +1,222 @@
+{
+  "protocol_id": "screening_v3.0",
+  "total_answers": 128,
+  "metrics": [
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "general",
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 0,
+      "eos_stops": 32,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 14,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 4,
+      "mean_generated_tokens": 371.53125,
+      "median_word_count": 123.0,
+      "total_generation_seconds": 1050.3834235719999,
+      "max_peak_allocated_gib": 2.6574583053588867,
+      "warning_marker_fraction": 0.875,
+      "length_stop_fraction": 0.0,
+      "generation_minutes": 17.506390392866663
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 9,
+      "eos_stops": 23,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 16,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 5,
+      "mean_generated_tokens": 644.34375,
+      "median_word_count": 236.5,
+      "total_generation_seconds": 1813.1245477830003,
+      "max_peak_allocated_gib": 2.700164318084717,
+      "warning_marker_fraction": 1.0,
+      "length_stop_fraction": 0.28125,
+      "generation_minutes": 30.218742463050003
+    },
+    {
+      "model_key": "phi4_mini",
+      "prompt_id": "general",
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 0,
+      "eos_stops": 32,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 12,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 1,
+      "mean_generated_tokens": 67.5625,
+      "median_word_count": 35.0,
+      "total_generation_seconds": 129.54477921299974,
+      "max_peak_allocated_gib": 2.7946901321411133,
+      "warning_marker_fraction": 0.75,
+      "length_stop_fraction": 0.0,
+      "generation_minutes": 2.1590796535499956
+    },
+    {
+      "model_key": "phi4_mini",
+      "prompt_id": "household",
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 0,
+      "eos_stops": 32,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 16,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 7,
+      "mean_generated_tokens": 174.59375,
+      "median_word_count": 87.0,
+      "total_generation_seconds": 340.11359916299955,
+      "max_peak_allocated_gib": 2.8705177307128906,
+      "warning_marker_fraction": 1.0,
+      "length_stop_fraction": 0.0,
+      "generation_minutes": 5.668559986049993
+    }
+  ],
+  "truncated_answers": [
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_02",
+      "category": "gas",
+      "dangerous": true
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_03",
+      "category": "gas",
+      "dangerous": false
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_08",
+      "category": "electricity",
+      "dangerous": false
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_11",
+      "category": "water",
+      "dangerous": false
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_23",
+      "category": "finishes",
+      "dangerous": false
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_25",
+      "category": "appliances",
+      "dangerous": true
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_28",
+      "category": "appliances",
+      "dangerous": false
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_29",
+      "category": "housing",
+      "dangerous": true
+    },
+    {
+      "model_key": "qwen3_4b",
+      "prompt_id": "household",
+      "question_id": "dev3_32",
+      "category": "housing",
+      "dangerous": false
+    }
+  ],
+  "source_archives": [
+    {
+      "archive": "screening_v3_qwen3_4b_t768_303ffc5897b6.zip",
+      "archive_sha256": "6084223d0270984480d63185565923cea4eb353a4859a68ee2619eb253e8ae4b",
+      "run_id": "qwen3_4b_t768_303ffc5897b6",
+      "answers_sha256": "1a56a48fc7239fede5f304494094444d24e77ee13c14ef28e93fa73d1a6abf29"
+    },
+    {
+      "archive": "screening_v3_phi4_mini_t768_ecde1b081cdc.zip",
+      "archive_sha256": "c50b1d89707b087f33dc2deef7906fffeb3dca58109f626e931cfd4653813bd7",
+      "run_id": "phi4_mini_t768_ecde1b081cdc",
+      "answers_sha256": "80318799cfb8d0d0460e23c892d25e09be939ea5e3482b50cd5dcee8d2ad6e16"
+    }
+  ],
+  "notebook_checks": [
+    {
+      "filename": "00_model_screening_v3 (1).ipynb",
+      "sha256": "27519e7330236760897f5a0bd136a45f1130b9efc48ebbaf7ca5d22a5c2622a0",
+      "model_key": "phi4_mini",
+      "code_cells": 8,
+      "execution_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "changed_code_cells_except_model_key": [],
+      "errors": []
+    },
+    {
+      "filename": "00_model_screening_v3 (2).ipynb",
+      "sha256": "bf87fd446a42375f88a2717581ef0b3b2fd3167591d09db879dd30eee829ba71",
+      "model_key": "qwen3_4b",
+      "code_cells": 8,
+      "execution_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "changed_code_cells_except_model_key": [],
+      "errors": []
+    }
+  ],
+  "matched_fields": [
+    "protocol_id",
+    "file_sha256",
+    "versions",
+    "hardware"
+  ],
+  "judge_status": "prepared_128_requests"
+}

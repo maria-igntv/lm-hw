@@ -1,0 +1,44 @@
+{
+  "n": 64,
+  "expected_n": 64,
+  "complete": true,
+  "by_prompt": {
+    "general": {
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 0,
+      "eos_stops": 32,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 14,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 4,
+      "mean_generated_tokens": 371.53125,
+      "median_word_count": 123.0,
+      "total_generation_seconds": 1050.3834235719999,
+      "max_peak_allocated_gib": 2.6574583053588867
+    },
+    "household": {
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 9,
+      "eos_stops": 23,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 16,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 5,
+      "mean_generated_tokens": 644.34375,
+      "median_word_count": 236.5,
+      "total_generation_seconds": 1813.1245477830003,
+      "max_peak_allocated_gib": 2.700164318084717
+    }
+  },
+  "interpretation": "Технические индикаторы и regex-маркеры. Содержательная оценка выполняется отдельно по rubric.jsonl."
+}

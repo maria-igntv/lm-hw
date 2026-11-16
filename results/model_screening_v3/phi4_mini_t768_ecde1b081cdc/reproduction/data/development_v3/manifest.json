@@ -1,0 +1,152 @@
+{
+  "version": "development_v3.0",
+  "created_on": "2026-11-16",
+  "purpose": "Model / prompt / checkpoint development for the next SFT cycle",
+  "frozen_before_new_candidate_responses": true,
+  "new_candidate_responses_generated": 0,
+  "selection_method": "Авторский стратифицированный набор. По 2 опасных и 2 обычных случая на категорию.",
+  "expert_human_review": false,
+  "count": 32,
+  "category_counts": {
+    "gas": 4,
+    "electricity": 4,
+    "water": 4,
+    "structural": 4,
+    "doors_windows": 4,
+    "finishes": 4,
+    "appliances": 4,
+    "housing": 4
+  },
+  "dangerous_counts": {
+    "dangerous": 16,
+    "ordinary": 16
+  },
+  "task_type_counts": {
+    "emergency": 7,
+    "hazard_boundary": 9,
+    "explanation": 1,
+    "calculation": 5,
+    "selection": 4,
+    "planning": 2,
+    "troubleshooting": 2,
+    "procedure": 2
+  },
+  "information_status_counts": {
+    "sufficient": 19,
+    "conditional": 7,
+    "clarification_needed": 6
+  },
+  "external_sources": 17,
+  "internal_basis_types": 2,
+  "model_input_fields": [
+    "question"
+  ],
+  "model_metadata_fields": [
+    "id",
+    "category",
+    "dangerous"
+  ],
+  "duplicate_normalization": "Unicode NFKC, casefold, ё→е, последовательности Unicode \\w, нормализация пробелов",
+  "duplicate_checks": [
+    {
+      "path": "data/raw/appliances.jsonl",
+      "sha256": "043e342ca1a378d87519b5f8bc12795e46956511b8657aecf1a09fdfcf27d8a5",
+      "question_count": 80,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/doors_windows.jsonl",
+      "sha256": "c1c48625e780f9347739963e3bcdf7ca5ba65983bc649ace33e16a9d94365ade",
+      "question_count": 60,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/electricity.jsonl",
+      "sha256": "4c8a0f9de29e0ee4a5683beed3198a511bab15f7a05be050e715ea44f1749834",
+      "question_count": 100,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/finishes.jsonl",
+      "sha256": "a54b98f6754d9a27e3f8d04ee788f15b8aa1f34eef597cc67fd61d006e80d892",
+      "question_count": 70,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/gas.jsonl",
+      "sha256": "61cb8d521c4190d63ab6a10c3f6815ad44a91c62be72756257d3b9b3e4db459b",
+      "question_count": 70,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/housing.jsonl",
+      "sha256": "00933fcd5bbffff58df6d1d572ea1f1e7197532d5cb5edc9b825117cc3ee4823",
+      "question_count": 85,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/structural.jsonl",
+      "sha256": "947d8f3ec73514883a7b775d816caa7c2330edecebc5b878f2e54225be21f391",
+      "question_count": 85,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/raw/water.jsonl",
+      "sha256": "7f8b295e6800c414d82bfe1fd37e8b38b8f46c7788fd3932f8c84864f0d49521",
+      "question_count": 100,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/eval_questions.jsonl",
+      "sha256": "21fc521131766881d3bc2dfa180d32fa3a535667dcd43fd30931524eaaaaf6b9",
+      "question_count": 100,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/model_screening/questions.jsonl",
+      "sha256": "41b30cad11c1956d11ed70e6ebe796066acac65d730cc7d7b53e43e92ae67cb3",
+      "question_count": 16,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/sft_train.jsonl",
+      "sha256": "a20416c05dca1ae208d7b313a17a020abdd400f8ed80f7cf211a20bea43656e8",
+      "question_count": 618,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/sft_val.jsonl",
+      "sha256": "b8c28394f9e2b3510e0c40c7c9a5eca802a741231215d631331f50a6e47ac663",
+      "question_count": 32,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/sft_v2/sft_train.jsonl",
+      "sha256": "330d2082d0aba5bf7b5d69fbc3d6e36011030359a691848ea87473d4286dce4b",
+      "question_count": 560,
+      "normalized_exact_matches": 0
+    },
+    {
+      "path": "data/sft_v2/sft_val.jsonl",
+      "sha256": "71d3117927caa56df25609d7f7cbbeac953bf8534ebde2754521afeb89784402",
+      "question_count": 90,
+      "normalized_exact_matches": 0
+    }
+  ],
+  "semantic_overlap_note": "Тематическое и сценарное пересечение с прежними данными есть. Выборка используется для development, финальный тест готовится отдельно.",
+  "arithmetic_checks": {
+    "lamp_kwh": 1.2,
+    "water_m3": 9,
+    "water_cost_rub": 450,
+    "boxes_total_width_cm": 78,
+    "boxes_fit": true,
+    "wallpaper_strips": 5
+  },
+  "file_sha256": {
+    "questions.jsonl": "440228aa8ed0a2dff6c3e59b4be5155398e6c0937975fedf0b59312f5253d629",
+    "rubric.jsonl": "dfb1f18076e2ea7b28ce0926225fe34efb5e63b9e8ae0956aa0e93f9b8897ae7",
+    "sources.json": "993619d62e59d60753c4f411dd3e537290b64f024c282565d78f16c8e730d88d",
+    "README.md": "598948f65d1ec79ae2451d4bd789d87396751ef636644d2a4230dd591a61465a",
+    "validate.py": "a03340753b90ac56aed2443d75e1b12fe52dedd5be258500315901af8f68a22d"
+  }
+}

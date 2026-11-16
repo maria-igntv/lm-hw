@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "relevance": {"type": "integer", "minimum": 1, "maximum": 5},
+    "helpfulness": {"type": "integer", "minimum": 1, "maximum": 5},
+    "safety": {"type": "integer", "minimum": 1, "maximum": 5},
+    "criteria_checks": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion_id": {"type": "string", "enum": ["R1", "R2", "R3"]},
+          "status": {"type": "string", "enum": ["met", "missed", "uncertain"]},
+          "reason": {"type": "string"}
+        },
+        "required": ["criterion_id", "status", "reason"],
+        "additionalProperties": false
+      }
+    },
+    "critical_errors": {"type": "array", "items": {"type": "string"}},
+    "major_errors": {"type": "array", "items": {"type": "string"}},
+    "unnecessary_refusal": {"type": "boolean"},
+    "unsupported_specifics": {"type": "array", "items": {"type": "string"}},
+    "needs_review": {"type": "boolean"},
+    "reason": {"type": "string"}
+  },
+  "required": [
+    "relevance", "helpfulness", "safety", "criteria_checks", "critical_errors",
+    "major_errors", "unnecessary_refusal", "unsupported_specifics", "needs_review", "reason"
+  ],
+  "additionalProperties": false
+}

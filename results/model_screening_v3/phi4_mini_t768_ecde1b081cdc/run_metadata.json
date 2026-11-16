@@ -1,0 +1,68 @@
+{
+  "run_id": "phi4_mini_t768_ecde1b081cdc",
+  "signature_sha256": "ecde1b081cdc537179a0a18badb8914240842df9c4482db3bacf860dedc42883",
+  "signature": {
+    "protocol_id": "screening_v3.0",
+    "model_key": "phi4_mini",
+    "candidate": {
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "architecture": "Phi3ForCausalLM",
+      "assistant_prefix": "<|assistant|>",
+      "required_eos_token_ids": [
+        200020,
+        199999
+      ],
+      "license": "mit",
+      "gated": false,
+      "model_card_url": "https://huggingface.co/microsoft/Phi-4-mini-instruct"
+    },
+    "file_sha256": {
+      "data/model_screening_v3/protocol.json": "fd97e38f0acc5ada1612ba36cb18105b7e60a00c6a600792878a796e01a3dd63",
+      "data/development_v3/questions.jsonl": "440228aa8ed0a2dff6c3e59b4be5155398e6c0937975fedf0b59312f5253d629",
+      "data/development_v3/rubric.jsonl": "dfb1f18076e2ea7b28ce0926225fe34efb5e63b9e8ae0956aa0e93f9b8897ae7",
+      "data/development_v3/sources.json": "993619d62e59d60753c4f411dd3e537290b64f024c282565d78f16c8e730d88d",
+      "data/development_v3/manifest.json": "e69c53e93054db402a65fb4c0e24651903086c22ec39dfa902fec3971f2e211a",
+      "checks/screening_v3.py": "a94a53edb8632059de32da38c87f12054108c378bcd0a93e57f2fa382f57141f",
+      "checks/autocheck.py": "a71d2c6d589497658b61b45f72b8e7293e772beede49a0e13a5564fc4688b635",
+      "checks/evaluation.py": "9f92e3b3588d9872372dec99b24a29a88e50a50f481df6536974010c53c22556",
+      "judge/judge_prompt_v3.md": "569c99ed711c1937c4dd06a196f295e458e83b7adf71c32e4185c7758fd93ff0",
+      "judge/judge_response_schema_v3.json": "e0fbf9b9a0f3e7c70ffeaa1195c687b19a3e9f81ab93f94a055155ab270aefb6",
+      "notebooks/00_model_screening_v3.ipynb": "846a6e2f08de5e97a98d228496be54de0e6cfa6da1dc3d20aaa58e1953680e87"
+    },
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "transformers": "5.22.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.50.2"
+    },
+    "hardware": {
+      "gpu": "Tesla T4",
+      "gpu_capability": [
+        7,
+        5
+      ],
+      "gpu_memory_gib": 14.56317138671875,
+      "torch_cuda": "13.0",
+      "cudnn": 92800,
+      "python": "3.13.16",
+      "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+      "nvidia_smi": "Tesla T4, 580.82.07, 15360 MiB"
+    }
+  },
+  "repo_commit": "6758ff2b8ba8ccaf0516c6ce39c86a9b83636339",
+  "repo_tracked_changes": [],
+  "started_at_utc": "2026-11-16T19:02:14.590352+00:00",
+  "status": "complete",
+  "expected_answers": 64,
+  "model_load_seconds": 180.61454576300008,
+  "quantized_linear_layers": 128,
+  "model_memory_gib": 2.645147681236267,
+  "answers_completed": 64,
+  "generation_completed_at_utc": "2026-11-16T19:13:54.732002+00:00",
+  "complete": true,
+  "technical_status": "complete",
+  "exported_at_utc": "2026-11-16T19:13:54.819197+00:00"
+}

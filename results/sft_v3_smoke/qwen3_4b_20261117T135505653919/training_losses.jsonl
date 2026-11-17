@@ -1,0 +1,4 @@
+{"microbatch": 1, "sample_id": "smoke_01", "loss": 1.7388190031051636}
+{"microbatch": 2, "sample_id": "smoke_02", "loss": 1.618806004524231}
+{"microbatch": 3, "sample_id": "smoke_03", "loss": 2.9925551414489746}
+{"microbatch": 4, "sample_id": "smoke_04", "loss": 2.1570818424224854}

@@ -1,0 +1,53 @@
+{
+  "adapter_file": "adapter_model.safetensors",
+  "adapter_sha256": "0c66937a2ceed8d75d575c2ebbf89ba78058603993d1890d58644ab2d3384d5c",
+  "adapter_bytes": 132187888,
+  "saved_tensors": 504,
+  "logits_max_abs_diff": 0.0,
+  "logits_allclose": true,
+  "greedy_tokens_equal": true,
+  "generation_before_reload": {
+    "token_ids": [
+      17,
+      11,
+      19,
+      127765,
+      22127,
+      284,
+      220,
+      17,
+      19,
+      15,
+      5409,
+      126602,
+      16104,
+      8178,
+      23862,
+      13,
+      151645
+    ],
+    "text": "2,4 метра = 240 сантиметров."
+  },
+  "generation_after_reload": {
+    "token_ids": [
+      17,
+      11,
+      19,
+      127765,
+      22127,
+      284,
+      220,
+      17,
+      19,
+      15,
+      5409,
+      126602,
+      16104,
+      8178,
+      23862,
+      13,
+      151645
+    ],
+    "text": "2,4 метра = 240 сантиметров."
+  }
+}

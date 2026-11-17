@@ -1,0 +1,4 @@
+{"sample_id": "smoke_01", "prompt_tokens": 244, "unpadded_tokens": 279, "padded_tokens": 768, "supervised_tokens": 35, "last_supervised_token_id": 151645, "supervised_text": "В 2,4 метра содержится 240 сантиметров: 2,4 × 100 = 240.<|im_end|>"}
+{"sample_id": "smoke_02", "prompt_tokens": 261, "unpadded_tokens": 287, "padded_tokens": 768, "supervised_tokens": 26, "last_supervised_token_id": 151645, "supervised_text": "На каждой коробке будет по 6 наклеек: 18 ÷ 3 = 6.<|im_end|>"}
+{"sample_id": "smoke_03", "prompt_tokens": 257, "unpadded_tokens": 284, "padded_tokens": 768, "supervised_tokens": 27, "last_supervised_token_id": 151645, "supervised_text": "Для 9 наборов потребуется 63 карточки: 7 × 9 = 63.<|im_end|>"}
+{"sample_id": "smoke_04", "prompt_tokens": 255, "unpadded_tokens": 277, "padded_tokens": 768, "supervised_tokens": 22, "last_supervised_token_id": 151645, "supervised_text": "Осталось 11 деталей: 15 − 4 = 11.<|im_end|>"}

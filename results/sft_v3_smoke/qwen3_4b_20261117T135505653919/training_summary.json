@@ -1,0 +1,16 @@
+{
+  "optimizer_steps": 1,
+  "microbatches": 4,
+  "mean_training_loss": 2.1268154978752136,
+  "grad_norm_before_clip": 12.527032852172852,
+  "parameters_with_grad": 504,
+  "nonzero_B_matrices_after_step": 252,
+  "scaler_scale_after_step": 128.0,
+  "training_seconds": 8.144539548000012,
+  "peak_allocated_gib": 6.0499091148376465,
+  "peak_reserved_gib": 6.98046875,
+  "sequence_length": 768,
+  "batch_size": 1,
+  "first_example_loss_before": 1.7388190031051636,
+  "first_example_loss_after": 1.1216661930084229
+}

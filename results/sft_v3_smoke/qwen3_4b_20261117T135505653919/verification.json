@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "verified_on_moscow": "2026-11-17",
+  "archive_file": "sft_v3_smoke_qwen3_4b_20261117T135505653919.zip",
+  "archive_sha256": "4ff48c5e68751f9d124b733012b573ea222476f1c459d8257f65e69cdffffead",
+  "archive_run_id": "qwen3_4b_20261117T135505653919",
+  "source_repo_commit": "0f8d78d13703f0cf31d0e55fc91910381312247c",
+  "snapshot_files_verified": 8,
+  "snapshot_hashes_match_current_repository_at_verification": true,
+  "saved_weights": {
+    "sha256": "0c66937a2ceed8d75d575c2ebbf89ba78058603993d1890d58644ab2d3384d5c",
+    "bytes": 132187888,
+    "tensor_count": 504,
+    "parameters": 33030144,
+    "dtype": "float32",
+    "all_finite": true,
+    "B_matrices": 252,
+    "nonzero_B_matrices": 252
+  },
+  "masks_recomputed_with_selected_model_tokenizer": true,
+  "supervised_tokens_per_example": [
+    35,
+    26,
+    27,
+    22
+  ],
+  "prompt_and_padding_masked": true,
+  "assistant_eos_supervised": true,
+  "executed_notebook": {
+    "filename": "02_sft_v3_smoke (1).ipynb",
+    "sha256": "7a9c255db03e83ea97be113cb8ca557079d271ac427fc16604c600a38d803cc2",
+    "code_matches_published_snapshot": true,
+    "executed_code_cells": 7,
+    "exception_outputs": 0,
+    "smoke_pass_output": true,
+    "run_id": "qwen3_4b_20261117T115717369046",
+    "same_run_as_archive": false,
+    "adapter_sha256_matches_archive": true,
+    "training_summary_differences": {
+      "training_seconds": {
+        "notebook": 8.147268422000025,
+        "archive": 8.144539548000012
+      }
+    }
+  },
+  "scope": "One optimizer step on four arithmetic controls; household answer quality requires SFT pilot evaluation.",
+  "weights_storage": "Original local ZIP supplied by the user"
+}

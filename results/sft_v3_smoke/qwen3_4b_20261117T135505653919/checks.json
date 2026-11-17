@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "mask_examples": 4,
+  "fresh_adapter_identity": true,
+  "base_weights_frozen": true,
+  "optimizer_steps": 1,
+  "nonzero_B_matrices": 252,
+  "saved_weights_finite": true,
+  "reload_logits_match": true,
+  "reload_greedy_tokens_match": true
+}

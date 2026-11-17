@@ -38,8 +38,13 @@ logits и greedy-токены совпали точно. Веса и исход�
 [Все 96 ответов в удобном виде](data/sft_v3/corpus_v1/review.md).
 Подготовлен пакет дополнительной независимой проверки targets.
 [96 заданий судье](judge/sft_v3_corpus_v1/README.md).
-Следующий пункт — контроль обучения на маленьком подмножестве,
-затем содержательный SFT-пилот.
+Для пункта 5 подготовлен контроль обучения на восьми train-примерах,
+24 шага с LR=5e-5. Сохраняются ответы до/после, train/validation loss
+и проверка загрузки на всех восьми вопросах. Реальный запуск этой
+проверки на T4 предстоит выполнить.
+[Инструкция пункта 5](docs/sft_v3_tiny_guide.md).
+[Открыть восемь примеров в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/03_sft_v3_tiny.ipynb).
+После разбора результата следует содержательный SFT-пилот.
 
 [Пошаговая инструкция](docs/model_screening_v3.md).
 [Открыть сравнение v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening_v3.ipynb).

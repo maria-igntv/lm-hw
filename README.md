@@ -29,9 +29,17 @@ logits и greedy-токены совпали точно. Веса и исход�
 [Результаты пункта 3](results/sft_v3_smoke/analysis.md).
 [Инструкция](docs/sft_v3_smoke_guide.md).
 [Открыть проверку LoRA v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/02_sft_v3_smoke.ipynb).
-Следующий пункт — корпус 80–120 проверенных ответов с разделением сценариев
-между train и validation. Затем выполняются контроль обучения на маленьком
-подмножестве и содержательный SFT-пилот.
+Пункт 4 выполнен. Подготовлены 96 авторски проверенных ответов,
+80 train и 16 validation, с восемью категориями в обеих частях.
+Группы сценариев целиком назначены в один split. Для каждого ответа
+сохранены критерии и замечание к проверке, полные диалоги занимают
+297–412 токенов и укладываются в лимит 768.
+[Корпус, источники и проверки](data/sft_v3/corpus_v1/README.md).
+[Все 96 ответов в удобном виде](data/sft_v3/corpus_v1/review.md).
+Подготовлен пакет дополнительной независимой проверки targets.
+[96 заданий судье](judge/sft_v3_corpus_v1/README.md).
+Следующий пункт — контроль обучения на маленьком подмножестве,
+затем содержательный SFT-пилот.
 
 [Пошаговая инструкция](docs/model_screening_v3.md).
 [Открыть сравнение v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening_v3.ipynb).

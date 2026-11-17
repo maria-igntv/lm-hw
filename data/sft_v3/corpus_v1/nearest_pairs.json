@@ -1,0 +1,175 @@
+{
+  "method": "SequenceMatcher on normalized text, author-reviewed candidates, not a semantic duplicate detector",
+  "train_validation": [
+    {
+      "left_id": "sft3_069",
+      "right_id": "sft3_047",
+      "left_group": "finishes_adhesive_selection",
+      "right_group": "structural_dynamic_suspended_load",
+      "similarity": 0.5296803652968036
+    },
+    {
+      "left_id": "sft3_085",
+      "right_id": "sft3_095",
+      "left_group": "housing_smoke_blocks_exit",
+      "right_group": "housing_lift_outside_rescue",
+      "similarity": 0.4609053497942387
+    },
+    {
+      "left_id": "sft3_001",
+      "right_id": "sft3_095",
+      "left_group": "gas_indoor_leak",
+      "right_group": "housing_lift_outside_rescue",
+      "similarity": 0.4482758620689655
+    },
+    {
+      "left_id": "sft3_076",
+      "right_id": "sft3_023",
+      "left_group": "appliances_smoke_from_mains_device",
+      "right_group": "electric_drilled_hidden_cable",
+      "similarity": 0.4125560538116592
+    },
+    {
+      "left_id": "sft3_063",
+      "right_id": "sft3_083",
+      "left_group": "finishes_bleach_mixing",
+      "right_group": "appliances_microwave_damaged_door",
+      "similarity": 0.40869565217391307
+    },
+    {
+      "left_id": "sft3_079",
+      "right_id": "sft3_048",
+      "left_group": "appliances_unknown_error_code",
+      "right_group": "structural_acoustic_consultation",
+      "similarity": 0.40329218106995884
+    },
+    {
+      "left_id": "sft3_056",
+      "right_id": "sft3_096",
+      "left_group": "window_insect_screen_selection",
+      "right_group": "housing_planned_technician_visit",
+      "similarity": 0.40186915887850466
+    },
+    {
+      "left_id": "sft3_029",
+      "right_id": "sft3_083",
+      "left_group": "water_heating_pressure",
+      "right_group": "appliances_microwave_damaged_door",
+      "similarity": 0.4018264840182648
+    },
+    {
+      "left_id": "sft3_010",
+      "right_id": "sft3_047",
+      "left_group": "gas_appliance_documentation",
+      "right_group": "structural_dynamic_suspended_load",
+      "similarity": 0.39316239316239315
+    },
+    {
+      "left_id": "sft3_037",
+      "right_id": "sft3_023",
+      "left_group": "structural_existing_fastener_failure",
+      "right_group": "electric_drilled_hidden_cable",
+      "similarity": 0.3870967741935484
+    },
+    {
+      "left_id": "sft3_046",
+      "right_id": "sft3_096",
+      "left_group": "structural_observation_before_visit",
+      "right_group": "housing_planned_technician_visit",
+      "similarity": 0.3868312757201646
+    },
+    {
+      "left_id": "sft3_089",
+      "right_id": "sft3_083",
+      "left_group": "housing_unsafe_stair_edge",
+      "right_group": "appliances_microwave_damaged_door",
+      "similarity": 0.38461538461538464
+    }
+  ],
+  "corpus_development": [
+    {
+      "left_id": "sft3_070",
+      "right_id": "dev3_24",
+      "left_group": "finishes_adhesive_selection",
+      "right_group": null,
+      "similarity": 0.46689895470383275
+    },
+    {
+      "left_id": "sft3_006",
+      "right_id": "dev3_12",
+      "left_group": "gas_meter_arithmetic",
+      "right_group": null,
+      "similarity": 0.4589041095890411
+    },
+    {
+      "left_id": "sft3_057",
+      "right_id": "dev3_20",
+      "left_group": "door_light_friction_observation",
+      "right_group": null,
+      "similarity": 0.45614035087719296
+    },
+    {
+      "left_id": "sft3_076",
+      "right_id": "dev3_05",
+      "left_group": "appliances_smoke_from_mains_device",
+      "right_group": null,
+      "similarity": 0.44881889763779526
+    },
+    {
+      "left_id": "sft3_079",
+      "right_id": "dev3_25",
+      "left_group": "appliances_unknown_error_code",
+      "right_group": null,
+      "similarity": 0.44528301886792454
+    },
+    {
+      "left_id": "sft3_019",
+      "right_id": "dev3_07",
+      "left_group": "electric_energy_cost",
+      "right_group": null,
+      "similarity": 0.44155844155844154
+    },
+    {
+      "left_id": "sft3_001",
+      "right_id": "dev3_01",
+      "left_group": "gas_indoor_leak",
+      "right_group": null,
+      "similarity": 0.43010752688172044
+    },
+    {
+      "left_id": "sft3_071",
+      "right_id": "dev3_28",
+      "left_group": "finishes_old_paint_cleanup",
+      "right_group": null,
+      "similarity": 0.42696629213483145
+    },
+    {
+      "left_id": "sft3_034",
+      "right_id": "dev3_29",
+      "left_group": "water_surface_care_labels",
+      "right_group": null,
+      "similarity": 0.425531914893617
+    },
+    {
+      "left_id": "sft3_028",
+      "right_id": "dev3_10",
+      "left_group": "water_heating_pressure",
+      "right_group": null,
+      "similarity": 0.421875
+    },
+    {
+      "left_id": "sft3_063",
+      "right_id": "dev3_21",
+      "left_group": "finishes_bleach_mixing",
+      "right_group": null,
+      "similarity": 0.42105263157894735
+    },
+    {
+      "left_id": "sft3_007",
+      "right_id": "dev3_12",
+      "left_group": "gas_meter_arithmetic",
+      "right_group": null,
+      "similarity": 0.4178082191780822
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "request_id": "sft3_d6e7154adf8bbdf83a348e25",
+    "sample_id": "sft3_095",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_d6be9679ad9f06b90abe532e",
+    "sample_id": "sft3_042",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_2cc0b2bf88d8cb5d1c384e87",
+    "sample_id": "sft3_089",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_4692eef165bc5114157cc452",
+    "sample_id": "sft3_063",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_14e4ee7c41095c8b4ca099f2",
+    "sample_id": "sft3_040",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_ef94b881fd7a47d03036090b",
+    "sample_id": "sft3_094",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_9271fdaa6030d3e8c90ae02a",
+    "sample_id": "sft3_027",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_dba63920aa34b1fd9fc9e7e9",
+    "sample_id": "sft3_085",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_027c02d8e8b813b64c0ddcc9",
+    "sample_id": "sft3_034",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_6eed14067e44eefd6d1eac8b",
+    "sample_id": "sft3_077",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_e2e185d8c097fd0427731efc",
+    "sample_id": "sft3_080",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_cfcd76ad67498fb5862a2a0a",
+    "sample_id": "sft3_003",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_7c7b4b6cb1b9b3e2f29ba654",
+    "sample_id": "sft3_083",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_e84a42374bab6b83b6bd3329",
+    "sample_id": "sft3_021",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_2e5dba37965513dfe2379672",
+    "sample_id": "sft3_047",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_60abd6987be4dbf16d45d1ea",
+    "sample_id": "sft3_043",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_45d558eec224584818789ee5",
+    "sample_id": "sft3_055",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_be7d3d0bbc5e69fe215b6c79",
+    "sample_id": "sft3_035",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_64f279b88227a958ec8c8765",
+    "sample_id": "sft3_015",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_86a236ee738cfe4a614ffef1",
+    "sample_id": "sft3_054",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_74f657ee35da704c34b840fb",
+    "sample_id": "sft3_024",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_dbf8fe0668e19fb142c0263d",
+    "sample_id": "sft3_014",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_3d6396725608b22a7d834a83",
+    "sample_id": "sft3_072",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_3d8201faf0422afa5cb5665f",
+    "sample_id": "sft3_059",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_b8cb34770798fff1379a2311",
+    "sample_id": "sft3_067",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f161257405521373e466786c",
+    "sample_id": "sft3_001",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_cedb63d08cca44b033451e19",
+    "sample_id": "sft3_056",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_de7e18b3e6ee136e7afa3708",
+    "sample_id": "sft3_071",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_e7a3e44f5b83d7ca0d8a3716",
+    "sample_id": "sft3_029",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f22a459767432ea4cfbff450",
+    "sample_id": "sft3_053",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f04ff265f87550ed3eb978e4",
+    "sample_id": "sft3_007",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_3ba1a9b0028abbfe19d58544",
+    "sample_id": "sft3_074",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f7306e3d498e1c9e950a0e17",
+    "sample_id": "sft3_050",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_52b3f34fed9338ca75e33208",
+    "sample_id": "sft3_087",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_1182c27790c0719a31a2c542",
+    "sample_id": "sft3_093",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_24b3e82217d9fdc1157e1b34",
+    "sample_id": "sft3_078",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_328a74bece6f53bcc81aa96b",
+    "sample_id": "sft3_058",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_86c36f84ec512ccb401f66df",
+    "sample_id": "sft3_068",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_555949a7e5d7299372a9935a",
+    "sample_id": "sft3_032",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_0790ad845a4760386bae79e2",
+    "sample_id": "sft3_079",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_35dae1188b7679dd6383b278",
+    "sample_id": "sft3_064",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_9c7657a4243927fd9effc876",
+    "sample_id": "sft3_091",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_99d18e8c38c0a7574bdf312c",
+    "sample_id": "sft3_041",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_ea3d1055dc8dabd830718882",
+    "sample_id": "sft3_076",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_01bbf8af8f8f25c004601801",
+    "sample_id": "sft3_051",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_156e035ca39e06d4d3943867",
+    "sample_id": "sft3_057",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_a50a0c746ee28acc1b0edc7c",
+    "sample_id": "sft3_048",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_2a261eade3f8870cec2a2854",
+    "sample_id": "sft3_005",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_25d8bf76dbbee56bec0836cb",
+    "sample_id": "sft3_073",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_674dfaae4f8c53393bb24335",
+    "sample_id": "sft3_020",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f6eb40cfb38f196daa4321d2",
+    "sample_id": "sft3_011",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_a31618c04ce1ca42ad464325",
+    "sample_id": "sft3_088",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_5e204c4b8ea97df887f5bdf1",
+    "sample_id": "sft3_036",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_6c09079d5bfb07f489e47fe9",
+    "sample_id": "sft3_049",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_2d8129dcb2f99e08544a158d",
+    "sample_id": "sft3_084",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_63356978eb985f0ea125130c",
+    "sample_id": "sft3_096",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_d72e417fcd7b304b07f9cf5e",
+    "sample_id": "sft3_082",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_8a2ed17532ddf13781289941",
+    "sample_id": "sft3_081",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_d1e2e8ef33c63a4016374a32",
+    "sample_id": "sft3_012",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_5d8bfefd9d4f8e8560d19922",
+    "sample_id": "sft3_033",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_cabd901152172c8891db3fee",
+    "sample_id": "sft3_009",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_fdd96098925b81a8d5bae810",
+    "sample_id": "sft3_086",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_eb25ffda4d09f145076c2821",
+    "sample_id": "sft3_006",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_4b7771ac9a69db3076cbf2ab",
+    "sample_id": "sft3_065",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_8035102b0a1440eae80f9858",
+    "sample_id": "sft3_010",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_2b19d32dbe34d06c5dffb71e",
+    "sample_id": "sft3_075",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_5f4cbe2db34a9f4c43c1b9ee",
+    "sample_id": "sft3_013",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_00f109ff811c36b612b44dfb",
+    "sample_id": "sft3_025",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_afa7c566c24813ddfacd6e39",
+    "sample_id": "sft3_022",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_2f163aed5730a2c05386fd19",
+    "sample_id": "sft3_031",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_e6465b1de5b92fa23b01cefc",
+    "sample_id": "sft3_018",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_8de147331caa41f482e5dba7",
+    "sample_id": "sft3_070",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_9455f4a777002d200de5cdaf",
+    "sample_id": "sft3_069",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_fcc7f365af954ed944a89885",
+    "sample_id": "sft3_090",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_58054db5be42e1946986b50a",
+    "sample_id": "sft3_017",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_605eca6805eed9959290c05b",
+    "sample_id": "sft3_023",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_5e24066bebb476443758c884",
+    "sample_id": "sft3_061",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_a90966e6c972d303bb594f55",
+    "sample_id": "sft3_052",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_bcf2a963ab392836e35b0782",
+    "sample_id": "sft3_066",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_3013eb73ef19c32fb9d89bb3",
+    "sample_id": "sft3_016",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_ba3d70aedc4dfad8027bb0cb",
+    "sample_id": "sft3_062",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_f27517e4d6cc9942c6daa58a",
+    "sample_id": "sft3_037",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_594b2b25ac8b9565d1193508",
+    "sample_id": "sft3_038",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_0691c9c5aa1a8fe22e2a7230",
+    "sample_id": "sft3_046",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_cce1d34266525b6e9aa66292",
+    "sample_id": "sft3_002",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_0cc6492e6936442b1eb705dd",
+    "sample_id": "sft3_008",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_62c005d68e74b85d8023f8c8",
+    "sample_id": "sft3_060",
+    "split": "validation"
+  },
+  {
+    "request_id": "sft3_93c81940d5b9dc010d3ceb3d",
+    "sample_id": "sft3_045",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_24fa65c2fd9efcfba9eac63c",
+    "sample_id": "sft3_092",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_b61d6c74f5df88cb58800854",
+    "sample_id": "sft3_039",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_cc269464966d6336e4f6f321",
+    "sample_id": "sft3_044",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_ff31a62933d7f7e8f6e335bd",
+    "sample_id": "sft3_028",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_6bcd7bcee780ff8700050f88",
+    "sample_id": "sft3_026",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_7feeb20c307c1885a077309b",
+    "sample_id": "sft3_030",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_27441ae790868fae543dfee7",
+    "sample_id": "sft3_004",
+    "split": "train"
+  },
+  {
+    "request_id": "sft3_4adb36466d21593b23e11600",
+    "sample_id": "sft3_019",
+    "split": "train"
+  }
+]

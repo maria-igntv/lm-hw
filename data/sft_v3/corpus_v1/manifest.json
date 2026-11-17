@@ -1,0 +1,327 @@
+{
+  "version": "sft_v3_corpus_v1",
+  "created_on_moscow": "2026-11-17",
+  "seed": 20261117,
+  "status": "author_reviewed",
+  "author": "Codex",
+  "expert_human_review": false,
+  "independent_judge_review": "prepared_not_run",
+  "n": 96,
+  "groups": 48,
+  "splits": {
+    "train": {
+      "n": 80,
+      "categories": {
+        "appliances": 10,
+        "doors_windows": 10,
+        "electricity": 10,
+        "finishes": 10,
+        "gas": 10,
+        "housing": 10,
+        "structural": 10,
+        "water": 10
+      },
+      "dangerous": 40,
+      "ordinary": 40,
+      "group_ids": [
+        "appliances_manual_detergent_dose",
+        "appliances_smoke_from_mains_device",
+        "appliances_swollen_lithium_battery",
+        "appliances_unknown_error_code",
+        "door_light_friction_observation",
+        "electric_damaged_flexible_cord",
+        "electric_energy_cost",
+        "electric_live_work_request",
+        "electric_low_voltage_label",
+        "finishes_adhesive_selection",
+        "finishes_bleach_mixing",
+        "finishes_flammable_solvent",
+        "finishes_paint_quantity",
+        "gas_appliance_documentation",
+        "gas_indoor_leak",
+        "gas_meter_arithmetic",
+        "gas_stove_space_heating",
+        "housing_contractor_quote",
+        "housing_maintenance_request",
+        "housing_smoke_blocks_exit",
+        "housing_unsafe_stair_edge",
+        "structural_existing_fastener_failure",
+        "structural_observation_before_visit",
+        "structural_room_area",
+        "structural_unknown_wall_demolition",
+        "water_heating_pressure",
+        "water_supply_leak",
+        "water_surface_care_labels",
+        "water_volume_units",
+        "window_child_access_control",
+        "window_insect_screen_selection",
+        "window_unstable_sash"
+      ],
+      "sample_ids_in_file_order": [
+        "sft3_040",
+        "sft3_050",
+        "sft3_085",
+        "sft3_001",
+        "sft3_031",
+        "sft3_026",
+        "sft3_075",
+        "sft3_016",
+        "sft3_056",
+        "sft3_017",
+        "sft3_081",
+        "sft3_089",
+        "sft3_049",
+        "sft3_078",
+        "sft3_066",
+        "sft3_019",
+        "sft3_038",
+        "sft3_028",
+        "sft3_092",
+        "sft3_025",
+        "sft3_003",
+        "sft3_080",
+        "sft3_033",
+        "sft3_073",
+        "sft3_087",
+        "sft3_020",
+        "sft3_029",
+        "sft3_027",
+        "sft3_010",
+        "sft3_094",
+        "sft3_093",
+        "sft3_068",
+        "sft3_077",
+        "sft3_088",
+        "sft3_082",
+        "sft3_006",
+        "sft3_086",
+        "sft3_005",
+        "sft3_058",
+        "sft3_007",
+        "sft3_061",
+        "sft3_015",
+        "sft3_064",
+        "sft3_057",
+        "sft3_062",
+        "sft3_013",
+        "sft3_042",
+        "sft3_076",
+        "sft3_046",
+        "sft3_067",
+        "sft3_063",
+        "sft3_079",
+        "sft3_041",
+        "sft3_065",
+        "sft3_051",
+        "sft3_022",
+        "sft3_009",
+        "sft3_014",
+        "sft3_037",
+        "sft3_091",
+        "sft3_055",
+        "sft3_039",
+        "sft3_069",
+        "sft3_018",
+        "sft3_074",
+        "sft3_043",
+        "sft3_044",
+        "sft3_054",
+        "sft3_002",
+        "sft3_008",
+        "sft3_070",
+        "sft3_053",
+        "sft3_090",
+        "sft3_045",
+        "sft3_052",
+        "sft3_032",
+        "sft3_030",
+        "sft3_034",
+        "sft3_004",
+        "sft3_021"
+      ]
+    },
+    "validation": {
+      "n": 16,
+      "categories": {
+        "appliances": 2,
+        "doors_windows": 2,
+        "electricity": 2,
+        "finishes": 2,
+        "gas": 2,
+        "housing": 2,
+        "structural": 2,
+        "water": 2
+      },
+      "dangerous": 8,
+      "ordinary": 8,
+      "group_ids": [
+        "appliances_laundry_program_constraints",
+        "appliances_microwave_damaged_door",
+        "door_purchase_documents",
+        "electric_drilled_hidden_cable",
+        "electric_smart_switch_preselection",
+        "finishes_old_paint_cleanup",
+        "finishes_product_scope_label",
+        "gas_carbon_monoxide_symptoms",
+        "gas_volume_energy_conversion",
+        "housing_lift_outside_rescue",
+        "housing_planned_technician_visit",
+        "structural_acoustic_consultation",
+        "structural_dynamic_suspended_load",
+        "water_sewage_backflow",
+        "water_shutoff_preparation",
+        "window_exterior_planter_height"
+      ],
+      "sample_ids_in_file_order": [
+        "sft3_060",
+        "sft3_047",
+        "sft3_012",
+        "sft3_023",
+        "sft3_048",
+        "sft3_095",
+        "sft3_059",
+        "sft3_071",
+        "sft3_072",
+        "sft3_096",
+        "sft3_036",
+        "sft3_083",
+        "sft3_084",
+        "sft3_024",
+        "sft3_011",
+        "sft3_035"
+      ]
+    }
+  },
+  "system_prompt_sha256": "c4bcdcc9aef10519c8d74e26f4db176475ce00dec9780ffe8986c03fe1ec2b86",
+  "tokenizer": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "class": "Qwen2Tokenizer",
+    "eos_token_id": 151645,
+    "pad_token_id": 151643,
+    "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326"
+  },
+  "tokenization": {
+    "max_seq_length": 768,
+    "minimum_total_tokens": 297,
+    "maximum_total_tokens": 412,
+    "minimum_supervised_tokens": 35,
+    "maximum_supervised_tokens": 136,
+    "truncated_examples": 0
+  },
+  "arithmetic_operations_checked": 34,
+  "answer_words": {
+    "minimum": 12,
+    "median": 42.0,
+    "maximum": 52
+  },
+  "technical_indicators": {
+    "empty_answers": 0,
+    "answers_with_cjk": 0,
+    "answers_with_repetition": 0
+  },
+  "external_sources": 22,
+  "source_access_counts": {
+    "derived_from_question": 1,
+    "content_read": 19,
+    "search_excerpt_read": 3,
+    "authored_reasoning": 1
+  },
+  "duplicate_checks": [
+    {
+      "path": "data/development_v3/questions.jsonl",
+      "sha256": "440228aa8ed0a2dff6c3e59b4be5155398e6c0937975fedf0b59312f5253d629",
+      "matches": 0
+    },
+    {
+      "path": "data/eval_questions.jsonl",
+      "sha256": "21fc521131766881d3bc2dfa180d32fa3a535667dcd43fd30931524eaaaaf6b9",
+      "matches": 0
+    },
+    {
+      "path": "data/model_screening/questions.jsonl",
+      "sha256": "41b30cad11c1956d11ed70e6ebe796066acac65d730cc7d7b53e43e92ae67cb3",
+      "matches": 0
+    },
+    {
+      "path": "data/sft_train.jsonl",
+      "sha256": "a20416c05dca1ae208d7b313a17a020abdd400f8ed80f7cf211a20bea43656e8",
+      "matches": 0
+    },
+    {
+      "path": "data/sft_val.jsonl",
+      "sha256": "b8c28394f9e2b3510e0c40c7c9a5eca802a741231215d631331f50a6e47ac663",
+      "matches": 0
+    },
+    {
+      "path": "data/sft_v2/sft_train.jsonl",
+      "sha256": "330d2082d0aba5bf7b5d69fbc3d6e36011030359a691848ea87473d4286dce4b",
+      "matches": 0
+    },
+    {
+      "path": "data/sft_v2/sft_val.jsonl",
+      "sha256": "71d3117927caa56df25609d7f7cbbeac953bf8534ebde2754521afeb89784402",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/appliances.jsonl",
+      "sha256": "043e342ca1a378d87519b5f8bc12795e46956511b8657aecf1a09fdfcf27d8a5",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/doors_windows.jsonl",
+      "sha256": "c1c48625e780f9347739963e3bcdf7ca5ba65983bc649ace33e16a9d94365ade",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/electricity.jsonl",
+      "sha256": "4c8a0f9de29e0ee4a5683beed3198a511bab15f7a05be050e715ea44f1749834",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/finishes.jsonl",
+      "sha256": "a54b98f6754d9a27e3f8d04ee788f15b8aa1f34eef597cc67fd61d006e80d892",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/gas.jsonl",
+      "sha256": "61cb8d521c4190d63ab6a10c3f6815ad44a91c62be72756257d3b9b3e4db459b",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/housing.jsonl",
+      "sha256": "00933fcd5bbffff58df6d1d572ea1f1e7197532d5cb5edc9b825117cc3ee4823",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/structural.jsonl",
+      "sha256": "947d8f3ec73514883a7b775d816caa7c2330edecebc5b878f2e54225be21f391",
+      "matches": 0
+    },
+    {
+      "path": "data/raw/water.jsonl",
+      "sha256": "7f8b295e6800c414d82bfe1fd37e8b38b8f46c7788fd3932f8c84864f0d49521",
+      "matches": 0
+    }
+  ],
+  "semantic_overlap": "General skills overlap with development and historical data. Validation scenario families are held out from this training split. See split_review.md.",
+  "data_file_sha256": {
+    "curated.json": "4fc356de2e5bbc2d516156dbb15af968e193a3f2c2f01e91ba676a960c73a986",
+    "sources.json": "809e5651be8cea30b9626b53b47d968934c75f397f480d98b441096e5fc4d311",
+    "records.jsonl": "70294419c965becae0db746f98b31fb82e21b05067e399dd9a93b73e341ff825",
+    "train.jsonl": "2367b126e96bfbd2ad2e4d73d2adcd35f015ffd3c3bcdb85ca21dcf649ff9ada",
+    "validation.jsonl": "f0d46aeb523c8e06a0fba7c9d6b5863e056130b68bf76ed4ae560cf5e91c4a27",
+    "tokenization_audit.jsonl": "da9483b9f9bbffda5d4b1449031ba212ff43c2c6804c9b790fcb8f3e46be5ece",
+    "groups.json": "6ab0aed3c61c0496489588b5401430ca3c197cbf861a4bef1817ba71e038deaf",
+    "nearest_pairs.json": "b80785b405c773b00b32d5a67a4d6b3631decb990c5dec5eca86372210ab5f93",
+    "review.md": "309ea133d41ad5e085c5d5608c4188d3f3d0c26bbc9c5e93e061b793f05186ae",
+    "README.md": "883fedf7294e802244c6a2a37e22dc78ccb3551f4ec02e592faa161f8a35ecfe",
+    "split_review.md": "fd0bc737d84341d901a23d786fca51fa166ff4d22115c0693c331b44484ffc03"
+  },
+  "code_sha256": {
+    "script/prepare_sft_v3.py": "b44dc53e47fe9abb7413bdbc4c4f4913ea1552fce0c3d9e26f72d6b05646111b",
+    "checks/sft_smoke_v3.py": "c12271cf62880446354799711826a990aaffbf7da4ab895fcbefd989d5287879",
+    "data/sft_v3/corpus_v1/validate.py": "e4343f3d4a89690af202d699532ce5c49b69b267bc31065f299e5134bf0a0064"
+  },
+  "judge_requests_sha256": "0501cc1db4ecf7f9b93ed57bf14cd8b7db17e9870815e697adc7104bf93d38d8"
+}

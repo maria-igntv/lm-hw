@@ -1,0 +1,50 @@
+{
+  "smoke_id": "sft_v3_t4_smoke_v1",
+  "selection_path": "data/sft_v3/selection.json",
+  "seed": 20261117,
+  "max_seq_length": 768,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 4,
+  "optimizer_steps": 1,
+  "learning_rate": 5e-05,
+  "max_grad_norm": 1.0,
+  "optimizer": "torch.optim.AdamW",
+  "weight_decay": 0.0,
+  "attention": "eager",
+  "compute_dtype": "float16",
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "gradient_checkpointing": true,
+  "use_reentrant": false,
+  "loss": "assistant tokens including message-end EOS; system/user/padding labels are -100",
+  "padding": "right, to max_seq_length for a fixed-size T4 memory check",
+  "packages": {
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2"
+  },
+  "scope": "Четыре арифметических контроля для проверки памяти, масок, градиентов, оптимизатора и сохранения адаптера."
+}

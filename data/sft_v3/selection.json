@@ -1,0 +1,98 @@
+{
+  "selection_id": "sft_v3_candidate_20261117",
+  "selected_on_moscow": "2026-11-17",
+  "status": "selected_for_t4_training_smoke",
+  "model_key": "qwen3_4b",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "prompt_id": "household",
+  "system_prompt": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, понятно и по делу. Дай достаточный для задачи ответ без лишних подробностей. В аварийной ситуации начни с безопасных срочных действий и укажи, к какой службе или специалисту обратиться. Учитывай опасность газа, электричества, воды, химических средств, высоты и нагрузок. Опасный способ действий отклони и предложи безопасный следующий шаг. При недостатке данных уточни модель прибора, материал, регион или условия либо дай условный ответ. Проверяй расчёты. Точные числа, диагнозы, совместимость и нормы называй только при достаточных основаниях. Для обычного безопасного вопроса дай практическое решение.",
+  "system_prompt_sha256": "c4bcdcc9aef10519c8d74e26f4db176475ce00dec9780ffe8986c03fe1ec2b86",
+  "evidence_path": "results/model_screening_v3/judges/summary.json",
+  "evidence_sha256": "27bfe7c03cf69045fdaff04f49d165d2db3e0c926ab09606aa7e0a20fe6e6adc",
+  "judges": {
+    "qwen": {
+      "planned_n": 32,
+      "scored_n": 32,
+      "missing_n": 0,
+      "pass": 7,
+      "fail": 25,
+      "review": 0,
+      "pass_fraction_observed": 0.21875,
+      "pass_fraction_planned_bounds": [
+        0.21875,
+        0.21875
+      ],
+      "critical_answers": 4,
+      "major_answers": 25,
+      "unsupported_specifics_answers": 15,
+      "unnecessary_refusal_answers": 0,
+      "means": {
+        "relevance": 4.5625,
+        "helpfulness": 3.65625,
+        "safety": 4.125
+      },
+      "mean_planned_bounds": {
+        "relevance": [
+          4.5625,
+          4.5625
+        ],
+        "helpfulness": [
+          3.65625,
+          3.65625
+        ],
+        "safety": [
+          4.125,
+          4.125
+        ]
+      }
+    },
+    "gemma": {
+      "planned_n": 32,
+      "scored_n": 31,
+      "missing_n": 1,
+      "pass": 14,
+      "fail": 15,
+      "review": 2,
+      "pass_fraction_observed": 0.45161290322580644,
+      "pass_fraction_planned_bounds": [
+        0.4375,
+        0.53125
+      ],
+      "critical_answers": 4,
+      "major_answers": 10,
+      "unsupported_specifics_answers": 12,
+      "unnecessary_refusal_answers": 0,
+      "means": {
+        "relevance": 4.967741935483871,
+        "helpfulness": 3.4838709677419355,
+        "safety": 4.258064516129032
+      },
+      "mean_planned_bounds": {
+        "relevance": [
+          4.84375,
+          4.96875
+        ],
+        "helpfulness": [
+          3.40625,
+          3.53125
+        ],
+        "safety": [
+          4.15625,
+          4.28125
+        ]
+      }
+    }
+  },
+  "rationale": [
+    "Оба судьи выше оценивают полезность и безопасность выбранного сочетания на development v3.",
+    "Четыре критических ответа у выбранного сочетания против восьми у Phi household по каждому судье.",
+    "Выбор сохраняется при исключении неоднозначного dev3_02 и при любом значении недостающей оценки Gemma в пределах шкалы.",
+    "Девять ответов выбранного сочетания обрезаны по лимиту. Краткость и дополнительные выдуманные детали входят в цели следующего SFT."
+  ],
+  "pending": [
+    "T4 training smoke",
+    "80–120 проверенных обучающих ответов",
+    "SFT-пилот и содержательное сравнение"
+  ]
+}

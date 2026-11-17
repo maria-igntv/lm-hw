@@ -1,0 +1,305 @@
+{
+  "run_id": "qwen3_4b_20261117T194030951982",
+  "status": "complete",
+  "experiment_id": "sft_v3_tiny_v1",
+  "started_at_utc": "2026-11-17T19:40:30.954060+00:00",
+  "selection": {
+    "selection_id": "sft_v3_candidate_20261117",
+    "selected_on_moscow": "2026-11-17",
+    "status": "selected_for_t4_training_smoke",
+    "model_key": "qwen3_4b",
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "prompt_id": "household",
+    "system_prompt": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, понятно и по делу. Дай достаточный для задачи ответ без лишних подробностей. В аварийной ситуации начни с безопасных срочных действий и укажи, к какой службе или специалисту обратиться. Учитывай опасность газа, электричества, воды, химических средств, высоты и нагрузок. Опасный способ действий отклони и предложи безопасный следующий шаг. При недостатке данных уточни модель прибора, материал, регион или условия либо дай условный ответ. Проверяй расчёты. Точные числа, диагнозы, совместимость и нормы называй только при достаточных основаниях. Для обычного безопасного вопроса дай практическое решение.",
+    "system_prompt_sha256": "c4bcdcc9aef10519c8d74e26f4db176475ce00dec9780ffe8986c03fe1ec2b86",
+    "evidence_path": "results/model_screening_v3/judges/summary.json",
+    "evidence_sha256": "27bfe7c03cf69045fdaff04f49d165d2db3e0c926ab09606aa7e0a20fe6e6adc",
+    "judges": {
+      "qwen": {
+        "planned_n": 32,
+        "scored_n": 32,
+        "missing_n": 0,
+        "pass": 7,
+        "fail": 25,
+        "review": 0,
+        "pass_fraction_observed": 0.21875,
+        "pass_fraction_planned_bounds": [
+          0.21875,
+          0.21875
+        ],
+        "critical_answers": 4,
+        "major_answers": 25,
+        "unsupported_specifics_answers": 15,
+        "unnecessary_refusal_answers": 0,
+        "means": {
+          "relevance": 4.5625,
+          "helpfulness": 3.65625,
+          "safety": 4.125
+        },
+        "mean_planned_bounds": {
+          "relevance": [
+            4.5625,
+            4.5625
+          ],
+          "helpfulness": [
+            3.65625,
+            3.65625
+          ],
+          "safety": [
+            4.125,
+            4.125
+          ]
+        }
+      },
+      "gemma": {
+        "planned_n": 32,
+        "scored_n": 31,
+        "missing_n": 1,
+        "pass": 14,
+        "fail": 15,
+        "review": 2,
+        "pass_fraction_observed": 0.45161290322580644,
+        "pass_fraction_planned_bounds": [
+          0.4375,
+          0.53125
+        ],
+        "critical_answers": 4,
+        "major_answers": 10,
+        "unsupported_specifics_answers": 12,
+        "unnecessary_refusal_answers": 0,
+        "means": {
+          "relevance": 4.967741935483871,
+          "helpfulness": 3.4838709677419355,
+          "safety": 4.258064516129032
+        },
+        "mean_planned_bounds": {
+          "relevance": [
+            4.84375,
+            4.96875
+          ],
+          "helpfulness": [
+            3.40625,
+            3.53125
+          ],
+          "safety": [
+            4.15625,
+            4.28125
+          ]
+        }
+      }
+    },
+    "rationale": [
+      "Оба судьи выше оценивают полезность и безопасность выбранного сочетания на development v3.",
+      "Четыре критических ответа у выбранного сочетания против восьми у Phi household по каждому судье.",
+      "Выбор сохраняется при исключении неоднозначного dev3_02 и при любом значении недостающей оценки Gemma в пределах шкалы.",
+      "Девять ответов выбранного сочетания обрезаны по лимиту. Краткость и дополнительные выдуманные детали входят в цели следующего SFT."
+    ],
+    "pending": [
+      "T4 training smoke",
+      "80–120 проверенных обучающих ответов",
+      "SFT-пилот и содержательное сравнение"
+    ]
+  },
+  "settings": {
+    "selection_path": "data/sft_v3/selection.json",
+    "seed": 20261117,
+    "max_seq_length": 768,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "optimizer_steps": 24,
+    "learning_rate": 5e-05,
+    "max_grad_norm": 1.0,
+    "optimizer": "torch.optim.AdamW",
+    "weight_decay": 0.0,
+    "attention": "eager",
+    "compute_dtype": "float16",
+    "lora": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "bias": "none",
+      "task_type": "CAUSAL_LM"
+    },
+    "quantization": {
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16"
+    },
+    "gradient_checkpointing": true,
+    "use_reentrant": false,
+    "loss": "assistant tokens including message-end EOS; system/user/padding labels are -100",
+    "padding": "right, to max_seq_length for a fixed-size T4 memory check",
+    "packages": {
+      "transformers": "5.22.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.50.2",
+      "peft": "0.21.2"
+    },
+    "experiment_id": "sft_v3_tiny_v1",
+    "corpus_directory": "data/sft_v3/corpus_v1",
+    "corpus_manifest_sha256": "32bc3d363a7b888b504767688c3ddc1b1c7bcb9cbc968cfa8962cdb66764d1d2",
+    "sample_ids": [
+      "sft3_006",
+      "sft3_016",
+      "sft3_033",
+      "sft3_037",
+      "sft3_054",
+      "sft3_061",
+      "sft3_078",
+      "sft3_085"
+    ],
+    "evaluation_steps": [
+      0,
+      4,
+      12,
+      24
+    ],
+    "generation": {
+      "max_new_tokens": 768,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true
+    },
+    "scheduler": "constant",
+    "objective": "Mean causal language-model loss over supervised tokens in each accumulation group",
+    "scope": "Eight fixed train examples, before/after generation, training fit and save/reload checks"
+  },
+  "repo_commit": "92c1c5b7800bfbb242a7ee8f60476107742cd482",
+  "file_sha256": {
+    "checks/autocheck.py": "a71d2c6d589497658b61b45f72b8e7293e772beede49a0e13a5564fc4688b635",
+    "checks/evaluation.py": "9f92e3b3588d9872372dec99b24a29a88e50a50f481df6536974010c53c22556",
+    "checks/screening_v3.py": "a94a53edb8632059de32da38c87f12054108c378bcd0a93e57f2fa382f57141f",
+    "checks/sft_smoke_v3.py": "c12271cf62880446354799711826a990aaffbf7da4ab895fcbefd989d5287879",
+    "checks/sft_tiny_v3.py": "afad0368cedaae04353127fb359c55d0ab756e51cacef1b600d668de6d62c4b0",
+    "data/sft_v3/corpus_v1/README.md": "883fedf7294e802244c6a2a37e22dc78ccb3551f4ec02e592faa161f8a35ecfe",
+    "data/sft_v3/corpus_v1/curated.json": "4fc356de2e5bbc2d516156dbb15af968e193a3f2c2f01e91ba676a960c73a986",
+    "data/sft_v3/corpus_v1/groups.json": "6ab0aed3c61c0496489588b5401430ca3c197cbf861a4bef1817ba71e038deaf",
+    "data/sft_v3/corpus_v1/manifest.json": "32bc3d363a7b888b504767688c3ddc1b1c7bcb9cbc968cfa8962cdb66764d1d2",
+    "data/sft_v3/corpus_v1/nearest_pairs.json": "b80785b405c773b00b32d5a67a4d6b3631decb990c5dec5eca86372210ab5f93",
+    "data/sft_v3/corpus_v1/records.jsonl": "70294419c965becae0db746f98b31fb82e21b05067e399dd9a93b73e341ff825",
+    "data/sft_v3/corpus_v1/review.md": "309ea133d41ad5e085c5d5608c4188d3f3d0c26bbc9c5e93e061b793f05186ae",
+    "data/sft_v3/corpus_v1/sources.json": "809e5651be8cea30b9626b53b47d968934c75f397f480d98b441096e5fc4d311",
+    "data/sft_v3/corpus_v1/split_review.md": "fd0bc737d84341d901a23d786fca51fa166ff4d22115c0693c331b44484ffc03",
+    "data/sft_v3/corpus_v1/tokenization_audit.jsonl": "da9483b9f9bbffda5d4b1449031ba212ff43c2c6804c9b790fcb8f3e46be5ece",
+    "data/sft_v3/corpus_v1/train.jsonl": "2367b126e96bfbd2ad2e4d73d2adcd35f015ffd3c3bcdb85ca21dcf649ff9ada",
+    "data/sft_v3/corpus_v1/validate.py": "e4343f3d4a89690af202d699532ce5c49b69b267bc31065f299e5134bf0a0064",
+    "data/sft_v3/corpus_v1/validation.jsonl": "f0d46aeb523c8e06a0fba7c9d6b5863e056130b68bf76ed4ae560cf5e91c4a27",
+    "data/sft_v3/selection.json": "1a4e9e6b91452d75ce54771ebe96003afd92c13839de9eb5df44f32d1874e5e4",
+    "data/sft_v3/tiny_config.json": "988f8028da6aab911b4a8632759416640c9d7878147b5afa18729f8437dc0cc0",
+    "notebooks/03_sft_v3_tiny.ipynb": "1d355e0012583b07a2b5757d980024b9a193a031dab7f223588857488e39cacb",
+    "script/prepare_sft_v3.py": "b44dc53e47fe9abb7413bdbc4c4f4913ea1552fce0c3d9e26f72d6b05646111b"
+  },
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2"
+  },
+  "hardware": {
+    "gpu": "Tesla T4",
+    "python": "3.13.16",
+    "torch_cuda": "13.0",
+    "gpu_memory_gib": 14.56317138671875,
+    "nvidia_smi": "Tesla T4, 580.82.07, 15360 MiB"
+  },
+  "generation_context": "Prepared k-bit base with fresh zero-contribution LoRA before training; greedy generation.",
+  "corpus_review_status": "author_reviewed",
+  "model_load_seconds": 127.78083918900006,
+  "generation_config": {
+    "max_length": null,
+    "max_new_tokens": 768,
+    "min_length": null,
+    "min_new_tokens": null,
+    "early_stopping": null,
+    "max_time": null,
+    "stop_strings": null,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_mtp": null,
+    "use_cache": true,
+    "cache_implementation": null,
+    "cache_config": null,
+    "max_cache_len": null,
+    "temperature": null,
+    "top_k": null,
+    "top_p": null,
+    "min_p": null,
+    "top_h": null,
+    "typical_p": null,
+    "epsilon_cutoff": null,
+    "eta_cutoff": null,
+    "repetition_penalty": null,
+    "encoder_repetition_penalty": null,
+    "length_penalty": null,
+    "no_repeat_ngram_size": null,
+    "bad_words_ids": null,
+    "renormalize_logits": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": null,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "sequence_bias": null,
+    "token_healing": null,
+    "guidance_scale": null,
+    "watermarking_config": null,
+    "num_return_sequences": null,
+    "output_attentions": null,
+    "output_hidden_states": null,
+    "output_scores": null,
+    "output_logits": null,
+    "return_dict_in_generate": null,
+    "pad_token_id": 151643,
+    "bos_token_id": null,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "encoder_no_repeat_ngram_size": null,
+    "decoder_start_token_id": null,
+    "is_assistant": null,
+    "num_assistant_tokens": null,
+    "num_assistant_tokens_schedule": null,
+    "assistant_confidence_threshold": null,
+    "prompt_lookup_num_tokens": null,
+    "max_matching_ngram_size": null,
+    "assistant_early_exit": null,
+    "assistant_lookbehind": null,
+    "target_lookbehind": null,
+    "assistant_ensemble_weight": null,
+    "speculation_type": null,
+    "compile_config": null,
+    "disable_compile": null,
+    "continuous_batching_config": null,
+    "low_memory": null,
+    "penalty_alpha": null,
+    "dola_layers": null,
+    "diversity_penalty": null,
+    "num_beam_groups": null,
+    "constraints": null,
+    "force_words_ids": null,
+    "prefill_chunk_size": null,
+    "_from_model_config": null,
+    "transformers_version": "5.22.1"
+  },
+  "last_optimizer_step": 24,
+  "adapter_sha256": "637aada843212fb739ebd7078e1a471497d580212bdf0d403f310896d0fe77b9",
+  "finished_at_utc": "2026-11-17T20:00:50.921693+00:00"
+}

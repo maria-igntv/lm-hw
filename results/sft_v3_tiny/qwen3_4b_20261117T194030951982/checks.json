@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "train_examples": 8,
+  "validation_examples": 16,
+  "fresh_adapter_identity": true,
+  "base_weights_frozen": true,
+  "optimizer_steps": 24,
+  "trained_adapter_changes_logits": true,
+  "disabled_base_probe_matches": true,
+  "saved_weights_finite": true,
+  "reload_logits_match": true,
+  "reload_greedy_tokens_match": true,
+  "train_loss_decreased": true,
+  "logged_errors": 0
+}

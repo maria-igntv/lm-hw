@@ -1,0 +1,30 @@
+{
+  "train_loss_before": 2.844172491873464,
+  "train_loss_after": 0.5643520186408874,
+  "train_loss_relative_drop": 0.801576022462285,
+  "train_loss_decreased": true,
+  "train_token_accuracy_before": 0.5251612903225806,
+  "train_token_accuracy_after": 0.8593548387096774,
+  "train_eos_accuracy_before": 0.125,
+  "train_eos_accuracy_after": 1.0,
+  "validation_loss_before": 2.8435705757364063,
+  "validation_loss_after": 1.7983308790860157,
+  "generation": {
+    "before": {
+      "n": 8,
+      "length_stops": 0,
+      "empty_answers": 0
+    },
+    "after": {
+      "n": 8,
+      "length_stops": 0,
+      "empty_answers": 0
+    },
+    "after_reload": {
+      "n": 8,
+      "length_stops": 0,
+      "empty_answers": 0
+    }
+  },
+  "content_review": "pending review of comparison.md against the saved criteria"
+}

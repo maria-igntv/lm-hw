@@ -1,0 +1,5 @@
+{
+  "trained_adapter_max_abs_diff": 19.519912719726562,
+  "disabled_base_probe_max_abs_diff": 0.0,
+  "disabled_base_probe_allclose": true
+}

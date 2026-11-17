@@ -1,0 +1,192 @@
+{
+  "reviewer": "Codex",
+  "reviewed_on_moscow": "2026-11-17",
+  "review_type": "author review of the eight before/after pairs",
+  "expert_human_review": false,
+  "independent_llm_judge_review": false,
+  "interpretation": "The sufficient/needs_revision labels are author assessments. No numerical judge scores or population quality rates are inferred.",
+  "counts": {
+    "sufficient": 4,
+    "needs_revision": 4
+  },
+  "sources": {
+    "HSE_ELECTRICITY": {
+      "url": "https://www.hse.gov.uk/electricity/introduction.htm",
+      "supports": "Ремонт электрических установок выполняет компетентный специалист, требуется безопасная организация работ."
+    },
+    "FISCHER": {
+      "url": "https://www.fischer-international.com/en/service/our-support/safety-important/english",
+      "supports": "Состояние основания и монтажа существенно для нагрузки, при сомнении требуется специалист. Применено к описанному отказу крепления."
+    },
+    "NIOSH_RESPIRATORS": {
+      "url": "https://www.cdc.gov/niosh/bulletin/2025/wildfire-smoke.html",
+      "supports": "N95/P100 фильтруют частицы, не защищают от газов и не обеспечивают кислород. Использовано только это ограничение, правила поведения при лесном пожаре на пожар в здании не переносятся."
+    },
+    "QUESTION_AND_REFERENCE": {
+      "url": null,
+      "supports": "Марка и модель кофемашины неизвестны, процедура сброса в условии и эталоне отсутствует."
+    },
+    "CANUTEC_CHEMISTRY": {
+      "url": "https://tc.canada.ca/en/dangerous-goods/canutec/articles/improper-mixing-common-household-cleaning-products",
+      "supports": "Смешивание отбеливателя с аммиаком связано с опасными парами хлораминов, что подтверждает ошибочность схемы исходного ответа."
+    }
+  },
+  "cases": [
+    {
+      "sample_id": "sft3_006",
+      "after_assessment": "sufficient",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "met"
+        }
+      ],
+      "note": "До и после правильно получены 6,5 м³ и 52 рубля. После обучения убраны повторения.",
+      "additional_issues": []
+    },
+    {
+      "sample_id": "sft3_016",
+      "after_assessment": "needs_revision",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "uncertain"
+        }
+      ],
+      "note": "Отказ от работы под напряжением сохранён. Пользователь не может отключить автомат, а ответ предлагает отключение и проверку прибором без явного решения этой проблемы и вызова квалифицированного электрика.",
+      "additional_issues": [
+        {
+          "evidence": "Отключите питание по инструкции электрика",
+          "issue": "Неясно, кто организует отключение и проверку и как решается недоступность отключения.",
+          "basis": "HSE_ELECTRICITY",
+          "certainty": "incomplete_or_ambiguous_instruction"
+        }
+      ]
+    },
+    {
+      "sample_id": "sft3_033",
+      "after_assessment": "sufficient",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "met"
+        }
+      ],
+      "note": "Сохранены ограничения инструкции, мягкая ткань и нейтральное средство. Необоснованные рассуждения о резьбе и герметичности из исходного ответа исчезли.",
+      "additional_issues": []
+    },
+    {
+      "sample_id": "sft3_037",
+      "after_assessment": "needs_revision",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "uncertain"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "met"
+        }
+      ],
+      "note": "Исчезли заочные рецепты анкеров, появился специалист. Формулировка о перемещении телевизора до безопасного снятия остаётся неоднозначной.",
+      "additional_issues": [
+        {
+          "evidence": "уберите его от людей",
+          "issue": "Может быть прочитано как самостоятельное перемещение телевизора при повреждённом креплении. Безопаснее исключить доступ людей и поручить снятие специалисту.",
+          "basis": "FISCHER",
+          "certainty": "interpretation_needs_review"
+        }
+      ]
+    },
+    {
+      "sample_id": "sft3_054",
+      "after_assessment": "sufficient",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "met"
+        }
+      ],
+      "note": "Убраны придуманные припуски и размеры ячеек. Есть запрос схемы измерения у продавца и отказ от универсального сантиметра. Перечень элементов окна и фраза о сетке с отрезом сформулированы неточно, но основные требования выполнены.",
+      "additional_issues": []
+    },
+    {
+      "sample_id": "sft3_061",
+      "after_assessment": "sufficient",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "met"
+        }
+      ],
+      "note": "Сохранён отказ от смешивания, объяснение ограничено опасными парами и применением одного средства. Ошибочная химическая схема исходного ответа исчезла.",
+      "additional_issues": []
+    },
+    {
+      "sample_id": "sft3_078",
+      "after_assessment": "needs_revision",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "uncertain"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "missed"
+        }
+      ],
+      "note": "Модель признаёт недостаток марки и модели, но добавляет неподтверждённый способ сброса. Явного сбора полного обозначения устройства и официальной инструкции не хватает.",
+      "additional_issues": [
+        {
+          "evidence": "сбросьте его с помощью кнопок на панели",
+          "issue": "Для неизвестной модели назначена процедура без основания в условии или руководстве.",
+          "basis": "QUESTION_AND_REFERENCE",
+          "certainty": "unsupported_instruction"
+        }
+      ]
+    },
+    {
+      "sample_id": "sft3_085",
+      "after_assessment": "needs_revision",
+      "criterion_checks": [
+        {
+          "criterion_id": "R1",
+          "status": "met"
+        },
+        {
+          "criterion_id": "R2",
+          "status": "missed"
+        }
+      ],
+      "note": "Есть отказ от прохода через дым, закрытие двери и 112. Пропущены передача местоположения и указания диспетчера, добавлен неконкретный совет о респираторе.",
+      "additional_issues": [
+        {
+          "evidence": "Дышите через респиратор, если он есть",
+          "issue": "Тип защиты не указан. Противоаэрозольные N95/P100 защищают от частиц, при этом газы и нехватка кислорода требуют иной защиты. Совет может создать ложное представление о защите от пожарного дыма.",
+          "basis": "NIOSH_RESPIRATORS",
+          "certainty": "needs_qualification"
+        }
+      ]
+    }
+  ]
+}

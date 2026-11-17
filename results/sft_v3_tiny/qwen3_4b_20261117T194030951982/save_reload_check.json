@@ -1,0 +1,57 @@
+{
+  "adapter_sha256": "637aada843212fb739ebd7078e1a471497d580212bdf0d403f310896d0fe77b9",
+  "adapter_bytes": 132187888,
+  "saved_tensors": 504,
+  "per_example": [
+    {
+      "sample_id": "sft3_006",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_016",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_033",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_037",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_054",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_061",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_078",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    },
+    {
+      "sample_id": "sft3_085",
+      "logits_max_abs_diff": 0.0,
+      "logits_allclose": true,
+      "greedy_tokens_equal": true
+    }
+  ],
+  "all_logits_match": true,
+  "all_greedy_tokens_match": true
+}

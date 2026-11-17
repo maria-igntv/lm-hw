@@ -1,0 +1,9 @@
+{
+  "optimizer_steps": 24,
+  "microbatches": 96,
+  "equivalent_passes_over_tiny_set": 12.0,
+  "training_wall_seconds_including_evaluations": 233.4770262469999,
+  "nonzero_B_matrices": 252,
+  "peak_allocated_gib": 6.419046401977539,
+  "peak_reserved_gib": 7.169921875
+}

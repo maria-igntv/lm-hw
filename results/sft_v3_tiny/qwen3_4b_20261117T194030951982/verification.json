@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "archive_file": "sft_v3_tiny_qwen3_4b_20261117T194030951982.zip",
+  "archive_sha256": "3e5667c78c2a46d9e38f04e72377213dbba3fa3fd98d489437b955f72f8f1969",
+  "notebook_file": "03_sft_v3_tiny.ipynb",
+  "notebook_sha256": "0488d940562665cff619b26c633c90e24fcc49a0fe0203e90bbbce2d603afb70",
+  "matching_run_id": "qwen3_4b_20261117T194030951982",
+  "matching_source_commit": "92c1c5b7800bfbb242a7ee8f60476107742cd482",
+  "source_snapshot_hashes_verified_against_commit": 22,
+  "executed_code_matches_snapshot": true,
+  "executed_code_cells": 9,
+  "adapter_sha256": "637aada843212fb739ebd7078e1a471497d580212bdf0d403f310896d0fe77b9",
+  "saved_tensors": 504,
+  "saved_parameters": 33030144,
+  "saved_weights_finite": true,
+  "nonzero_B_matrices": 252,
+  "saved_tensor_dtypes": {
+    "float32": 504
+  },
+  "reload_tokens_verified_on_n_questions": 8,
+  "masks_recomputed": true,
+  "evaluation_aggregates_recomputed": true,
+  "training_sample_visits": {
+    "sft3_078": 12,
+    "sft3_085": 12,
+    "sft3_037": 12,
+    "sft3_054": 12,
+    "sft3_061": 12,
+    "sft3_016": 12,
+    "sft3_006": 12,
+    "sft3_033": 12
+  }
+}

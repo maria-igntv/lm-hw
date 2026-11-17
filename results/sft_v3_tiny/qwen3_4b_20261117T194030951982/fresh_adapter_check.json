@@ -1,0 +1,10 @@
+{
+  "B_matrices": 252,
+  "all_B_zero": true,
+  "active_vs_disabled_max_abs_diff": 0.0,
+  "active_vs_disabled_allclose": true,
+  "preparation_max_abs_diff": 0.054314613342285156,
+  "base_weights_frozen": true,
+  "gradient_checkpointing": true,
+  "trainable_parameters": 33030144
+}

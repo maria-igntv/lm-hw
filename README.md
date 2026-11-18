@@ -55,11 +55,21 @@ logits и greedy-токены совпали точно. Веса и исход�
 2,844 → 1,734. Технические проверки прошли, но свободные ответы
 содержат регрессии и зацикливания: дополнительная диагностика выявила
 10 циклов из 32 после SFT против нуля у baseline. Этот адаптер
-не выбран как улучшенная модель. Независимые оценки 64 ответов ещё ожидаются.
+не выбран как улучшенная модель. Получены 64/64 оценки от каждого из двух
+судей: helpfulness снизилась с 3,594 до 2,281 по Qwen и с 3,438 до 2,281
+по Gemma; semantic pass — с 6 до 4 и с 12 до 6 из 32.
+[Независимый разбор двух судей](results/sft_v3_pilot/judges/analysis.md).
 [Результаты и разбор пункта 6](results/sft_v3_pilot/analysis.md).
 [64 задания судье](judge/sft_v3_pilot/README.md).
 [Инструкция пункта 6](docs/sft_v3_pilot_guide.md).
 [Открыть SFT-пилот в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/04_sft_v3_pilot.ipynb).
+
+Следующий этап — диагностика силы сохранённой LoRA без обучения:
+множители 0 / 0,25 / 0,5 / 1, восемь вопросов, 32 sampling-ответа
+и отдельные greedy-контроли. Ноутбук проверен локально;
+полный GPU-прогон ещё предстоит.
+[Инструкция диагностики](docs/adapter_strength_v1_guide.md).
+[Открыть диагностику в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/05_adapter_strength_diagnostic_v1.ipynb).
 
 [Пошаговая инструкция](docs/model_screening_v3.md).
 [Открыть сравнение v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening_v3.ipynb).

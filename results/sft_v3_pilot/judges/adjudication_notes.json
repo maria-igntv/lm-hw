@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "reviewed_on": "2026-11-18",
+  "score_values_changed": false,
+  "expert_human_adjudication": false,
+  "notes": [
+    {
+      "question_id": "dev3_24",
+      "phase": "sft",
+      "issue": "Qwen marks incorrect repainting advice as critical, citing damage to the coating. The stated reason does not establish the immediate risk of serious harm required by the frozen rubric. Gemma marks a major error but records R1 as met despite the contradictory final conclusion.",
+      "handling": "Preserve both raw scores. Show post-hoc sensitivity excluding this question. Semantic failure persists for both judges due to major errors / missed criteria."
+    },
+    {
+      "question_id": "dev3_02",
+      "issue": "Previously recorded ambiguity about stove type; report sensitivity excluding it."
+    }
+  ],
+  "posthoc_severity_sensitivity": {
+    "qwen": {
+      "critical_baseline": 3,
+      "critical_sft": 4,
+      "helpfulness_delta": -1.2580645161290323
+    },
+    "gemma": {
+      "critical_baseline": 4,
+      "critical_sft": 5,
+      "helpfulness_delta": -1.096774193548387
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "prepared_and_locally_checked_not_GPU_executed",
+  "source_archive": "lm_hw_continuation_package.zip",
+  "source_archive_sha256": "872faf671890b741a388baf4f88e2fc1c31129f0369870914d1bd4f437038a40",
+  "notebook_sha256": "b733abd465dcd53c2edbfac77200242437b8e0b137503617b1b87afb38cc5afe",
+  "notebook_imported_without_code_changes": true,
+  "source_commit_for_inputs": "89dd84aaf40feac11563802b100a97076fb9b72e",
+  "local_checks": {
+    "nbformat_and_syntax": true,
+    "pinned_source_file_hashes": 7,
+    "PEFT_absolute_scaling_on_small_CPU_Qwen3": true,
+    "zero_vs_disabled_logits_exact": true,
+    "scale_one_restoration_exact": true,
+    "parameter_fingerprints_unchanged": true,
+    "RNG_restored_after_exception": true,
+    "long_span_detector": true,
+    "atomic_JSONL_write": true
+  },
+  "limits": "Pure helpers and PEFT controls were checked on a small CPU model. Full Qwen3-4B NF4 generation on T4 is pending."
+}

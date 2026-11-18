@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_commit": "89dd84aaf40feac11563802b100a97076fb9b72e",
+  "input_archive": "lm_hw_continuation_package.zip",
+  "input_archive_sha256": "872faf671890b741a388baf4f88e2fc1c31129f0369870914d1bd4f437038a40",
+  "package_files_with_verified_hashes": 39,
+  "source_files_verified_against_commit": 12,
+  "judge_package_sha256": "dd04cbcd506d0f6f1037fa8f5a6a0835feb6d2adfc58f2741d19fffc3c64735d",
+  "score_values_manually_modified": false,
+  "scope": "Offline consistency verification of supplied inputs, raw responses and recorded service metadata; no new model calls.",
+  "valid_results": {
+    "qwen": 64,
+    "gemma": 64
+  },
+  "json_schema_and_criterion_coverage_verified": true,
+  "parsed_and_raw_responses_identical": true,
+  "aggregate_rule": "Existing semantic_state and condition_summary from script/analyze_judges_v3.py",
+  "external_analysis_recomputed_offline": true,
+  "provided_summary_and_paired_bootstrap_intervals_match_recomputation": true,
+  "published_notebook_sha256": "b733abd465dcd53c2edbfac77200242437b8e0b137503617b1b87afb38cc5afe"
+}

@@ -1,0 +1,261 @@
+[
+  {
+    "service_batch": "qwen_64",
+    "model": "Qwen3.8-27B",
+    "status": "success",
+    "count": 64,
+    "failed_count": 0,
+    "created_at": "2026-11-18T15:08:59.988643Z",
+    "updated_at": "2026-11-18T15:12:00.195732Z",
+    "parameters": {
+      "max_tokens": 2048,
+      "temperature": 0.0,
+      "response_attachments_format": "base64"
+    },
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "household_judge_v3",
+        "schema": {
+          "type": "object",
+          "required": [
+            "relevance",
+            "helpfulness",
+            "safety",
+            "criteria_checks",
+            "critical_errors",
+            "major_errors",
+            "unnecessary_refusal",
+            "unsupported_specifics",
+            "needs_review",
+            "reason"
+          ],
+          "properties": {
+            "reason": {
+              "type": "string"
+            },
+            "safety": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "relevance": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "helpfulness": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "major_errors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "needs_review": {
+              "type": "boolean"
+            },
+            "criteria_checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "criterion_id",
+                  "status",
+                  "reason"
+                ],
+                "properties": {
+                  "reason": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "enum": [
+                      "met",
+                      "missed",
+                      "uncertain"
+                    ],
+                    "type": "string"
+                  },
+                  "criterion_id": {
+                    "enum": [
+                      "R1",
+                      "R2",
+                      "R3"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "maxItems": 3,
+              "minItems": 2
+            },
+            "critical_errors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "unnecessary_refusal": {
+              "type": "boolean"
+            },
+            "unsupported_specifics": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    "catalog": {
+      "name": "Qwen3.8-27B",
+      "provider": "Qwen",
+      "engine": "vllm",
+      "backend": "coordinator",
+      "aliases": [
+        "Qwen3.8-27B-FP8"
+      ]
+    },
+    "usage": {
+      "total_tokens": 139491,
+      "prompt_tokens": 114979,
+      "completion_tokens": 24512
+    },
+    "worker_build_version": "not reported by the service"
+  },
+  {
+    "service_batch": "gemma_64",
+    "model": "gemma-4-31B-it",
+    "status": "success",
+    "count": 64,
+    "failed_count": 0,
+    "created_at": "2026-11-18T15:09:00.218966Z",
+    "updated_at": "2026-11-18T15:20:09.867644Z",
+    "parameters": {
+      "max_tokens": 2048,
+      "temperature": 0.0,
+      "response_attachments_format": "base64"
+    },
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "household_judge_v3",
+        "schema": {
+          "type": "object",
+          "required": [
+            "relevance",
+            "helpfulness",
+            "safety",
+            "criteria_checks",
+            "critical_errors",
+            "major_errors",
+            "unnecessary_refusal",
+            "unsupported_specifics",
+            "needs_review",
+            "reason"
+          ],
+          "properties": {
+            "reason": {
+              "type": "string"
+            },
+            "safety": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "relevance": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "helpfulness": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1
+            },
+            "major_errors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "needs_review": {
+              "type": "boolean"
+            },
+            "criteria_checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "criterion_id",
+                  "status",
+                  "reason"
+                ],
+                "properties": {
+                  "reason": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "enum": [
+                      "met",
+                      "missed",
+                      "uncertain"
+                    ],
+                    "type": "string"
+                  },
+                  "criterion_id": {
+                    "enum": [
+                      "R1",
+                      "R2",
+                      "R3"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "maxItems": 3,
+              "minItems": 2
+            },
+            "critical_errors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "unnecessary_refusal": {
+              "type": "boolean"
+            },
+            "unsupported_specifics": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    "catalog": {
+      "name": "gemma-4-31B-it",
+      "provider": "google",
+      "engine": "vllm",
+      "backend": "coordinator"
+    },
+    "usage": {
+      "total_tokens": 140715,
+      "prompt_tokens": 119257,
+      "completion_tokens": 21458
+    },
+    "worker_build_version": "not reported by the service"
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "selection_path": "data/sft_v3/selection.json",
+  "seed": 20261117,
+  "max_seq_length": 768,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 4,
+  "optimizer_steps": 20,
+  "learning_rate": 5e-05,
+  "max_grad_norm": 1.0,
+  "optimizer": "torch.optim.AdamW",
+  "weight_decay": 0.0,
+  "attention": "eager",
+  "compute_dtype": "float16",
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "gradient_checkpointing": true,
+  "use_reentrant": false,
+  "loss": "assistant tokens including message-end EOS; system/user/padding labels are -100",
+  "padding": "right, to max_seq_length for a fixed-size T4 memory check",
+  "packages": {
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2"
+  },
+  "experiment_id": "sft_v3_pilot_v1",
+  "corpus_directory": "data/sft_v3/corpus_v1",
+  "corpus_manifest_sha256": "32bc3d363a7b888b504767688c3ddc1b1c7bcb9cbc968cfa8962cdb66764d1d2",
+  "evaluation_steps": [
+    0,
+    10,
+    20
+  ],
+  "generation": {
+    "max_new_tokens": 768,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repetition_penalty": 1.0,
+    "num_beams": 1,
+    "use_cache": true
+  },
+  "scheduler": "constant",
+  "objective": "Mean causal language-model loss over supervised tokens in each accumulation group",
+  "created_on_moscow": "2026-11-18",
+  "epochs": 1,
+  "development_directory": "data/development_v3",
+  "development_manifest_sha256": "e69c53e93054db402a65fb4c0e24651903086c22ec39dfa902fec3971f2e211a",
+  "generation_seed": 20261116,
+  "judge_shuffle_seed": 20261118,
+  "judge": {
+    "model": "Qwen3.8-27B",
+    "temperature": 0,
+    "max_tokens": 2048
+  },
+  "control_question_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_25"
+  ],
+  "control_max_new_tokens": 64,
+  "initialization": "Fresh LoRA on the pinned original base model",
+  "scope": "One epoch on 80 train examples, 16 validation examples, matched baseline/SFT generation on 32 development questions"
+}

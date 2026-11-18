@@ -47,7 +47,13 @@ logits и greedy-токены совпали точно. Веса и исход�
 [Результаты и разбор пункта 5](results/sft_v3_tiny/analysis.md).
 [Инструкция пункта 5](docs/sft_v3_tiny_guide.md).
 [Открыть восемь примеров в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/03_sft_v3_tiny.ipynb).
-Следующий пункт — содержательный SFT-пилот на 80 train-примерах.
+Для пункта 6 подготовлен содержательный SFT-пилот: свежая LoRA,
+80 train / 16 validation, одна эпоха с LR=5e-5 и 20 шагами.
+Ноутбук сохраняет 32 новых baseline-ответа и 32 SFT-ответа при одинаковых
+параметрах и seed, веса и готовый пакет 64 заданий судье.
+Реальное выполнение пилота на T4 и оценка качества ещё предстоят.
+[Инструкция пункта 6](docs/sft_v3_pilot_guide.md).
+[Открыть SFT-пилот в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/04_sft_v3_pilot.ipynb).
 
 [Пошаговая инструкция](docs/model_screening_v3.md).
 [Открыть сравнение v3 в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/00_model_screening_v3.ipynb).

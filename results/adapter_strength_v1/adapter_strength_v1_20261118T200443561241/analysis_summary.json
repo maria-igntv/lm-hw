@@ -1,0 +1,82 @@
+{
+  "run_id": "adapter_strength_v1_20261118T200443561241",
+  "by_scale": [
+    {
+      "multiplier": 0.0,
+      "n": 8,
+      "length_stops": 2,
+      "repetition_ids": [],
+      "repetition_after_list_counter_removal_ids": [],
+      "median_tokens": 564.0,
+      "median_words": 210.5,
+      "generation_seconds": 671.5387130599995
+    },
+    {
+      "multiplier": 0.25,
+      "n": 8,
+      "length_stops": 1,
+      "repetition_ids": [],
+      "repetition_after_list_counter_removal_ids": [
+        "dev3_29"
+      ],
+      "median_tokens": 324.5,
+      "median_words": 143.0,
+      "generation_seconds": 404.9606813419996
+    },
+    {
+      "multiplier": 0.5,
+      "n": 8,
+      "length_stops": 1,
+      "repetition_ids": [
+        "dev3_29"
+      ],
+      "repetition_after_list_counter_removal_ids": [
+        "dev3_29"
+      ],
+      "median_tokens": 111.0,
+      "median_words": 42.5,
+      "generation_seconds": 220.0998923860002
+    },
+    {
+      "multiplier": 1.0,
+      "n": 8,
+      "length_stops": 2,
+      "repetition_ids": [
+        "dev3_01",
+        "dev3_29"
+      ],
+      "repetition_after_list_counter_removal_ids": [
+        "dev3_01",
+        "dev3_29"
+      ],
+      "median_tokens": 122.5,
+      "median_words": 50.5,
+      "generation_seconds": 315.9365990720007
+    }
+  ],
+  "historical_endpoint_token_matches": {
+    "0.0": [
+      "dev3_01",
+      "dev3_07",
+      "dev3_15",
+      "dev3_21",
+      "dev3_24",
+      "dev3_25",
+      "dev3_26",
+      "dev3_29"
+    ],
+    "1.0": [
+      "dev3_01",
+      "dev3_07",
+      "dev3_15",
+      "dev3_21",
+      "dev3_24",
+      "dev3_25",
+      "dev3_26",
+      "dev3_29"
+    ]
+  },
+  "total_wall_seconds": 2811.991973,
+  "numbered_repeat_diagnostic": "Post-hoc: remove line-leading Markdown list counters, then seek three adjacent exact copies with period 3..128 words.",
+  "independent_middle_scale_judge_status": "not_scored"
+}

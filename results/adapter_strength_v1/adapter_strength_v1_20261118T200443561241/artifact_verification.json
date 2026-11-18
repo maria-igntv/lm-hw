@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "archive_sha256": "52bd4ee8e9bdc7b0c2c7beba78ed863cb6688998d513cb0939304ea95c4a6c12",
+  "notebook_sha256": "509916b817bd12bc172ba29d0a2bce100b502a4ba73d2df0b65521a3d8888c7c",
+  "published_notebook_sha256": "b733abd465dcd53c2edbfac77200242437b8e0b137503617b1b87afb38cc5afe",
+  "executed_code_matches_published": true,
+  "executed_code_cells": 7,
+  "source_hashes_verified_against_commit": 7,
+  "matching_parameter_fingerprint_entries": 902,
+  "main_answers": 32,
+  "greedy_controls": 12,
+  "historical_endpoint_tokens_match": true,
+  "text_and_prompt_tokenizer_checks": true,
+  "scope": "Offline archive consistency and recorded control verification; no new full-model inference."
+}

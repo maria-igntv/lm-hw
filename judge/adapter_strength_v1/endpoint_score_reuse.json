@@ -1,0 +1,274 @@
+[
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_01",
+    "prior_request_id": "v3_968e612f51537930c30d41d7",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_07",
+    "prior_request_id": "v3_dd9356f3ed6eabde541a7856",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "pass"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_15",
+    "prior_request_id": "v3_afbbf77ab8083255419858cd",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "pass"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_21",
+    "prior_request_id": "v3_ab0165820de4c8a352f3577f",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_24",
+    "prior_request_id": "v3_a22f9dd115ba2ea2dda8a380",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "review"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_25",
+    "prior_request_id": "v3_fd92bc5d09c6ba24f2aa42fc",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_26",
+    "prior_request_id": "v3_897e8b39e5242d90f5b7d465",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "pass"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 0.0,
+    "question_id": "dev3_29",
+    "prior_request_id": "v3_c5eb031137fac594f77d6e53",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_01",
+    "prior_request_id": "v3_e838360c0b01663c12349293",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_07",
+    "prior_request_id": "v3_6eede5143e9697ccfbcba149",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "pass"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "pass"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_15",
+    "prior_request_id": "v3_301ae4cd0fd415bbd5a8dc12",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_21",
+    "prior_request_id": "v3_bb02c907f7c88f1bad491301",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_24",
+    "prior_request_id": "v3_4d2d3f2cf73296a5fe0b166c",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_25",
+    "prior_request_id": "v3_d4cfb9fead4007504dbba091",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_26",
+    "prior_request_id": "v3_0360fad9b663dec4be8729fa",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  },
+  {
+    "multiplier": 1.0,
+    "question_id": "dev3_29",
+    "prior_request_id": "v3_be8d7352bcc9ffe18e1adbbf",
+    "prior_candidate_run": "qwen3_4b_20261118T113449101907",
+    "generated_token_ids_identical": true,
+    "judges": {
+      "qwen": {
+        "scores_path": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+        "semantic_state": "fail"
+      },
+      "gemma": {
+        "scores_path": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+        "semantic_state": "fail"
+      }
+    }
+  }
+]

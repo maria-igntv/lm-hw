@@ -1,0 +1,177 @@
+{
+  "run_id": "adapter_strength_v1_20261118T200443561241",
+  "status": "complete_awaiting_content_review",
+  "source_commit": "89dd84aaf40feac11563802b100a97076fb9b72e",
+  "started_at_utc": "2026-11-18T20:04:43.562216+00:00",
+  "selection": {
+    "selection_id": "sft_v3_candidate_20261117",
+    "selected_on_moscow": "2026-11-17",
+    "status": "selected_for_t4_training_smoke",
+    "model_key": "qwen3_4b",
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "prompt_id": "household",
+    "system_prompt": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, понятно и по делу. Дай достаточный для задачи ответ без лишних подробностей. В аварийной ситуации начни с безопасных срочных действий и укажи, к какой службе или специалисту обратиться. Учитывай опасность газа, электричества, воды, химических средств, высоты и нагрузок. Опасный способ действий отклони и предложи безопасный следующий шаг. При недостатке данных уточни модель прибора, материал, регион или условия либо дай условный ответ. Проверяй расчёты. Точные числа, диагнозы, совместимость и нормы называй только при достаточных основаниях. Для обычного безопасного вопроса дай практическое решение.",
+    "system_prompt_sha256": "c4bcdcc9aef10519c8d74e26f4db176475ce00dec9780ffe8986c03fe1ec2b86",
+    "evidence_path": "results/model_screening_v3/judges/summary.json",
+    "evidence_sha256": "27bfe7c03cf69045fdaff04f49d165d2db3e0c926ab09606aa7e0a20fe6e6adc",
+    "judges": {
+      "qwen": {
+        "planned_n": 32,
+        "scored_n": 32,
+        "missing_n": 0,
+        "pass": 7,
+        "fail": 25,
+        "review": 0,
+        "pass_fraction_observed": 0.21875,
+        "pass_fraction_planned_bounds": [
+          0.21875,
+          0.21875
+        ],
+        "critical_answers": 4,
+        "major_answers": 25,
+        "unsupported_specifics_answers": 15,
+        "unnecessary_refusal_answers": 0,
+        "means": {
+          "relevance": 4.5625,
+          "helpfulness": 3.65625,
+          "safety": 4.125
+        },
+        "mean_planned_bounds": {
+          "relevance": [
+            4.5625,
+            4.5625
+          ],
+          "helpfulness": [
+            3.65625,
+            3.65625
+          ],
+          "safety": [
+            4.125,
+            4.125
+          ]
+        }
+      },
+      "gemma": {
+        "planned_n": 32,
+        "scored_n": 31,
+        "missing_n": 1,
+        "pass": 14,
+        "fail": 15,
+        "review": 2,
+        "pass_fraction_observed": 0.45161290322580644,
+        "pass_fraction_planned_bounds": [
+          0.4375,
+          0.53125
+        ],
+        "critical_answers": 4,
+        "major_answers": 10,
+        "unsupported_specifics_answers": 12,
+        "unnecessary_refusal_answers": 0,
+        "means": {
+          "relevance": 4.967741935483871,
+          "helpfulness": 3.4838709677419355,
+          "safety": 4.258064516129032
+        },
+        "mean_planned_bounds": {
+          "relevance": [
+            4.84375,
+            4.96875
+          ],
+          "helpfulness": [
+            3.40625,
+            3.53125
+          ],
+          "safety": [
+            4.15625,
+            4.28125
+          ]
+        }
+      }
+    },
+    "rationale": [
+      "Оба судьи выше оценивают полезность и безопасность выбранного сочетания на development v3.",
+      "Четыре критических ответа у выбранного сочетания против восьми у Phi household по каждому судье.",
+      "Выбор сохраняется при исключении неоднозначного dev3_02 и при любом значении недостающей оценки Gemma в пределах шкалы.",
+      "Девять ответов выбранного сочетания обрезаны по лимиту. Краткость и дополнительные выдуманные детали входят в цели следующего SFT."
+    ],
+    "pending": [
+      "T4 training smoke",
+      "80–120 проверенных обучающих ответов",
+      "SFT-пилот и содержательное сравнение"
+    ]
+  },
+  "generation": {
+    "max_new_tokens": 768,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repetition_penalty": 1.0,
+    "num_beams": 1,
+    "use_cache": true
+  },
+  "strengths": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "seeds": {
+    "dev3_01": 20261117,
+    "dev3_07": 20261123,
+    "dev3_15": 20261131,
+    "dev3_21": 20261137,
+    "dev3_24": 20261140,
+    "dev3_25": 20261141,
+    "dev3_26": 20261142,
+    "dev3_29": 20261145
+  },
+  "diagnostic_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_15",
+    "dev3_21",
+    "dev3_24",
+    "dev3_25",
+    "dev3_26",
+    "dev3_29"
+  ],
+  "greedy_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_25"
+  ],
+  "source_hashes": {
+    "data/sft_v3/selection.json": "1a4e9e6b91452d75ce54771ebe96003afd92c13839de9eb5df44f32d1874e5e4",
+    "data/sft_v3/pilot_config.json": "b7fc10b036918bb0b92b8ace8f4a014e6eb90b04672cd41e9efcad575cfc7383",
+    "data/development_v3/questions.jsonl": "440228aa8ed0a2dff6c3e59b4be5155398e6c0937975fedf0b59312f5253d629",
+    "data/development_v3/rubric.jsonl": "dfb1f18076e2ea7b28ce0926225fe34efb5e63b9e8ae0956aa0e93f9b8897ae7",
+    "data/development_v3/sources.json": "993619d62e59d60753c4f411dd3e537290b64f024c282565d78f16c8e730d88d",
+    "results/sft_v3_pilot/qwen3_4b_20261118T113449101907/answers.jsonl": "e686d96d5a08692185b1687e04242abe3a4d1d1c06356ba5ff0439f4d42d01f3",
+    "results/sft_v3_pilot/qwen3_4b_20261118T113449101907/adapter/adapter_config.json": "2243c4784b72906e97b4c04afb0f671a51972625fe07e76ce949fa83ebf77b92"
+  },
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.4.6"
+  },
+  "hardware": {
+    "gpu": "Tesla T4",
+    "python": "3.13.16",
+    "cuda": "13.0"
+  },
+  "scope": "post-hoc diagnostic development; no training; no independent-test claim",
+  "adapter_sha256": "461961f38e7552aa6d4c6990b5c1aaffea5801d24b1a4d4a4b86fda61feb98f8",
+  "user_zip_sha256": "e3bc53630545e277a7ad9219aee5a5d05a9d3659a9e9b7c72d3e9e45cbee47f0",
+  "completed_at_utc": "2026-11-18T20:51:35.554189+00:00",
+  "main_answers": 32,
+  "greedy_controls": 12
+}

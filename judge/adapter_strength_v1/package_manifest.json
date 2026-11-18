@@ -1,0 +1,12 @@
+{
+  "status": "prepared_not_scored",
+  "run_id": "adapter_strength_v1_20261118T200443561241",
+  "new_requests": 16,
+  "new_multipliers": [
+    0.25,
+    0.5
+  ],
+  "endpoint_answers_identical_to_previously_scored": 16,
+  "source_archive_sha256": "52bd4ee8e9bdc7b0c2c7beba78ed863cb6688998d513cb0939304ea95c4a6c12",
+  "judge_zip_sha256": "c4815f8258471e4d1362522626ca175b4434994bda276b9338d1117c44a4159a"
+}

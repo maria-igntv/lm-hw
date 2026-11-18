@@ -1,0 +1,49 @@
+{
+  "status": "complete_awaiting_content_review",
+  "by_scale": [
+    {
+      "multiplier": 0.0,
+      "answers": 8,
+      "planned": 8,
+      "length_stops": 2,
+      "eos_stops": 6,
+      "repetition_question_ids": [],
+      "empty_answers": 0
+    },
+    {
+      "multiplier": 0.25,
+      "answers": 8,
+      "planned": 8,
+      "length_stops": 1,
+      "eos_stops": 7,
+      "repetition_question_ids": [],
+      "empty_answers": 0
+    },
+    {
+      "multiplier": 0.5,
+      "answers": 8,
+      "planned": 8,
+      "length_stops": 1,
+      "eos_stops": 7,
+      "repetition_question_ids": [
+        "dev3_29"
+      ],
+      "empty_answers": 0
+    },
+    {
+      "multiplier": 1.0,
+      "answers": 8,
+      "planned": 8,
+      "length_stops": 2,
+      "eos_stops": 6,
+      "repetition_question_ids": [
+        "dev3_01",
+        "dev3_29"
+      ],
+      "empty_answers": 0
+    }
+  ],
+  "main_count": 32,
+  "greedy_count": 12,
+  "caution": "Post-hoc diagnostic development; content and safety are not inferred from these indicators."
+}

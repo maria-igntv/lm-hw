@@ -64,10 +64,13 @@ logits и greedy-токены совпали точно. Веса и исход�
 [Инструкция пункта 6](docs/sft_v3_pilot_guide.md).
 [Открыть SFT-пилот в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/04_sft_v3_pilot.ipynb).
 
-Следующий этап — диагностика силы сохранённой LoRA без обучения:
+Диагностика силы сохранённой LoRA без обучения завершена на T4:
 множители 0 / 0,25 / 0,5 / 1, восемь вопросов, 32 sampling-ответа
-и отдельные greedy-контроли. Ноутбук проверен локально;
-полный GPU-прогон ещё предстоит.
+и отдельные greedy-контроли. Крайние масштабы точно воспроизвели прежние
+baseline/SFT. При 0,25 вернулся правильный ответ про коробки, но сохраняются
+ошибки и опасные советы; улучшение модели в целом ещё не подтверждено.
+[Результат диагностики](results/adapter_strength_v1/analysis.md).
+[16 новых ответов для судей](judge/adapter_strength_v1/README.md).
 [Инструкция диагностики](docs/adapter_strength_v1_guide.md).
 [Открыть диагностику в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/05_adapter_strength_diagnostic_v1.ipynb).
 

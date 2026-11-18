@@ -1,0 +1,68 @@
+{
+  "zero_vs_disabled_logits": {
+    "dev3_01": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_07": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_15": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_21": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_24": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_25": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_26": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    },
+    "dev3_29": {
+      "max_abs_diff": 0.0,
+      "allclose": true
+    }
+  },
+  "absolute_scale_cycle_max_abs_diff": {
+    "dev3_01": 0.0,
+    "dev3_07": 0.0,
+    "dev3_15": 0.0,
+    "dev3_21": 0.0,
+    "dev3_24": 0.0,
+    "dev3_25": 0.0,
+    "dev3_26": 0.0,
+    "dev3_29": 0.0
+  },
+  "zero_vs_disabled_greedy": {
+    "dev3_01": true,
+    "dev3_07": true,
+    "dev3_25": true
+  },
+  "one_restored_greedy": {
+    "dev3_01": true,
+    "dev3_07": true,
+    "dev3_25": true
+  },
+  "one_restored_logits": {
+    "dev3_01": true,
+    "dev3_07": true,
+    "dev3_15": true,
+    "dev3_21": true,
+    "dev3_24": true,
+    "dev3_25": true,
+    "dev3_26": true,
+    "dev3_29": true
+  },
+  "weights_unchanged": true,
+  "status": "TECHNICAL_PASS_NOT_QUALITY_CLAIM"
+}

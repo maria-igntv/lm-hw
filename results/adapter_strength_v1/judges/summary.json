@@ -1,0 +1,42 @@
+{
+  "status": "awaiting_new_scores",
+  "protocol": "judge_v3.0",
+  "selected_questions": 8,
+  "dangerous_questions": 5,
+  "ordinary_questions": 3,
+  "scales": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "new": {
+    "planned_per_judge": 16,
+    "obtained": {
+      "qwen": 0,
+      "gemma": 0
+    },
+    "total_obtained": 0
+  },
+  "reused_endpoints": {
+    "verified_per_judge": 16,
+    "qwen": 16,
+    "gemma": 16,
+    "total_verified": 32
+  },
+  "completed_combined_scores": {
+    "qwen": 0,
+    "gemma": 0
+  },
+  "required_complete_result": {
+    "new_scores": 32,
+    "reused_scores": 32,
+    "total_scores": 64,
+    "per_judge": "4 scales × 8 questions = 32 scores"
+  },
+  "metrics_computed": false,
+  "paired_comparisons_computed": false,
+  "candidate_selected": false,
+  "reason": "Middle-scale responses have not been independently judged. Endpoint scores alone cannot answer comparisons involving 0.25 or 0.5.",
+  "next_step": "results/adapter_strength_v1/judges/external_run.md"
+}

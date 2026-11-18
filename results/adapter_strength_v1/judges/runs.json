@@ -1,0 +1,69 @@
+{
+  "status": "awaiting_external_judge_runs",
+  "protocol": "judge_v3.0",
+  "new_runs": [],
+  "requested_new_runs": [
+    {
+      "judge": "qwen",
+      "model": "Qwen3.8-27B",
+      "status": "not_run_no_authorized_api_access",
+      "planned_count": 16,
+      "obtained_count": 0,
+      "parameters": {
+        "temperature": 0,
+        "max_tokens": 2048
+      },
+      "prior_catalog_reference": {
+        "name": "Qwen3.8-27B",
+        "provider": "Qwen",
+        "engine": "vllm",
+        "backend": "coordinator",
+        "aliases": [
+          "Qwen3.8-27B-FP8"
+        ]
+      }
+    },
+    {
+      "judge": "gemma",
+      "model": "gemma-4-31B-it",
+      "status": "not_run_no_authorized_api_access",
+      "planned_count": 16,
+      "obtained_count": 0,
+      "parameters": {
+        "temperature": 0,
+        "max_tokens": 2048
+      },
+      "prior_catalog_reference": {
+        "name": "gemma-4-31B-it",
+        "provider": "google",
+        "engine": "vllm",
+        "backend": "coordinator"
+      }
+    }
+  ],
+  "reused_endpoint_runs": [
+    {
+      "service_batch": "qwen_64",
+      "model": "Qwen3.8-27B",
+      "source_file": "results/sft_v3_pilot/judges/qwen_scores.jsonl",
+      "source_run_metadata": "results/sft_v3_pilot/judges/runs.json",
+      "reused_scores": 16,
+      "parameters": {
+        "temperature": 0,
+        "max_tokens": 2048
+      }
+    },
+    {
+      "service_batch": "gemma_64",
+      "model": "gemma-4-31B-it",
+      "source_file": "results/sft_v3_pilot/judges/gemma_scores.jsonl",
+      "source_run_metadata": "results/sft_v3_pilot/judges/runs.json",
+      "reused_scores": 16,
+      "parameters": {
+        "temperature": 0,
+        "max_tokens": 2048
+      }
+    }
+  ],
+  "note": "Prior catalog fields are references for the external run, not claims about a new run. No model request was sent locally."
+}

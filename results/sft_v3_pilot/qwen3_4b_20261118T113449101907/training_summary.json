@@ -1,0 +1,10 @@
+{
+  "optimizer_steps": 20,
+  "microbatches": 80,
+  "training_wall_seconds_including_evaluations": 334.9331036470003,
+  "nonzero_B_matrices": 252,
+  "peak_allocated_gib": 6.419046401977539,
+  "peak_reserved_gib": 7.1640625,
+  "epochs_completed": 1.0,
+  "each_train_example_used_once": true
+}

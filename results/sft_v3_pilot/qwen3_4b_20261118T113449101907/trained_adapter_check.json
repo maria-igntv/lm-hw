@@ -1,0 +1,10 @@
+{
+  "control_question_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_25"
+  ],
+  "trained_adapter_max_abs_diff": 23.928810119628906,
+  "disabled_base_max_abs_diff": 0.0,
+  "disabled_base_allclose": true
+}

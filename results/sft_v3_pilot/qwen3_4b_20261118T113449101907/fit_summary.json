@@ -1,0 +1,26 @@
+{
+  "by_split": {
+    "train": {
+      "n": 80,
+      "loss_before": 2.8791406439468923,
+      "loss_after": 1.5439635604689792,
+      "loss_decreased": true,
+      "token_accuracy_before": 0.5359187922956793,
+      "token_accuracy_after": 0.6412024986985945,
+      "eos_accuracy_before": 0.125,
+      "eos_accuracy_after": 0.9625
+    },
+    "validation": {
+      "n": 16,
+      "loss_before": 2.8435705757364063,
+      "loss_after": 1.7339945120953595,
+      "loss_decreased": true,
+      "token_accuracy_before": 0.5213325540619521,
+      "token_accuracy_after": 0.6101694915254238,
+      "eos_accuracy_before": 0.25,
+      "eos_accuracy_after": 1.0
+    }
+  },
+  "checkpoint_step": 20,
+  "quality_status": "awaiting_judge_scores_and_content_review"
+}

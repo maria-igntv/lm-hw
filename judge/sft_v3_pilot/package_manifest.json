@@ -1,0 +1,10 @@
+{
+  "run_id": "qwen3_4b_20261118T113449101907",
+  "requests": 64,
+  "baseline": 32,
+  "sft": 32,
+  "status": "prepared_not_scored",
+  "source_archive": "sft_v3_pilot_qwen3_4b_20261118T113449101907.zip",
+  "source_archive_sha256": "e3bc53630545e277a7ad9219aee5a5d05a9d3659a9e9b7c72d3e9e45cbee47f0",
+  "package_sha256": "dd04cbcd506d0f6f1037fa8f5a6a0835feb6d2adfc58f2741d19fffc3c64735d"
+}

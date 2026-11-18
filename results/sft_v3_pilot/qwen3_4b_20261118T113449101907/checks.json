@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "train_examples": 80,
+  "validation_examples": 16,
+  "development_questions": 32,
+  "saved_answers": 64,
+  "judge_requests": 64,
+  "fresh_adapter_identity": true,
+  "base_weights_frozen": true,
+  "optimizer_steps": 20,
+  "each_train_example_used_once": true,
+  "trained_adapter_changes_logits": true,
+  "disabled_base_controls_match": true,
+  "saved_weights_finite": true,
+  "reload_logits_match": true,
+  "reload_greedy_tokens_match": true,
+  "reload_control_question_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_25"
+  ],
+  "logged_errors": 0,
+  "quality_status": "awaiting_judge_scores_and_content_review"
+}

@@ -1,0 +1,16 @@
+{
+  "B_matrices": 252,
+  "trainable_tensors": 504,
+  "all_B_zero": true,
+  "active_vs_disabled_allclose": true,
+  "active_vs_disabled_max_abs_diff": 0.0,
+  "preparation_max_abs_diff": 0.05645942687988281,
+  "base_weights_frozen": true,
+  "gradient_checkpointing": true,
+  "trainable_parameters": 33030144,
+  "control_question_ids": [
+    "dev3_01",
+    "dev3_07",
+    "dev3_25"
+  ]
+}

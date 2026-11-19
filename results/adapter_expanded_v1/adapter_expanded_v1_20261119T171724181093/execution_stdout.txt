@@ -1,0 +1,52 @@
+Версии установлены. Генерация ещё не запускалась.
+
+Источники проверены: 22
+Каталог результата: /content/lm_hw_expanded_runs/adapter_expanded_v1_20261119T171724181093
+План: 24 новых ответа + 6 контрольных; 40 ответов переиспользуются.
+
+Функции сохранения готовы.
+
+Saving sft_v3_pilot_qwen3_4b_20261118T113449101907.zip to sft_v3_pilot_qwen3_4b_20261118T113449101907.zip
+SHA-256 адаптера подтверждён: 461961f38e7552aa6d4c6990b5c1aaffea5801d24b1a4d4a4b86fda61feb98f8
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Модель готова. Все 32 входа и 40 прежних текстов проверены. Новые ответы ещё не сгенерированы.
+
+Контроль 1 /6: baseline dev3_01 MATCH
+Контроль 2 /6: baseline dev3_15 MATCH
+Контроль 3 /6: baseline dev3_25 MATCH
+Контроль 4 /6: scale_0.25 dev3_01 MATCH
+Контроль 5 /6: scale_0.25 dev3_15 MATCH
+Контроль 6 /6: scale_0.25 dev3_25 MATCH
+CONTROLS PASS. Можно генерировать недостающие 24 ответа.
+
+Новых ответов: 1 /24; dev3_02 eos 337 токенов
+Новых ответов: 2 /24; dev3_03 eos 359 токенов
+Новых ответов: 3 /24; dev3_04 eos 430 токенов
+Новых ответов: 4 /24; dev3_05 eos 426 токенов
+Новых ответов: 5 /24; dev3_06 eos 365 токенов
+Новых ответов: 6 /24; dev3_08 eos 319 токенов
+Новых ответов: 7 /24; dev3_09 eos 161 токенов
+Новых ответов: 8 /24; dev3_10 eos 236 токенов
+Новых ответов: 9 /24; dev3_11 eos 336 токенов
+Новых ответов: 10 /24; dev3_12 eos 76 токенов
+Новых ответов: 11 /24; dev3_13 eos 406 токенов
+Новых ответов: 12 /24; dev3_14 eos 569 токенов
+Новых ответов: 13 /24; dev3_16 eos 302 токенов
+Новых ответов: 14 /24; dev3_17 eos 523 токенов
+Новых ответов: 15 /24; dev3_18 eos 233 токенов
+Новых ответов: 16 /24; dev3_19 eos 341 токенов
+Новых ответов: 17 /24; dev3_20 eos 286 токенов
+Новых ответов: 18 /24; dev3_22 eos 361 токенов
+Новых ответов: 19 /24; dev3_23 eos 291 токенов
+Новых ответов: 20 /24; dev3_27 eos 313 токенов
+Новых ответов: 21 /24; dev3_28 eos 365 токенов
+Новых ответов: 22 /24; dev3_30 eos 314 токенов
+Новых ответов: 23 /24; dev3_31 eos 587 токенов
+Новых ответов: 24 /24; dev3_32 eos 713 токенов
+ГОТОВО: 64 ответа = 32 baseline + 32 LoRA 0,25. Из них 24 новых. Качество ещё оценивает судья.
+
+Полный/частичный ZIP: /content/lm_hw_expanded_runs/adapter_expanded_v1_20261119T171724181093.zip
+Пакет для Qwen3.8-27B: /content/lm_hw_expanded_runs/adapter_expanded_v1_20261119T171724181093_for_judge.zip — 24 задания; повторно оценивать прежние 40 не нужно.

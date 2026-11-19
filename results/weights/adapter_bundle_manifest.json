@@ -1,0 +1,27 @@
+{
+  "status": "experimental_checkpoint_not_final_improved_model",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "adapter_sha256": "461961f38e7552aa6d4c6990b5c1aaffea5801d24b1a4d4a4b86fda61feb98f8",
+  "adapter_bytes": 132187888,
+  "training_run": "qwen3_4b_20261118T113449101907",
+  "adapter_config_unchanged": true,
+  "inference_multiplier": 0.25,
+  "base_model_included": false,
+  "files": {
+    "qwen3_4b_20261118T113449101907/adapter/adapter_model.safetensors": "461961f38e7552aa6d4c6990b5c1aaffea5801d24b1a4d4a4b86fda61feb98f8",
+    "qwen3_4b_20261118T113449101907/adapter/adapter_config.json": "2243c4784b72906e97b4c04afb0f671a51972625fe07e76ce949fa83ebf77b92",
+    "inference_config.json": "991e7caa4da98b2e0999fb40d0c568ab3eb388032a22df45661ffff57640e3c8",
+    "README.md": "33392cff313a5b1b25d13142145c8a4fc4a847c9128072d92ab04dba9f8b7445"
+  },
+  "archive_name": "sft_v3_pilot_adapter_only.zip",
+  "archive_bytes": 122291522,
+  "archive_sha256": "9c1ba204656b8fdc2cc64560d3271e2e401caf4d1b9a13b8b1aaa852bfd3a0f8",
+  "release_tag": "artifacts-sft-v3-pilot",
+  "release_url": "https://github.com/maria-igntv/lm-hw/releases/tag/artifacts-sft-v3-pilot",
+  "download_url": "https://github.com/maria-igntv/lm-hw/releases/download/artifacts-sft-v3-pilot/sft_v3_pilot_adapter_only.zip",
+  "publication_status": "uploaded",
+  "github_asset_digest": "sha256:9c1ba204656b8fdc2cc64560d3271e2e401caf4d1b9a13b8b1aaa852bfd3a0f8",
+  "github_asset_size_verified": true,
+  "github_asset_digest_matches_local": true
+}

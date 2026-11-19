@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "archive_sha256": "b428649df6e2d9c3b9c7c72fc9ec82ddd323850bba9087c9d6c59bd8a1634a5c",
+  "executed_notebook_sha256": "975500150e2f06b3957b209584c3461f4dbd822861fb13be253f00bed279c842",
+  "published_notebook_sha256": "4f9eccb1033796cc15431f9e5625db7b49d79d78ecefd736c4307ff5cae3cd7b",
+  "executed_code_matches_published": true,
+  "executed_code_cells": 8,
+  "notebook_exceptions": 0,
+  "source_files_verified_against_commit": 22,
+  "main_answers": 64,
+  "historical_answers_unchanged": 40,
+  "control_output_tokens_matched": 6,
+  "matching_lora_hash_entries": 504,
+  "external_judge_zip_verified": true,
+  "original_adapter_weights_independently_hashed": true,
+  "local_tokenizer_decode_checks": true,
+  "new_judge_requests_verified": 24,
+  "reused_judge_scores_verified": 80,
+  "analyzer_sha256": "bed04449bf47377f1196d300d2639461879d4e5f9f57db8fa415be41c674be38",
+  "scope": "Offline verification of files and recorded GPU controls; no new model/API calls."
+}

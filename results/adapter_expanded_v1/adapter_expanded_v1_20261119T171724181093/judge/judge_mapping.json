@@ -1,0 +1,146 @@
+[
+  {
+    "request_id": "v3_ce2fbe52808e37b69e4ff8c2",
+    "question_id": "dev3_20",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_8db27b03da1c0e8b50a3c882",
+    "question_id": "dev3_27",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_8652b3428693b48c632d01b3",
+    "question_id": "dev3_18",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_df0fd8e3a01dd634f5bdc5cd",
+    "question_id": "dev3_08",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_7d30bad85b19abeec467cbc0",
+    "question_id": "dev3_19",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_8816b7e53ff17e23c9e9936e",
+    "question_id": "dev3_11",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_abaf6928160d4decc3261a26",
+    "question_id": "dev3_06",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_d1db88e9efe3823a892b8d97",
+    "question_id": "dev3_12",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_be0b1cfd35545d88918832bf",
+    "question_id": "dev3_23",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_3500ed98d1c75ce69eaa385f",
+    "question_id": "dev3_05",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_6fb82a210fa5d0dd313951d7",
+    "question_id": "dev3_32",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_6faa281e7395bbc4196406e4",
+    "question_id": "dev3_17",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_f03c975262f2fbb3909dbaf5",
+    "question_id": "dev3_31",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_8f28579f74f94fc67bc1a636",
+    "question_id": "dev3_14",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_20b93429b0da9c2e4be5060c",
+    "question_id": "dev3_22",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_ceca2fb7644944a8e8f4503d",
+    "question_id": "dev3_30",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_53a068cb900dba16cca2498e",
+    "question_id": "dev3_16",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_71f20ccf5b5db0fa3a292e56",
+    "question_id": "dev3_10",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_412751ebf57cb91a8a572e5a",
+    "question_id": "dev3_02",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_8be1727339988545d290fcda",
+    "question_id": "dev3_03",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_9df31669876b38cfa838763d",
+    "question_id": "dev3_04",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_19704b34fee29eca49330d45",
+    "question_id": "dev3_13",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_e0626cb3d4aa9af37c6f6cfa",
+    "question_id": "dev3_09",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  },
+  {
+    "request_id": "v3_2b8cc2fd7708c0b4ba495d0f",
+    "question_id": "dev3_28",
+    "prompt_id": "scale_0.25",
+    "run_id": "adapter_expanded_v1_20261119T171724181093"
+  }
+]

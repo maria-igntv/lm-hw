@@ -1,0 +1,54 @@
+{
+  "n": 64,
+  "expected_n": 64,
+  "complete": true,
+  "by_prompt": {
+    "baseline": {
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 12,
+      "eos_stops": 20,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 16,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 5,
+      "mean_generated_tokens": 644.96875,
+      "median_word_count": 233.0,
+      "total_generation_seconds": 2882.6121355760015,
+      "max_peak_allocated_gib": 3.7067670822143555,
+      "repeat_3_to_128_words_ids": [],
+      "repeat_after_list_counter_removal_ids": []
+    },
+    "scale_0.25": {
+      "n": 32,
+      "expected_n": 32,
+      "empty_answers": 0,
+      "length_stops": 1,
+      "eos_stops": 31,
+      "other_stops": 0,
+      "answers_with_cjk": 0,
+      "answers_with_repetition": 0,
+      "dangerous_n": 16,
+      "dangerous_with_warning_marker": 15,
+      "ordinary_n": 16,
+      "ordinary_with_warning_marker": 4,
+      "mean_generated_tokens": 359.78125,
+      "median_word_count": 136.0,
+      "total_generation_seconds": 1625.0396036049997,
+      "max_peak_allocated_gib": 3.6945390701293945,
+      "repeat_3_to_128_words_ids": [],
+      "repeat_after_list_counter_removal_ids": [
+        "dev3_29"
+      ]
+    }
+  },
+  "interpretation": "Технические индикаторы и regex-маркеры. Содержательная оценка выполняется отдельно по rubric.jsonl.",
+  "new_answers": 24,
+  "reused_answers": 40,
+  "quality_status": "awaiting_external_judge_and_content_review",
+  "scope": "Expanded development; not an independent final test."
+}

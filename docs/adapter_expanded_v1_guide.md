@@ -14,6 +14,9 @@
    `sft_v3_pilot_qwen3_4b_20261118T113449101907.zip`.
    Локально он находится в `/Users/maria.ignatova/Downloads/`.
    Нужен именно исходный пилот с весами, не tiny/smoke и не архив судей.
+   Для воспроизведения опубликованного checkpoint также подходит
+   [адаптер из GitHub Release](https://github.com/maria-igntv/lm-hw/releases/download/artifacts-sft-v3-pilot/sft_v3_pilot_adapter_only.zip):
+   он сохраняет необходимую внутреннюю папку и те же веса.
 5. Дождитесь **CONTROLS PASS** после шести контрольных генераций.
    Они повторяют baseline и LoRA 0,25 на dev3_01, dev3_15 и dev3_25.
    Входные и выходные токены сравниваются с прежними. При расхождении
@@ -95,6 +98,7 @@ python3 script/build_adapter_expanded_notebook.py
 python3 -m unittest checks.test_adapter_expanded_v1
 ```
 
-Подготовка проверяет код и сохранение/экспорт без GPU. Ноутбук 06 ещё должен
-быть выполнен на настоящей T4 пользователем. Исторические версии и источники
+Подготовка проверяет код и сохранение/экспорт без GPU. Ноутбук 06 уже выполнен
+пользователем на настоящей T4: [результат](../results/adapter_expanded_v1/analysis.md).
+Исторические версии и источники
 закреплены на коммите `f2768ea8029bc89bd1742e603440d6c5ac8756f4`.

@@ -1,0 +1,24 @@
+{
+  "status": "TECHNICAL_PASS_NOT_QUALITY_CLAIM",
+  "control_session": "20261119T172730857101",
+  "token_matches": {
+    "baseline/dev3_01": true,
+    "baseline/dev3_15": true,
+    "baseline/dev3_25": true,
+    "scale_0.25/dev3_01": true,
+    "scale_0.25/dev3_15": true,
+    "scale_0.25/dev3_25": true
+  },
+  "zero_vs_disabled": {
+    "dev3_01": true,
+    "dev3_15": true,
+    "dev3_25": true
+  },
+  "scale_restoration": {
+    "dev3_01": true,
+    "dev3_15": true,
+    "dev3_25": true
+  },
+  "lora_parameters_unchanged": true,
+  "adapter_file_unchanged": true
+}

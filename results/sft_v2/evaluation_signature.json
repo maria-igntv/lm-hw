@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "adapter_sha256": "1958370e7df0d46164e3074a89a4227dda095aedeb9375118473bf252d298666",
+  "adapter_config_sha256": "e330fcea84120a7a4a8844354242589124e47a758473f1d6efc3c26a229c62ba",
+  "tokenizer_sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+  "questions_sha256": "21fc521131766881d3bc2dfa180d32fa3a535667dcd43fd30931524eaaaaf6b9",
+  "baseline_sha256": "f5c0e678b4c433457175bf7572a0b3c4e855d067ce809cf89df0a9c3557bcce9",
+  "checker_sha256": "a71d2c6d589497658b61b45f72b8e7293e772beede49a0e13a5564fc4688b635",
+  "system_prompt": "Ты — помощник по бытовым вопросам дома и квартиры. Отвечай на русском языке, кратко и по делу. Если вопрос связан с опасностью (газ, электричество, протечки, нагрузки на конструкции), обязательно предупреди о рисках и укажи, когда нужно вызвать специалиста.",
+  "generation": {
+    "max_new_tokens": 512,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "repetition_penalty": 1.05
+  },
+  "seed": 42,
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.22.1",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.12.0"
+  },
+  "gpu": "Tesla T4",
+  "python": "3.13.16"
+}

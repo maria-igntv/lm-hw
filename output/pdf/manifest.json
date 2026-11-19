@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pages": 8,
+  "format": "A4",
+  "report_markdown_sha256": "4ed1aa13ba5f60556cad7f9c5b68ecad03cfd3259e750241adf9b2d5b1a6b40a",
+  "pdf_sha256": "84e477eb48a1ddaf96b430697d9c0d4ff681ed3495bcb9decc660a4b91c7cdd0",
+  "cyrillic_fonts_embedded": true,
+  "glyph_coverage_checked": true,
+  "clickable_links": 39,
+  "pending_scores_explicit": true,
+  "gpu_or_api_calls_in_build": false
+}

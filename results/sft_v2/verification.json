@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source": "Previously supplied local v2 artifacts; no new training or generation.",
+  "source_files_sha256": {
+    "run_metadata.json": "840bbe1519e37eea330873d1322af853ee726eb06ae99423ff08df2edfb25210",
+    "trainer_log_history.json": "e55d76574dc3edd472dfdcdbca177dcdbebf3ed3d359c06bddde87a0cb11e8c3",
+    "sft_answers.jsonl": "fa992e82da349fe6b1b4d704a5b9488d41f7abf88ad41cb529f0c2a96ab608f0",
+    "metrics_comparison.json": "d904c243855361beaa1e139a98cf7f27e306c105fb21c3f586da1a7cbdcffbd7"
+  },
+  "questions_baseline_checker_hashes_match": true,
+  "dataset_hashes_match": true,
+  "metrics_recomputed": true,
+  "optimizer_steps": 35,
+  "eval_loss_step5": 2.0106632709503174,
+  "last_recorded_eval_loss": 1.9000160694122314,
+  "answers": 100,
+  "length_stops": 11,
+  "new_llm_judge_scores": 0
+}

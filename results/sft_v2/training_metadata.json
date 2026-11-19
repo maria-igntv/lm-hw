@@ -1,0 +1,39 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "smoke_test": false,
+  "date_utc": "2026-11-04T18:52:36.513763+00:00",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.22.1",
+    "trl": "1.17.1",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2",
+    "datasets": "5.1.0",
+    "accelerate": "1.12.0"
+  },
+  "gpu": "Tesla T4",
+  "dataset_version": "sft_v2_candidate",
+  "dataset_hashes": {
+    "sft_train.jsonl": "330d2082d0aba5bf7b5d69fbc3d6e36011030359a691848ea87473d4286dce4b",
+    "sft_val.jsonl": "71d3117927caa56df25609d7f7cbbeac953bf8534ebde2754521afeb89784402"
+  },
+  "train_examples": 560,
+  "val_examples": 90,
+  "learning_rate": 5e-05,
+  "epochs": 1,
+  "train_metrics": {
+    "train_runtime": 1039.0753,
+    "train_samples_per_second": 0.539,
+    "train_steps_per_second": 0.034,
+    "total_flos": 4205007946235904.0,
+    "train_loss": 1.957418407712664,
+    "epoch": 1.0
+  },
+  "final_evaluation": {
+    "eval_loss": 1.9000160694122314,
+    "eval_entropy": 1.9523167451222738,
+    "eval_mean_token_accuracy": 0.5658375528123644,
+    "eval_num_tokens": 232295.0
+  },
+  "best_metric": 1.9000223875045776
+}

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "scope": "Offline input and endpoint verification; no new model calls",
-  "checked_at_utc": "2026-11-18T21:48:34.977609+00:00",
+  "checked_at_utc": "2026-11-19T14:59:36.202755+00:00",
   "new_requests": 16,
   "new_request_ids_unique": true,
   "middle_scales": [

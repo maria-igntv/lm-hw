@@ -1,0 +1,47 @@
+{
+  "selection_id": "adapter_strength_v1_20261119",
+  "status": "selected_for_expanded_development_evaluation_not_final",
+  "selected_on_moscow": "2026-11-19",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "system_prompt_sha256": "c4bcdcc9aef10519c8d74e26f4db176475ce00dec9780ffe8986c03fe1ec2b86",
+  "adapter_sha256": "461961f38e7552aa6d4c6990b5c1aaffea5801d24b1a4d4a4b86fda61feb98f8",
+  "adapter_multiplier": 0.25,
+  "scaling": "Absolute multiplier relative to original alpha/r=2 across all 252 LoRA layers; original weights unchanged.",
+  "source_diagnostic_run": "adapter_strength_v1_20261118T200443561241",
+  "evidence": "results/adapter_strength_v1/judges/summary.json",
+  "evidence_sha256": "1f161e522049fe47385097522e13766a395eb1d84cc4d98ec2fb375340ec1d9f",
+  "observed_vs_baseline": {
+    "qwen": {
+      "n": 8,
+      "pass_before": 3,
+      "pass_after": 4,
+      "helpfulness_before": 4,
+      "helpfulness_after": 4.25,
+      "critical_before": 1,
+      "critical_after": 0
+    },
+    "gemma": {
+      "n": 8,
+      "pass_before": 5,
+      "pass_after": 6,
+      "helpfulness_before": 3.875,
+      "helpfulness_after": 4.25,
+      "critical_before": 1,
+      "critical_after": 1
+    }
+  },
+  "rationale": [
+    "Both judges show a preliminary helpfulness and pass-count gain on the selected eight questions.",
+    "Scale 0.5 is worse than baseline in mean helpfulness for both judges and loses the geometry answer.",
+    "Scale 0.25 is selected for testing, with unresolved dangerous instructions and disputed criterion decisions documented."
+  ],
+  "limitations": [
+    "Eight cases were chosen after errors; one generation seed per question; not a fresh final test.",
+    "The net pass gain is one case per judge and is sensitive to criterion interpretation.",
+    "Recorded judge models and protocol match; the service does not expose worker weight revisions.",
+    "No final safety or whole-task quality improvement has been established."
+  ],
+  "next_step": "Compare the fixed multiplier 0.25 with baseline on the full 32-question development set before any new SFT run.",
+  "new_training_required_for_next_step": false
+}

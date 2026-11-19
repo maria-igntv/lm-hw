@@ -1,0 +1,21 @@
+{
+  "input_archive": "adapter_strength_v1_judges.zip",
+  "archive_sha256": "90f2acd38f1bf4ff9873325d7aea343a3f9a844937be4c1c98f0ed21fb18e770",
+  "files": {
+    "errors.jsonl": "d46df1f824e082c3af6cc509b0861924064731aa496362b1ab216890114df1b7",
+    "gemma_results.jsonl": "9b8bcb083f0273c209877e586d6de9783b5fde48f7f3092f937604cd8d84d57a",
+    "qwen_results.jsonl": "45f7a996ed0caa3865f2adcff5f3a39a6437253219509d97f5ce0a746e90efcd",
+    "raw/gemma_new_failed.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw/gemma_new_output.jsonl": "f72ee298e318c8fe9aa1f271c3a89580523e24e05d2ba9e9c0805df773f91d34",
+    "raw/qwen_initial_failed.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw/qwen_initial_output.jsonl": "1821bc80086f2ef2943f99c1bfdc1581db67666ca6707b75a062cda20b9e5bd7",
+    "raw/qwen_new_output.jsonl": "6c3622862187d0b911443d9855ba46564121c346ed305981e6aa64fee413cdfe",
+    "raw/qwen_retry1_failed.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw/qwen_retry1_output.jsonl": "928a529226bbe729d35e3f41b17e9d2be89f65bc7ad0c6bc2d60901e6a553cd4",
+    "runs.json": "d8056b0fec0f0496b3c7406ce01641c973033519bec03005246c6b341f13e908",
+    "verification.json": "94b5d7775d4226d970edff22f2d4db9745a12165c98949e838cca913c9a3423c"
+  },
+  "new_final_scores": 32,
+  "api_calls": 33,
+  "invalid_attempts": 1
+}

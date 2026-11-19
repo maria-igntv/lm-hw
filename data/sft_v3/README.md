@@ -54,3 +54,9 @@ train-примеров, по одному на категорию с балан�
 [Разбор диагностики](../../results/adapter_strength_v1/analysis.md).
 [Ноутбук 05](../../notebooks/05_adapter_strength_diagnostic_v1.ipynb).
 [Инструкция](../../docs/adapter_strength_v1_guide.md).
+
+Получены и проверены по 16 новых оценок Qwen и Gemma для масштабов
+0,25 и 0,5. `adapter_strength_selection.json` фиксирует 0,25
+как предварительного кандидата для расширенной оценки, без принятия
+готовой модели. Следующий шаг — полный development, без нового обучения.
+[Судейский разбор масштабов](../../results/adapter_strength_v1/judges/analysis.md).

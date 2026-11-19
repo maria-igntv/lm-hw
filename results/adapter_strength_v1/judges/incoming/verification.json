@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "validator": "script/analyze_adapter_strength_v1_judges.py: validate_new_scores",
+  "repository_commit": "c37b3e83f75db476d445d64e92cb754f9149bb49",
+  "package_sha256": "c4815f8258471e4d1362522626ca175b4434994bda276b9338d1117c44a4159a",
+  "new_scores_per_judge": {
+    "qwen": 16,
+    "gemma": 16
+  },
+  "unique_requests": 16,
+  "api_calls": 33,
+  "invalid_attempts": 1,
+  "final_invalid_scores": 0,
+  "training_or_assistant_generation_started": false
+}

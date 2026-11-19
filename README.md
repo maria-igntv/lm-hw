@@ -71,6 +71,13 @@ baseline/SFT. При 0,25 вернулся правильный ответ пр�
 ошибки и опасные советы; улучшение модели в целом ещё не подтверждено.
 [Результат диагностики](results/adapter_strength_v1/analysis.md).
 [16 новых ответов для судей](judge/adapter_strength_v1/README.md).
+Оценка этих ответов завершена: по 16 новых оценок каждого судьи,
+с одним разрешённым повтором, 33 вызова. На диагностической восьмёрке
+масштаб 0,25 увеличил helpfulness до 4,25 у обоих судей и дал по одному
+дополнительному pass относительно базы. Это предварительный кандидат
+для полного development из 32 вопросов; новое обучение пока отложено.
+[Сравнение четырёх масштабов](results/adapter_strength_v1/judges/analysis.md).
+[Зафиксированный кандидат](data/sft_v3/adapter_strength_selection.json).
 [Инструкция диагностики](docs/adapter_strength_v1_guide.md).
 [Открыть диагностику в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/05_adapter_strength_diagnostic_v1.ipynb).
 

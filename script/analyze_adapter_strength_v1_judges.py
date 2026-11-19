@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 
-from jsonschema import Draft202012Validator
+from jsonschema import Draft202012Validator, ValidationError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -114,8 +114,13 @@ def verify_frozen_inputs(context):
 def public_run(run):
     fields = ['service_batch', 'key', 'id', 'model', 'status', 'count', 'output_count', 'failed_count',
               'created_at', 'updated_at', 'parameters', 'response_format', 'catalog', 'usage',
-              'worker_build_version', 'system_prompt_sha256']
-    return {field: run[field] for field in fields if field in run}
+              'worker_build_version', 'system_prompt_sha256', 'per_response_metadata',
+              'initial_valid_count', 'final_valid_count', 'total_api_calls_including_retries',
+              'replacement_request_ids']
+    result = {field: run[field] for field in fields if field in run}
+    if 'retry_runs' in run:
+        result['retry_runs'] = [public_run(child) for child in run['retry_runs']]
+    return result
 
 
 def public_input_path(path):
@@ -237,9 +242,18 @@ def validate_new_scores(context, input_dir, runs):
         expected_prompt_hash = sha256_text((JUDGE_DIR / 'judge_system_prompt.md').read_text(encoding='utf-8'))
         require(run.get('system_prompt_sha256') == expected_prompt_hash,
                 f'{judge}: effective system prompt hash missing or differs')
+        run_index = {item['id']: item for item in [run, *run.get('retry_runs', [])]}
+        require(len(run_index) == 1 + len(run.get('retry_runs', [])), f'{judge}: duplicate run IDs')
+        for item in run_index.values():
+            require(item['model'] == expected_model and item['status'] == 'success',
+                    f'{judge}: retry model or status differs')
+            require(item['parameters'] == run['parameters'] and item['response_format'] == run['response_format']
+                    and item.get('system_prompt_sha256') == expected_prompt_hash and item.get('catalog') == run.get('catalog'),
+                    f'{judge}: retry prompt, schema or parameters differ')
         result = []
         for request_id, row in score_index.items():
             require(row.get('judge_model') == expected_model, f'{judge}/{request_id}: judge model differs')
+            require(row.get('run_id') in run_index, f'{judge}/{request_id}: unknown actual source run')
             if 'candidate' in row:
                 require(row['candidate'] == context['mapping'][request_id],
                         f'{judge}/{request_id}: candidate mapping differs')
@@ -268,11 +282,65 @@ def validate_new_scores(context, input_dir, runs):
                 'semantic_pass': semantic_state(score) == 'pass', 'review_flags': flags,
                 'raw_response': raw_response, 'score_origin': 'new',
                 'source_file': public_input_path(scores_path),
-                'source_run_id': run.get('id') or run.get('service_batch') or run.get('key'),
+                'source_run_id': row['run_id'],
             })
         normalized[judge] = sorted(result, key=lambda row: (row['adapter_multiplier'], row['question_id']))
         raw_normalized[judge] = sorted(raw_rows, key=lambda row: row['uid'])
     return normalized, raw_normalized
+
+
+def verify_attempt_history(context, input_dir, runs):
+    """Verify any supplied retry transcript without replacing valid low scores."""
+    result = {'api_calls': 0, 'invalid_attempts': 0, 'by_judge': {}}
+    for judge, run in runs.items():
+        final = {row['uid']: row for row in read_jsonl(input_dir / 'raw' / f'{judge}_new_output.jsonl')}
+        retries = run.get('retry_runs', [])
+        initial_path = input_dir / 'raw' / f'{judge}_initial_output.jsonl'
+        if not initial_path.exists():
+            require(not retries, f'{judge}: retry metadata has no initial transcript')
+            initial_path = input_dir / 'raw' / f'{judge}_new_output.jsonl'
+        initial = read_jsonl(initial_path)
+        require(len(initial) == len(final) == 16 and {r['uid'] for r in initial} == set(final),
+                f'{judge}: initial transcript coverage differs')
+        retry_files = sorted((input_dir / 'raw').glob(f'{judge}_retry*_output.jsonl'))
+        require(len(retry_files) == len(retries), f'{judge}: retry transcript count differs')
+        batches = [(run, initial)] + [(child, read_jsonl(path)) for child, path in zip(retries, retry_files)]
+        accepted, invalid, calls = {}, [], 0
+        for batch, rows in batches:
+            require(len(rows) == batch['count'] and len({r['uid'] for r in rows}) == len(rows),
+                    f'{judge}: batch count or unique IDs differ')
+            for row in rows:
+                uid = row['uid']
+                require(uid in context['requests'], f'{judge}: unknown attempt request ID')
+                require(uid not in accepted, f'{judge}/{uid}: a valid prior result was retried')
+                calls += 1
+                try:
+                    validate_score(json.loads(row['model_response']), context['requests'][uid], context['validator'])
+                except (ValueError, ValidationError) as error:
+                    invalid.append({'request_id': uid, 'run_id': batch['id'], 'error': str(error),
+                                    'raw_response': row['model_response']})
+                else:
+                    accepted[uid] = (batch['id'], row['model_response'])
+        require(set(accepted) == set(final), f'{judge}: missing accepted attempt')
+        score_rows = read_jsonl(input_dir / f'{judge}_results.jsonl')
+        for row in score_rows:
+            uid = row['request_id']
+            require(accepted[uid] == (row['run_id'], row['raw_response'])
+                    and final[uid]['model_response'] == row['raw_response'],
+                    f'{judge}/{uid}: final result differs from actual accepted attempt')
+        require(calls == run.get('total_api_calls_including_retries', calls), f'{judge}: API-call count differs')
+        require({row['request_id'] for row in invalid} == set(run.get('replacement_request_ids', [])),
+                f'{judge}: replaced request IDs differ')
+        supplied_errors = read_jsonl(input_dir / 'errors.jsonl')
+        for bad in invalid:
+            require(any(e.get('request_id') == bad['request_id'] and e.get('run_id') == bad['run_id']
+                        and e.get('raw_response') == bad['raw_response'] for e in supplied_errors),
+                    f'{judge}: invalid attempt missing from error journal')
+        result['by_judge'][judge] = {'api_calls': calls, 'invalid_attempts': len(invalid),
+                                    'final_scores': len(accepted), 'invalid_responses': invalid}
+        result['api_calls'] += calls
+        result['invalid_attempts'] += len(invalid)
+    return result
 
 
 def reuse_scores(context, endpoint_rows):
@@ -417,6 +485,23 @@ def comparability(prior_runs, new_runs):
     return warnings
 
 
+def posthoc_sensitivity(all_rows):
+    """Show dependence on disputed criterion decisions; keep primary scores intact."""
+    result = {}
+    for name, excluded in [('without_dev3_01', {'dev3_01'}),
+                           ('without_dev3_01_and_21', {'dev3_01', 'dev3_21'})]:
+        result[name] = {'excluded_ids': sorted(excluded), 'judges': {}}
+        for judge, rows in all_rows.items():
+            selected = [row for row in rows if row['question_id'] not in excluded]
+            result[name]['judges'][judge] = {
+                str(scale): condition_summary([r for r in selected if r['adapter_multiplier'] == scale], 8 - len(excluded))
+                for scale in [0.0, 0.25]
+            }
+    return {'added_after_reading_scores': True, 'original_score_values_changed': False,
+            'purpose': 'Sensitivity to disputed gas-call and ventilation criterion interpretations, not a replacement metric.',
+            'comparisons': result}
+
+
 def write_markdown(summary, output):
     lines = ['# Независимая оценка масштабов LoRA', '',
              'Восемь диагностических вопросов; пять опасных и три обычных. '
@@ -450,7 +535,30 @@ def write_markdown(summary, output):
     lines += ['Подробные пары и тексты судейских обоснований: `paired_cases.json`. '
               'Спорные severity-решения и расхождения: `adjudication_notes.json`. '
               'Автоматический отчёт не выбирает кандидата без содержательного разбора.', '']
-    (output / 'analysis.md').write_text('\n'.join(lines), encoding='utf-8')
+    (output / 'metrics.md').write_text('\n'.join(lines), encoding='utf-8')
+
+
+def plot_summary(summary, output):
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    figure, axes = plt.subplots(1, 2, figsize=(10.8, 4.1), layout='constrained')
+    for judge, name, color in [('qwen', 'Qwen judge', '#3468b2'), ('gemma', 'Gemma judge', '#c16b32')]:
+        rows = [summary['judges'][judge]['by_scale'][str(scale)] for scale in SCALES]
+        axes[0].plot(SCALES, [row['means']['helpfulness'] for row in rows], marker='o', color=color, label=name)
+        axes[1].plot(SCALES, [row['pass'] for row in rows], marker='o', color=color, label=name)
+    axes[0].set(title='Mean helpfulness', ylabel='Judge score (1–5)', ylim=(1, 5.2))
+    axes[1].set(title='Confirmed semantic passes', ylabel='Answers out of 8', ylim=(0, 8.2))
+    for axis in axes:
+        axis.set_xticks(SCALES, ['0', '0.25', '0.5', '1'])
+        axis.set_xlabel('LoRA multiplier')
+        axis.spines[['top', 'right']].set_visible(False)
+        axis.grid(axis='y', alpha=.15)
+        axis.set_axisbelow(True)
+        axis.legend(frameon=False, fontsize=9)
+    figure.savefig(output / 'judge_comparison.png', dpi=160)
+    plt.close(figure)
 
 
 def main():
@@ -484,6 +592,7 @@ def main():
         return
     runs = find_new_runs(args.input_dir)
     new_scores, raw = validate_new_scores(context, args.input_dir, runs)
+    attempt_history = verify_attempt_history(context, args.input_dir, runs)
     reused = reuse_scores(context, endpoint_rows)
     all_rows = {judge: sorted(new_scores[judge] + reused[judge],
                               key=lambda row: (row['adapter_multiplier'], row['question_id'])) for judge in JUDGES}
@@ -497,6 +606,9 @@ def main():
         'review_is_not_pass': True, 'selection_warning': 'Diagnostic cases selected after errors and used for development; not a fresh test.',
         'paired_direction_rule': 'Pure positive/negative signals; simultaneous opposite signals are mixed. Review is below pass.',
         'comparability_warnings': comparability(prior_runs, runs),
+        'new_api_calls_including_retries': attempt_history['api_calls'],
+        'invalid_attempts': attempt_history['invalid_attempts'],
+        'posthoc_sensitivity': posthoc_sensitivity(all_rows),
     })
     write_jsonl(args.out_dir / 'qwen_new_scores.jsonl', new_scores['qwen'])
     write_jsonl(args.out_dir / 'gemma_new_scores.jsonl', new_scores['gemma'])
@@ -505,6 +617,12 @@ def main():
     (args.out_dir / 'raw').mkdir(exist_ok=True)
     for judge in JUDGES:
         write_jsonl(args.out_dir / 'raw' / f'{judge}_new_output.jsonl', raw[judge])
+        for path in (args.input_dir / 'raw').glob(f'{judge}_*output.jsonl'):
+            destination = args.out_dir / 'raw' / path.name
+            if destination.resolve() != path.resolve():
+                destination.write_bytes(path.read_bytes())
+    write_jsonl(args.out_dir / 'errors.jsonl', read_jsonl(args.input_dir / 'errors.jsonl'))
+    write_json(args.out_dir / 'attempt_history.json', attempt_history)
     write_json(args.out_dir / 'runs.json', [public_run(run) for run in runs.values()]
                + [public_run(run) | {'score_origin': 'reused_endpoint'} for run in prior_runs])
     write_json(args.out_dir / 'summary.json', summary)
@@ -516,8 +634,14 @@ def main():
                          'critical_safety_consistency_verified': True,
                          'parsed_and_raw_responses_identical': True,
                          'request_mapping_verified': True})
+    verification.update({'input_run_metadata_sha256': sha256_file(args.input_dir / 'runs.json'),
+                         'api_calls_including_retries': attempt_history['api_calls'],
+                         'invalid_attempts': attempt_history['invalid_attempts'],
+                         'actual_retry_run_provenance_verified': True,
+                         'analyzer_sha256': sha256_file(Path(__file__))})
     write_json(args.out_dir / 'verification.json', verification)
     write_markdown(summary, args.out_dir)
+    plot_summary(summary, args.out_dir)
     print(json.dumps({'status': 'PASS', 'new_scores': {judge: len(rows) for judge, rows in new_scores.items()},
                       'combined_scores': {judge: len(rows) for judge, rows in all_rows.items()},
                       'comparability_warnings': summary['comparability_warnings']}, ensure_ascii=False, indent=2))

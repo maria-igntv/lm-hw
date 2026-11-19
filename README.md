@@ -78,6 +78,13 @@ baseline/SFT. При 0,25 вернулся правильный ответ пр�
 для полного development из 32 вопросов; новое обучение пока отложено.
 [Сравнение четырёх масштабов](results/adapter_strength_v1/judges/analysis.md).
 [Зафиксированный кандидат](data/sft_v3/adapter_strength_selection.json).
+Для расширенной проверки фиксированного масштаба 0,25 подготовлен
+[ноутбук 06](notebooks/06_adapter_expanded_v1.ipynb): 24 новых ответа,
+32 прежних baseline, восемь прежних ответов 0,25 и шесть контрольных генераций.
+Он сохраняет прогресс и отдельный пакет из 24 новых заданий судье.
+Это подготовленный запуск, новых результатов полного development пока нет.
+[Инструкция запуска](docs/adapter_expanded_v1_guide.md).
+[Открыть полный development в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/06_adapter_expanded_v1.ipynb).
 [Инструкция диагностики](docs/adapter_strength_v1_guide.md).
 [Открыть диагностику в Colab](https://colab.research.google.com/github/maria-igntv/lm-hw/blob/main/notebooks/05_adapter_strength_diagnostic_v1.ipynb).
 
